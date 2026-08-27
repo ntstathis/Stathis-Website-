@@ -1,0 +1,757 @@
+[
+  {
+    "id": 4980,
+    "slug": "delivery-of-a-mobile-command-center-for-athens-international-airport",
+    "link": "https://stathis.com.gr/en/delivery-of-a-mobile-command-center-for-athens-international-airport/",
+    "lang": "en",
+    "translations": {
+      "en": 4980,
+      "el": 4976
+    },
+    "status": "publish",
+    "title": "Delivery of a Mobile Command Center for Athens International Airport"
+  },
+  {
+    "id": 4976,
+    "slug": "paradosi-mobile-command-center-gia-ton-diethni-aerolimena-athinon",
+    "link": "https://stathis.com.gr/paradosi-mobile-command-center-gia-ton-diethni-aerolimena-athinon/",
+    "lang": "el",
+    "translations": {
+      "el": 4976,
+      "en": 4980
+    },
+    "status": "publish",
+    "title": "Παράδοση Mobile Command Center για τον Διεθνή Αερολιμένα Αθηνών"
+  },
+  {
+    "id": 4974,
+    "slug": "we-participated-in-the-food-expo-2026",
+    "link": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/",
+    "lang": "en",
+    "translations": {
+      "en": 4974,
+      "el": 4970
+    },
+    "status": "publish",
+    "title": "We participated in the Food Expo 2026"
+  },
+  {
+    "id": 4970,
+    "slug": "symmeteichame-stin-food-expo-2026",
+    "link": "https://stathis.com.gr/symmeteichame-stin-food-expo-2026/",
+    "lang": "el",
+    "translations": {
+      "el": 4970,
+      "en": 4974
+    },
+    "status": "publish",
+    "title": "Συμμετείχαμε στην Food Expo 2026"
+  },
+  {
+    "id": 4573,
+    "slug": "metropolitan-expo",
+    "link": "https://stathis.com.gr/metropolitan-expo/",
+    "lang": "el",
+    "translations": {
+      "el": 4573
+    },
+    "status": "publish",
+    "title": "METROPOLITAN EXPO"
+  },
+  {
+    "id": 4499,
+    "slug": "metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis",
+    "link": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/",
+    "lang": "en",
+    "translations": {
+      "en": 4499,
+      "el": 221
+    },
+    "status": "publish",
+    "title": "Relocation of our Athens branch to new and larger facilities."
+  },
+  {
+    "id": 4497,
+    "slug": "the-gradual-delivery-of-45-vehicles-to-ayvens-for-liafarm-has-begun",
+    "link": "https://stathis.com.gr/en/the-gradual-delivery-of-45-vehicles-to-ayvens-for-liafarm-has-begun/",
+    "lang": "en",
+    "translations": {
+      "en": 4497,
+      "el": 3885
+    },
+    "status": "publish",
+    "title": "The gradual delivery of 45 vehicles to Ayvens for Liafarm has begun."
+  },
+  {
+    "id": 4407,
+    "slug": "mercedes-benz-sprinter-pick-up-315cdi-standard-3",
+    "link": "https://stathis.com.gr/en/mercedes-benz-sprinter-pick-up-315cdi-standard-3/",
+    "lang": "en",
+    "translations": {
+      "en": 4407,
+      "el": 3971
+    },
+    "status": "publish",
+    "title": "Mercedes-Benz Sprinter Pick-Up 315CDI Standard"
+  },
+  {
+    "id": 4402,
+    "slug": "mercedes-benz-sprinter-pick-up-315cdi-standard",
+    "link": "https://stathis.com.gr/en/mercedes-benz-sprinter-pick-up-315cdi-standard/",
+    "lang": "en",
+    "translations": {
+      "en": 4402,
+      "el": 4105
+    },
+    "status": "publish",
+    "title": "Mercedes-Benz Sprinter Pick-Up 315CDI Standard"
+  },
+  {
+    "id": 4388,
+    "slug": "refrigerated-container-koala-495",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-495/",
+    "lang": "en",
+    "translations": {
+      "en": 4388,
+      "el": 3433
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 495"
+  },
+  {
+    "id": 4383,
+    "slug": "refrigerated-container-koala-1300-tw-asian-pallet",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-1300-tw-asian-pallet/",
+    "lang": "en",
+    "translations": {
+      "en": 4383,
+      "el": 3139
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 1300 TW ASIAN PALLET"
+  },
+  {
+    "id": 4378,
+    "slug": "refrigerated-container-koala-1000-europallet",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-1000-europallet/",
+    "lang": "en",
+    "translations": {
+      "en": 4378,
+      "el": 3132
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 1000 EUROPALLET"
+  },
+  {
+    "id": 4373,
+    "slug": "refrigerated-container-koala-780",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-780/",
+    "lang": "en",
+    "translations": {
+      "en": 4373,
+      "el": 3122
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 780"
+  },
+  {
+    "id": 4368,
+    "slug": "refrigerated-container-koala-600",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-600/",
+    "lang": "en",
+    "translations": {
+      "en": 4368,
+      "el": 3105
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 600"
+  },
+  {
+    "id": 4363,
+    "slug": "refrigerated-container-koala-500",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-500/",
+    "lang": "en",
+    "translations": {
+      "en": 4363,
+      "el": 3087
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 500 "
+  },
+  {
+    "id": 4358,
+    "slug": "refrigerated-container-koala-370",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-370/",
+    "lang": "en",
+    "translations": {
+      "en": 4358,
+      "el": 3077
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 370"
+  },
+  {
+    "id": 4353,
+    "slug": "mobile-refrigerator-koala-160",
+    "link": "https://stathis.com.gr/en/mobile-refrigerator-koala-160/",
+    "lang": "en",
+    "translations": {
+      "en": 4353,
+      "el": 3067
+    },
+    "status": "publish",
+    "title": "Mobile refrigerator – KOALA 160 "
+  },
+  {
+    "id": 4348,
+    "slug": "refrigerated-container-koala-150",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-150/",
+    "lang": "en",
+    "translations": {
+      "en": 4348,
+      "el": 3049
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 150"
+  },
+  {
+    "id": 4339,
+    "slug": "refrigerated-container-koala-140",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-140/",
+    "lang": "en",
+    "translations": {
+      "en": 4339,
+      "el": 3026
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 140"
+  },
+  {
+    "id": 4334,
+    "slug": "refrigerated-container-koala-90",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-90/",
+    "lang": "en",
+    "translations": {
+      "en": 4334,
+      "el": 3009
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 90"
+  },
+  {
+    "id": 4329,
+    "slug": "refrigerated-container-koala-80",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-80/",
+    "lang": "en",
+    "translations": {
+      "en": 4329,
+      "el": 3000
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 80"
+  },
+  {
+    "id": 4324,
+    "slug": "refrigerated-container-koala-70",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-70/",
+    "lang": "en",
+    "translations": {
+      "en": 4324,
+      "el": 2992
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 70 "
+  },
+  {
+    "id": 4319,
+    "slug": "refrigerated-container-koala-50",
+    "link": "https://stathis.com.gr/en/refrigerated-container-koala-50/",
+    "lang": "en",
+    "translations": {
+      "en": 4319,
+      "el": 2913
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 50 "
+  },
+  {
+    "id": 4314,
+    "slug": "mobile-refrigerator-koala-32-af",
+    "link": "https://stathis.com.gr/en/mobile-refrigerator-koala-32-af/",
+    "lang": "en",
+    "translations": {
+      "en": 4314,
+      "el": 2912
+    },
+    "status": "publish",
+    "title": "Mobile refrigerator – KOALA 32 AF "
+  },
+  {
+    "id": 4309,
+    "slug": "mobile-refrigerator-koala-32-as",
+    "link": "https://stathis.com.gr/en/mobile-refrigerator-koala-32-as/",
+    "lang": "en",
+    "translations": {
+      "en": 4309,
+      "el": 2911
+    },
+    "status": "publish",
+    "title": "Mobile refrigerator – KOALA 32 AS "
+  },
+  {
+    "id": 4304,
+    "slug": "self-powered-refrigerated-container-koala-green-140",
+    "link": "https://stathis.com.gr/en/self-powered-refrigerated-container-koala-green-140/",
+    "lang": "en",
+    "translations": {
+      "en": 4304,
+      "el": 3189
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 140"
+  },
+  {
+    "id": 4299,
+    "slug": "self-powered-refrigerated-container-koala-green-370",
+    "link": "https://stathis.com.gr/en/self-powered-refrigerated-container-koala-green-370/",
+    "lang": "en",
+    "translations": {
+      "en": 4299,
+      "el": 3202
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 370"
+  },
+  {
+    "id": 4294,
+    "slug": "self-powered-refrigerated-container-koala-green-495",
+    "link": "https://stathis.com.gr/en/self-powered-refrigerated-container-koala-green-495/",
+    "lang": "en",
+    "translations": {
+      "en": 4294,
+      "el": 3222
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 495 "
+  },
+  {
+    "id": 4289,
+    "slug": "self-powered-refrigerated-container-koala-green-600",
+    "link": "https://stathis.com.gr/en/self-powered-refrigerated-container-koala-green-600/",
+    "lang": "en",
+    "translations": {
+      "en": 4289,
+      "el": 3236
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 600 "
+  },
+  {
+    "id": 4284,
+    "slug": "self-powered-refrigerated-container-koala-green-500",
+    "link": "https://stathis.com.gr/en/self-powered-refrigerated-container-koala-green-500/",
+    "lang": "en",
+    "translations": {
+      "en": 4284,
+      "el": 3251
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 500 "
+  },
+  {
+    "id": 4279,
+    "slug": "self-powered-refrigerated-container-koala-green-1000",
+    "link": "https://stathis.com.gr/en/self-powered-refrigerated-container-koala-green-1000/",
+    "lang": "en",
+    "translations": {
+      "en": 4279,
+      "el": 3261
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 1000 "
+  },
+  {
+    "id": 4274,
+    "slug": "self-powered-refrigerated-container-koala-green-1300",
+    "link": "https://stathis.com.gr/en/self-powered-refrigerated-container-koala-green-1300/",
+    "lang": "en",
+    "translations": {
+      "en": 4274,
+      "el": 3280
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 1300 "
+  },
+  {
+    "id": 4269,
+    "slug": "self-powered-refrigerated-container-koala-green-780",
+    "link": "https://stathis.com.gr/en/self-powered-refrigerated-container-koala-green-780/",
+    "lang": "en",
+    "translations": {
+      "en": 4269,
+      "el": 3442
+    },
+    "status": "publish",
+    "title": "Self powered refrigerated container – KOALA GREEN 780"
+  },
+  {
+    "id": 4133,
+    "slug": "mobile-refrigerator-koala-20",
+    "link": "https://stathis.com.gr/en/mobile-refrigerator-koala-20/",
+    "lang": "en",
+    "translations": {
+      "en": 4133,
+      "el": 2868
+    },
+    "status": "publish",
+    "title": "Mobile refrigerator – KOALA 20"
+  },
+  {
+    "id": 4105,
+    "slug": "mercedes-benz-sprinter-pick-up-315cdi-standard-2",
+    "link": "https://stathis.com.gr/mercedes-benz-sprinter-pick-up-315cdi-standard-2/",
+    "lang": "el",
+    "translations": {
+      "el": 4105,
+      "en": 4402
+    },
+    "status": "publish",
+    "title": "Mercedes-Benz Sprinter Pick-Up 315CDI Standard"
+  },
+  {
+    "id": 3971,
+    "slug": "mercedes-benz-sprinter-pick-up-315cdi-standard",
+    "link": "https://stathis.com.gr/mercedes-benz-sprinter-pick-up-315cdi-standard/",
+    "lang": "el",
+    "translations": {
+      "el": 3971,
+      "en": 4407
+    },
+    "status": "publish",
+    "title": "Mercedes-Benz Sprinter Pick-Up 315CDI Standard"
+  },
+  {
+    "id": 3885,
+    "slug": "xekinise-i-stadiaki-paradosi-45-ochimaton-stin-ayvens-gia-tin-liafarm",
+    "link": "https://stathis.com.gr/xekinise-i-stadiaki-paradosi-45-ochimaton-stin-ayvens-gia-tin-liafarm/",
+    "lang": "el",
+    "translations": {
+      "el": 3885,
+      "en": 4497
+    },
+    "status": "publish",
+    "title": "Ξεκίνησε η σταδιακή παράδοση 45 οχημάτων στην Ayvens για την Liafarm"
+  },
+  {
+    "id": 3442,
+    "slug": "self-powered-refrigerated-container-koala-green-780",
+    "link": "https://stathis.com.gr/self-powered-refrigerated-container-koala-green-780/",
+    "lang": "el",
+    "translations": {
+      "el": 3442,
+      "en": 4269
+    },
+    "status": "publish",
+    "title": "Self powered refrigerated container – KOALA GREEN 780"
+  },
+  {
+    "id": 3433,
+    "slug": "refrigerated-container-koala-495",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-495/",
+    "lang": "el",
+    "translations": {
+      "el": 3433,
+      "en": 4388
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 495"
+  },
+  {
+    "id": 3280,
+    "slug": "self-powered-refrigerated-container-koala-green-1300",
+    "link": "https://stathis.com.gr/self-powered-refrigerated-container-koala-green-1300/",
+    "lang": "el",
+    "translations": {
+      "el": 3280,
+      "en": 4274
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 1300"
+  },
+  {
+    "id": 3261,
+    "slug": "self-powered-refrigerated-container-koala-green-1000",
+    "link": "https://stathis.com.gr/self-powered-refrigerated-container-koala-green-1000/",
+    "lang": "el",
+    "translations": {
+      "el": 3261,
+      "en": 4279
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 1000"
+  },
+  {
+    "id": 3251,
+    "slug": "self-powered-refrigerated-container-koala-green-500",
+    "link": "https://stathis.com.gr/self-powered-refrigerated-container-koala-green-500/",
+    "lang": "el",
+    "translations": {
+      "el": 3251,
+      "en": 4284
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 500"
+  },
+  {
+    "id": 3236,
+    "slug": "self-powered-refrigerated-container-koala-green-600",
+    "link": "https://stathis.com.gr/self-powered-refrigerated-container-koala-green-600/",
+    "lang": "el",
+    "translations": {
+      "el": 3236,
+      "en": 4289
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 600"
+  },
+  {
+    "id": 3222,
+    "slug": "self-powered-refrigerated-container-koala-green-495",
+    "link": "https://stathis.com.gr/self-powered-refrigerated-container-koala-green-495/",
+    "lang": "el",
+    "translations": {
+      "el": 3222,
+      "en": 4294
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 495"
+  },
+  {
+    "id": 3202,
+    "slug": "self-powered-refrigerated-container-koala-green-370",
+    "link": "https://stathis.com.gr/self-powered-refrigerated-container-koala-green-370/",
+    "lang": "el",
+    "translations": {
+      "el": 3202,
+      "en": 4299
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 370"
+  },
+  {
+    "id": 3189,
+    "slug": "self-powered-refrigerated-container-koala-green-140",
+    "link": "https://stathis.com.gr/self-powered-refrigerated-container-koala-green-140/",
+    "lang": "el",
+    "translations": {
+      "el": 3189,
+      "en": 4304
+    },
+    "status": "publish",
+    "title": "Self-powered refrigerated container – KOALA GREEN 140"
+  },
+  {
+    "id": 3139,
+    "slug": "refrigerated-container-koala-1300-tw-asian-pallet",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-1300-tw-asian-pallet/",
+    "lang": "el",
+    "translations": {
+      "el": 3139,
+      "en": 4383
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 1300 TW ASIAN PALLET"
+  },
+  {
+    "id": 3132,
+    "slug": "refrigerated-container-koala-1000-europallet",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-1000-europallet/",
+    "lang": "el",
+    "translations": {
+      "el": 3132,
+      "en": 4378
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 1000 EUROPALLET"
+  },
+  {
+    "id": 3122,
+    "slug": "refrigerated-container-koala-780",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-780/",
+    "lang": "el",
+    "translations": {
+      "el": 3122,
+      "en": 4373
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 780"
+  },
+  {
+    "id": 3105,
+    "slug": "refrigerated-container-koala-600",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-600/",
+    "lang": "el",
+    "translations": {
+      "el": 3105,
+      "en": 4368
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 600"
+  },
+  {
+    "id": 3087,
+    "slug": "refrigerated-container-koala-500",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-500/",
+    "lang": "el",
+    "translations": {
+      "el": 3087,
+      "en": 4363
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 500"
+  },
+  {
+    "id": 3077,
+    "slug": "refrigerated-container-koala-370",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-370/",
+    "lang": "el",
+    "translations": {
+      "el": 3077,
+      "en": 4358
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 370"
+  },
+  {
+    "id": 3067,
+    "slug": "mobile-refrigerator-koala-160",
+    "link": "https://stathis.com.gr/mobile-refrigerator-koala-160/",
+    "lang": "el",
+    "translations": {
+      "el": 3067,
+      "en": 4353
+    },
+    "status": "publish",
+    "title": "Mobile refrigerator &#8211; KOALA 160"
+  },
+  {
+    "id": 3049,
+    "slug": "refrigerated-container-koala-150",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-150/",
+    "lang": "el",
+    "translations": {
+      "el": 3049,
+      "en": 4348
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 150"
+  },
+  {
+    "id": 3026,
+    "slug": "refrigerated-container-koala-140",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-140/",
+    "lang": "el",
+    "translations": {
+      "el": 3026,
+      "en": 4339
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 140"
+  },
+  {
+    "id": 3009,
+    "slug": "refrigerated-container-koala-90",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-90/",
+    "lang": "el",
+    "translations": {
+      "el": 3009,
+      "en": 4334
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 90"
+  },
+  {
+    "id": 3000,
+    "slug": "refrigerated-container-koala-80",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-80/",
+    "lang": "el",
+    "translations": {
+      "el": 3000,
+      "en": 4329
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 80"
+  },
+  {
+    "id": 2992,
+    "slug": "refrigerated-container-koala-70",
+    "link": "https://stathis.com.gr/refrigerated-container-koala-70/",
+    "lang": "el",
+    "translations": {
+      "el": 2992,
+      "en": 4324
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 70"
+  },
+  {
+    "id": 2913,
+    "slug": "mobile-refrigerator-koala-50",
+    "link": "https://stathis.com.gr/mobile-refrigerator-koala-50/",
+    "lang": "el",
+    "translations": {
+      "el": 2913,
+      "en": 4319
+    },
+    "status": "publish",
+    "title": "Refrigerated container – KOALA 50"
+  },
+  {
+    "id": 2912,
+    "slug": "mobile-refrigerator-koala-32-af",
+    "link": "https://stathis.com.gr/mobile-refrigerator-koala-32-af/",
+    "lang": "el",
+    "translations": {
+      "el": 2912,
+      "en": 4314
+    },
+    "status": "publish",
+    "title": "Mobile refrigerator – KOALA 32 AF"
+  },
+  {
+    "id": 2911,
+    "slug": "mobile-refrigerator-koala-32-as",
+    "link": "https://stathis.com.gr/mobile-refrigerator-koala-32-as/",
+    "lang": "el",
+    "translations": {
+      "el": 2911,
+      "en": 4309
+    },
+    "status": "publish",
+    "title": "Mobile refrigerator – KOALA 32 AS"
+  },
+  {
+    "id": 2868,
+    "slug": "mobile-refrigerator-koala-20",
+    "link": "https://stathis.com.gr/mobile-refrigerator-koala-20/",
+    "lang": "el",
+    "translations": {
+      "el": 2868,
+      "en": 4133
+    },
+    "status": "publish",
+    "title": "Mobile refrigerator – KOALA 20"
+  },
+  {
+    "id": 221,
+    "slug": "metafora-ypokatastimatos-athinon-se-kainouries-3",
+    "link": "https://stathis.com.gr/metafora-ypokatastimatos-athinon-se-kainouries-3/",
+    "lang": "el",
+    "translations": {
+      "el": 221,
+      "en": 4499
+    },
+    "status": "publish",
+    "title": "Μεταφορά υποκαταστήματος Αθηνών σε καινούριες και μεγαλύτερες εγκαταστάσεις"
+  }
+]

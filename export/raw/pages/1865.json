@@ -1,0 +1,148 @@
+{
+  "id": 1865,
+  "date": "2024-08-22T14:52:13",
+  "modified": "2026-02-16T17:33:20",
+  "slug": "about-us",
+  "status": "publish",
+  "type": "page",
+  "link": "https://stathis.com.gr/en/about-us/",
+  "title": {
+    "rendered": "About Us"
+  },
+  "content": {
+    "rendered": "",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "",
+    "protected": false
+  },
+  "featured_media": 0,
+  "parent": 0,
+  "yoast_head_json": {
+    "title": "About Us - Stathis",
+    "description": "Since 1961, \"Stathis\" is one of the leading companies in the field of car conversion in Greece.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://stathis.com.gr/en/about-us/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "About Us - Stathis",
+    "og_description": "Since 1961, \"Stathis\" is one of the leading companies in the field of car conversion in Greece.",
+    "og_url": "https://stathis.com.gr/en/about-us/",
+    "og_site_name": "Stathis",
+    "article_publisher": "https://www.facebook.com/stathisrefrigeration/",
+    "article_modified_time": "2026-02-16T15:33:20+00:00",
+    "og_image": [
+      {
+        "width": 900,
+        "height": 690,
+        "url": "https://stathis.com.gr/wp-content/uploads/2024/09/stathis-sortimo_1472.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://stathis.com.gr/en/about-us/",
+          "url": "https://stathis.com.gr/en/about-us/",
+          "name": "About Us - Stathis",
+          "isPartOf": {
+            "@id": "https://stathis.com.gr/#website"
+          },
+          "datePublished": "2024-08-22T14:52:13+00:00",
+          "dateModified": "2026-02-16T15:33:20+00:00",
+          "description": "Since 1961, \"Stathis\" is one of the leading companies in the field of car conversion in Greece.",
+          "breadcrumb": {
+            "@id": "https://stathis.com.gr/en/about-us/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://stathis.com.gr/en/about-us/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://stathis.com.gr/en/about-us/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://stathis.com.gr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About Us"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://stathis.com.gr/#website",
+          "url": "https://stathis.com.gr/",
+          "name": "Stathis",
+          "description": "Αμαξοποίηση &amp; Ψύξη Μεταφορών",
+          "publisher": {
+            "@id": "https://stathis.com.gr/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://stathis.com.gr/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://stathis.com.gr/#organization",
+          "name": "Stathis",
+          "url": "https://stathis.com.gr/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://stathis.com.gr/#/schema/logo/image/",
+            "url": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "contentUrl": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "width": 1182,
+            "height": 384,
+            "caption": "Stathis"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/#/schema/logo/image/"
+          },
+          "sameAs": [
+            "https://www.facebook.com/stathisrefrigeration/"
+          ]
+        }
+      ]
+    }
+  },
+  "lang": "en",
+  "translations": {
+    "en": 1865
+  }
+}

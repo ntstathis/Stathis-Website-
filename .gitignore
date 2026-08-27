@@ -1,0 +1,16 @@
+# dependencies / build
+node_modules/
+dist/
+.astro/
+
+# export working data: raw JSON, HTML snapshots and parity data ARE committed
+# (provenance of the old site); downloaded binaries are not — referenced images
+# get curated into src/assets/, everything else is re-fetchable while WP lives.
+export/media/
+export/fonts/*.woff
+export/fonts/*.woff2
+export/fonts/*.ttf
+
+# local
+.env
+Thumbs.db

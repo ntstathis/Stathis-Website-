@@ -1,0 +1,819 @@
+[
+  {
+    "id": 4926,
+    "slug": "archiki-3",
+    "link": "https://stathis.com.gr/archiki-3/",
+    "lang": "el",
+    "translations": {
+      "el": 4926
+    },
+    "status": "publish",
+    "title": "Αρχική 3"
+  },
+  {
+    "id": 4581,
+    "slug": "archiki-2",
+    "link": "https://stathis.com.gr/archiki-2/",
+    "lang": "el",
+    "translations": {
+      "el": 4581
+    },
+    "status": "publish",
+    "title": "Αρχική 2"
+  },
+  {
+    "id": 4513,
+    "slug": "configurator",
+    "link": "https://stathis.com.gr/en/configurator/",
+    "lang": "en",
+    "translations": {
+      "en": 4513,
+      "el": 2263
+    },
+    "status": "publish",
+    "title": "Configurator"
+  },
+  {
+    "id": 4501,
+    "slug": "our-news",
+    "link": "https://stathis.com.gr/en/our-news/",
+    "lang": "en",
+    "translations": {
+      "en": 4501,
+      "el": 3707
+    },
+    "status": "publish",
+    "title": "Our news"
+  },
+  {
+    "id": 4397,
+    "slug": "ready-to-deliver-mercedes-benz-vehicles",
+    "link": "https://stathis.com.gr/en/ready-to-deliver-mercedes-benz-vehicles/",
+    "lang": "en",
+    "translations": {
+      "en": 4397,
+      "el": 3889
+    },
+    "status": "publish",
+    "title": "Ready-to-deliver Mercedes-Benz vehicles"
+  },
+  {
+    "id": 4145,
+    "slug": "scattolini-aluminum-truck-bodies",
+    "link": "https://stathis.com.gr/en/scattolini-aluminum-truck-bodies/",
+    "lang": "en",
+    "translations": {
+      "en": 4145,
+      "el": 3777
+    },
+    "status": "publish",
+    "title": "Scattolini Aluminum Truck Bodies"
+  },
+  {
+    "id": 4124,
+    "slug": "refrigerated-containers-melform",
+    "link": "https://stathis.com.gr/en/refrigerated-containers-melform/",
+    "lang": "en",
+    "translations": {
+      "en": 4124,
+      "el": 2862
+    },
+    "status": "publish",
+    "title": "Refrigerated containers &#8211; Melform"
+  },
+  {
+    "id": 3889,
+    "slug": "ochimata-mercedes-benz-sprinter-pick-up",
+    "link": "https://stathis.com.gr/ochimata-mercedes-benz-sprinter-pick-up/",
+    "lang": "el",
+    "translations": {
+      "el": 3889,
+      "en": 4397
+    },
+    "status": "publish",
+    "title": "Οχήματα Mercedes-Benz Sprinter Pick-Up"
+  },
+  {
+    "id": 3840,
+    "slug": "oroi-chrisis-2",
+    "link": "https://stathis.com.gr/oroi-chrisis-2/",
+    "lang": "el",
+    "translations": {
+      "el": 3840
+    },
+    "status": "publish",
+    "title": "Όροι Χρήσης"
+  },
+  {
+    "id": 3777,
+    "slug": "karotses-alouminiou-scattolini",
+    "link": "https://stathis.com.gr/proionta/karotses-alouminiou-scattolini/",
+    "lang": "el",
+    "translations": {
+      "el": 3777,
+      "en": 4145
+    },
+    "status": "publish",
+    "title": "Καρότσες αλουμινίου Scattolini"
+  },
+  {
+    "id": 3707,
+    "slug": "news",
+    "link": "https://stathis.com.gr/news/",
+    "lang": "el",
+    "translations": {
+      "el": 3707,
+      "en": 4501
+    },
+    "status": "publish",
+    "title": "Τα Νέα μας"
+  },
+  {
+    "id": 2862,
+    "slug": "psyktika-docheia-melform",
+    "link": "https://stathis.com.gr/psyktika-docheia-melform/",
+    "lang": "el",
+    "translations": {
+      "el": 2862,
+      "en": 4124
+    },
+    "status": "publish",
+    "title": "Ψυκτικά δοχεία Melform"
+  },
+  {
+    "id": 2768,
+    "slug": "test",
+    "link": "https://stathis.com.gr/test/",
+    "lang": "el",
+    "translations": {
+      "el": 2768
+    },
+    "status": "publish",
+    "title": "Test"
+  },
+  {
+    "id": 2711,
+    "slug": "pelates",
+    "link": "https://stathis.com.gr/pelates/",
+    "lang": "el",
+    "translations": {
+      "el": 2711
+    },
+    "status": "publish",
+    "title": "Οι Πελάτες μας"
+  },
+  {
+    "id": 2639,
+    "slug": "diachoristiko-chorou-fortosis-lcv",
+    "link": "https://stathis.com.gr/en/diachoristiko-chorou-fortosis-lcv/",
+    "lang": "en",
+    "translations": {
+      "en": 2639
+    },
+    "status": "publish",
+    "title": "Movable partition in Vans"
+  },
+  {
+    "id": 1733,
+    "slug": "eboria-kreaton-van",
+    "link": "https://stathis.com.gr/eboria-kreaton-van/",
+    "lang": "el",
+    "translations": {
+      "el": 1733,
+      "en": 1841
+    },
+    "status": "publish",
+    "title": "Μεταφορά Προϊόντων Κρέατος με LCV"
+  },
+  {
+    "id": 2327,
+    "slug": "stainless-steel-roof-rack",
+    "link": "https://stathis.com.gr/en/stainless-steel-roof-rack/",
+    "lang": "en",
+    "translations": {
+      "en": 2327,
+      "el": 2010
+    },
+    "status": "publish",
+    "title": "Roof Rack"
+  },
+  {
+    "id": 2324,
+    "slug": "gatelock-locks",
+    "link": "https://stathis.com.gr/en/gatelock-locks/",
+    "lang": "en",
+    "translations": {
+      "en": 2324,
+      "el": 2002
+    },
+    "status": "publish",
+    "title": "Gatelock Locks"
+  },
+  {
+    "id": 2321,
+    "slug": "temperature-recorders",
+    "link": "https://stathis.com.gr/en/temperature-recorders/",
+    "lang": "en",
+    "translations": {
+      "en": 2321,
+      "el": 1980
+    },
+    "status": "publish",
+    "title": "Temperature Recorders"
+  },
+  {
+    "id": 2318,
+    "slug": "road-ranger",
+    "link": "https://stathis.com.gr/en/road-ranger/",
+    "lang": "en",
+    "translations": {
+      "en": 2318,
+      "el": 1996
+    },
+    "status": "publish",
+    "title": "Road Ranger"
+  },
+  {
+    "id": 2315,
+    "slug": "tail-lifts",
+    "link": "https://stathis.com.gr/en/tail-lifts/",
+    "lang": "en",
+    "translations": {
+      "en": 2315,
+      "el": 1974
+    },
+    "status": "publish",
+    "title": "Tail Lifts"
+  },
+  {
+    "id": 2312,
+    "slug": "sortimo-car-equipment",
+    "link": "https://stathis.com.gr/en/sortimo-car-equipment/",
+    "lang": "en",
+    "translations": {
+      "en": 2312,
+      "el": 1987
+    },
+    "status": "publish",
+    "title": "Sortimo Car Equipment"
+  },
+  {
+    "id": 2309,
+    "slug": "deep-freeze-body",
+    "link": "https://stathis.com.gr/en/deep-freeze-body/",
+    "lang": "en",
+    "translations": {
+      "en": 2309,
+      "el": 1960
+    },
+    "status": "publish",
+    "title": "Deep Freeze Body"
+  },
+  {
+    "id": 2306,
+    "slug": "isothermalbox",
+    "link": "https://stathis.com.gr/en/isothermalbox/",
+    "lang": "en",
+    "translations": {
+      "en": 2306,
+      "el": 1947
+    },
+    "status": "publish",
+    "title": "Isothermal Box"
+  },
+  {
+    "id": 2300,
+    "slug": "truck-refrigerators",
+    "link": "https://stathis.com.gr/en/truck-refrigerators/",
+    "lang": "en",
+    "translations": {
+      "en": 2300,
+      "el": 2019
+    },
+    "status": "publish",
+    "title": "Truck Refrigerators"
+  },
+  {
+    "id": 2296,
+    "slug": "refrigerated-units",
+    "link": "https://stathis.com.gr/en/refrigerated-units/",
+    "lang": "en",
+    "translations": {
+      "en": 2296,
+      "el": 2148
+    },
+    "status": "publish",
+    "title": "Refrigerated Units"
+  },
+  {
+    "id": 2267,
+    "slug": "proionta",
+    "link": "https://stathis.com.gr/proionta/",
+    "lang": "el",
+    "translations": {
+      "el": 2267
+    },
+    "status": "publish",
+    "title": "Προϊόντα"
+  },
+  {
+    "id": 2263,
+    "slug": "diamorfwtis",
+    "link": "https://stathis.com.gr/diamorfwtis/",
+    "lang": "el",
+    "translations": {
+      "el": 2263,
+      "en": 4513
+    },
+    "status": "publish",
+    "title": "Διαμορφωτής"
+  },
+  {
+    "id": 2148,
+    "slug": "psuktika-mixanimata",
+    "link": "https://stathis.com.gr/proionta/psuktika-mixanimata/",
+    "lang": "el",
+    "translations": {
+      "el": 2148,
+      "en": 2296
+    },
+    "status": "publish",
+    "title": "Ψυκτικά Μηχανήματα &#8211; new"
+  },
+  {
+    "id": 2002,
+    "slug": "kleidaries-gatelock",
+    "link": "https://stathis.com.gr/proionta/kleidaries-gatelock/",
+    "lang": "el",
+    "translations": {
+      "el": 2002,
+      "en": 2324
+    },
+    "status": "publish",
+    "title": "Κλειδαριές Gatelock &#8211; ΗΤ"
+  },
+  {
+    "id": 2019,
+    "slug": "psuktikoi-thalamoi-autokinitwn",
+    "link": "https://stathis.com.gr/proionta/psuktikoi-thalamoi-autokinitwn/",
+    "lang": "el",
+    "translations": {
+      "el": 2019,
+      "en": 2300
+    },
+    "status": "publish",
+    "title": "Ψυκτικοί Θάλαμοι Φορτηγών"
+  },
+  {
+    "id": 2010,
+    "slug": "anoxeidoti-schara-orofis",
+    "link": "https://stathis.com.gr/proionta/anoxeidoti-schara-orofis/",
+    "lang": "el",
+    "translations": {
+      "el": 2010,
+      "en": 2327
+    },
+    "status": "publish",
+    "title": "Ανοξείδωτη Σχάρα Οροφής &#8211; ΗΤ"
+  },
+  {
+    "id": 1996,
+    "slug": "roadranger",
+    "link": "https://stathis.com.gr/roadranger/",
+    "lang": "el",
+    "translations": {
+      "el": 1996,
+      "en": 2318
+    },
+    "status": "publish",
+    "title": "Road Ranger"
+  },
+  {
+    "id": 1987,
+    "slug": "eksoplismos-autokinitwn-sortimo",
+    "link": "https://stathis.com.gr/proionta/eksoplismos-autokinitwn-sortimo/",
+    "lang": "el",
+    "translations": {
+      "el": 1987,
+      "en": 2312
+    },
+    "status": "publish",
+    "title": "Εξοπλισμός αυτοκινήτων Sortimo"
+  },
+  {
+    "id": 1947,
+    "slug": "kivwtamakses",
+    "link": "https://stathis.com.gr/proionta/kivwtamakses/",
+    "lang": "el",
+    "translations": {
+      "el": 1947,
+      "en": 2306
+    },
+    "status": "publish",
+    "title": "Κιβωτάμαξες &#8211; HT"
+  },
+  {
+    "id": 1960,
+    "slug": "thalamoi-vatheias-katapsuksis",
+    "link": "https://stathis.com.gr/proionta/thalamoi-vatheias-katapsuksis/",
+    "lang": "el",
+    "translations": {
+      "el": 1960,
+      "en": 2309
+    },
+    "status": "publish",
+    "title": "Θάλαμοι Βαθιάς Κατάψυξης"
+  },
+  {
+    "id": 1974,
+    "slug": "ydraulikes-portes",
+    "link": "https://stathis.com.gr/proionta/ydraulikes-portes/",
+    "lang": "el",
+    "translations": {
+      "el": 1974,
+      "en": 2315
+    },
+    "status": "publish",
+    "title": "Υδραυλικές Πόρτες"
+  },
+  {
+    "id": 1980,
+    "slug": "katagrafika-thermokrasias-euroscan",
+    "link": "https://stathis.com.gr/proionta/katagrafika-thermokrasias-euroscan/",
+    "lang": "el",
+    "translations": {
+      "el": 1980,
+      "en": 2321
+    },
+    "status": "publish",
+    "title": "Καταγραφικά Θερμοκρασίας &#8211; ΗΤ"
+  },
+  {
+    "id": 1865,
+    "slug": "about-us",
+    "link": "https://stathis.com.gr/en/about-us/",
+    "lang": "en",
+    "translations": {
+      "en": 1865
+    },
+    "status": "publish",
+    "title": "About Us"
+  },
+  {
+    "id": 1864,
+    "slug": "rafia-thalamon-en",
+    "link": "https://stathis.com.gr/en/rafia-thalamon-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1864,
+      "el": 1406
+    },
+    "status": "publish",
+    "title": "Adjustable aluminum shelves"
+  },
+  {
+    "id": 1854,
+    "slug": "prosopika-dedomena-kai-cookies-en",
+    "link": "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1854,
+      "el": 726
+    },
+    "status": "publish",
+    "title": "Personal Data and Cookies"
+  },
+  {
+    "id": 1853,
+    "slug": "rafia-van-en",
+    "link": "https://stathis.com.gr/en/rafia-van-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1853,
+      "el": 1381
+    },
+    "status": "publish",
+    "title": "Adjustable aluminum shelves in Vans"
+  },
+  {
+    "id": 1852,
+    "slug": "customers",
+    "link": "https://stathis.com.gr/en/customers/",
+    "lang": "en",
+    "translations": {
+      "en": 1852
+    },
+    "status": "publish",
+    "title": "Our Customers"
+  },
+  {
+    "id": 1851,
+    "slug": "van-insulation",
+    "link": "https://stathis.com.gr/en/van-insulation/",
+    "lang": "en",
+    "translations": {
+      "en": 1851,
+      "el": 556
+    },
+    "status": "publish",
+    "title": "Van Insulation"
+  },
+  {
+    "id": 1850,
+    "slug": "insulation-kit",
+    "link": "https://stathis.com.gr/en/insulation-kit/",
+    "lang": "en",
+    "translations": {
+      "en": 1850,
+      "el": 550
+    },
+    "status": "publish",
+    "title": "Insulation Kit"
+  },
+  {
+    "id": 1843,
+    "slug": "van-rent",
+    "link": "https://stathis.com.gr/en/van-rent/",
+    "lang": "en",
+    "translations": {
+      "en": 1843,
+      "el": 149
+    },
+    "status": "publish",
+    "title": "Van rental"
+  },
+  {
+    "id": 1841,
+    "slug": "eboria-kreaton-van-en",
+    "link": "https://stathis.com.gr/en/eboria-kreaton-van-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1841,
+      "el": 1733
+    },
+    "status": "publish",
+    "title": "Meat Transportation by LCV"
+  },
+  {
+    "id": 1839,
+    "slug": "eboria-ichthyon-thalamon-en",
+    "link": "https://stathis.com.gr/en/eboria-ichthyon-thalamon-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1839,
+      "el": 1398
+    },
+    "status": "publish",
+    "title": "Fish transportation"
+  },
+  {
+    "id": 1837,
+    "slug": "eboria-ichthyon-en",
+    "link": "https://stathis.com.gr/en/eboria-ichthyon-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1837,
+      "el": 1371
+    },
+    "status": "publish",
+    "title": "Fish Transportation by LCV"
+  },
+  {
+    "id": 1835,
+    "slug": "diachoristiko-thalamou-en",
+    "link": "https://stathis.com.gr/en/diachoristiko-thalamou-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1835,
+      "el": 1412
+    },
+    "status": "publish",
+    "title": "Partitions in trucks"
+  },
+  {
+    "id": 1829,
+    "slug": "after-sales-service-en",
+    "link": "https://stathis.com.gr/en/after-sales-service-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1829,
+      "el": 577
+    },
+    "status": "publish",
+    "title": "After Sales Service"
+  },
+  {
+    "id": 1826,
+    "slug": "eboria-kreaton-en",
+    "link": "https://stathis.com.gr/en/eboria-kreaton-en/",
+    "lang": "en",
+    "translations": {
+      "en": 1826,
+      "el": 1364
+    },
+    "status": "publish",
+    "title": "Meat Transportation"
+  },
+  {
+    "id": 1817,
+    "slug": "contact",
+    "link": "https://stathis.com.gr/en/contact/",
+    "lang": "en",
+    "translations": {
+      "en": 1817,
+      "el": 230
+    },
+    "status": "publish",
+    "title": "Contact"
+  },
+  {
+    "id": 1412,
+    "slug": "diachoristika",
+    "link": "https://stathis.com.gr/diachoristika/",
+    "lang": "el",
+    "translations": {
+      "el": 1412,
+      "en": 1835
+    },
+    "status": "publish",
+    "title": "Διαχωριστικό θαλάμου"
+  },
+  {
+    "id": 1406,
+    "slug": "rafia-thalamon",
+    "link": "https://stathis.com.gr/rafia-thalamon/",
+    "lang": "el",
+    "translations": {
+      "el": 1406,
+      "en": 1864
+    },
+    "status": "publish",
+    "title": "Ράφια Θαλάμων"
+  },
+  {
+    "id": 1398,
+    "slug": "eboria-ichthyon-thalamon",
+    "link": "https://stathis.com.gr/eboria-ichthyon-thalamon/",
+    "lang": "el",
+    "translations": {
+      "el": 1398,
+      "en": 1839
+    },
+    "status": "publish",
+    "title": "Μεταφορά Προϊόντων Αλιείας"
+  },
+  {
+    "id": 1389,
+    "slug": "diachoristika-van",
+    "link": "https://stathis.com.gr/diachoristika-van/",
+    "lang": "el",
+    "translations": {
+      "el": 1389
+    },
+    "status": "publish",
+    "title": "Διαχωριστικό χώρου φόρτωσης LCV"
+  },
+  {
+    "id": 1381,
+    "slug": "rafia-van-old",
+    "link": "https://stathis.com.gr/rafia-van-old/",
+    "lang": "el",
+    "translations": {
+      "el": 1381,
+      "en": 1853
+    },
+    "status": "publish",
+    "title": "Ανακλινόμενα και ρυθμιζόμενα ράφια"
+  },
+  {
+    "id": 1371,
+    "slug": "eboria-ichthyon",
+    "link": "https://stathis.com.gr/eboria-ichthyon/",
+    "lang": "el",
+    "translations": {
+      "el": 1371,
+      "en": 1837
+    },
+    "status": "publish",
+    "title": "Μεταφορά Προϊόντων Αλιείας με LCV"
+  },
+  {
+    "id": 1364,
+    "slug": "eboria-kreaton",
+    "link": "https://stathis.com.gr/eboria-kreaton/",
+    "lang": "el",
+    "translations": {
+      "el": 1364,
+      "en": 1826
+    },
+    "status": "publish",
+    "title": "Μεταφορά Προϊόντων Κρέατος"
+  },
+  {
+    "id": 726,
+    "slug": "prosopika-dedomena-kai-cookies",
+    "link": "https://stathis.com.gr/prosopika-dedomena-kai-cookies/",
+    "lang": "el",
+    "translations": {
+      "el": 726,
+      "en": 1854
+    },
+    "status": "publish",
+    "title": "Προσωπικά Δεδομένα και Cookies"
+  },
+  {
+    "id": 577,
+    "slug": "after-sales-service",
+    "link": "https://stathis.com.gr/after-sales-service/",
+    "lang": "el",
+    "translations": {
+      "el": 577,
+      "en": 1829
+    },
+    "status": "publish",
+    "title": "After Sales Service"
+  },
+  {
+    "id": 556,
+    "slug": "monwseis-autokinitwn-van",
+    "link": "https://stathis.com.gr/proionta/monwseis-autokinitwn-van/",
+    "lang": "el",
+    "translations": {
+      "el": 556,
+      "en": 1851
+    },
+    "status": "publish",
+    "title": "Μονώσεις Αυτοκινήτων Van"
+  },
+  {
+    "id": 550,
+    "slug": "kit-monwsis",
+    "link": "https://stathis.com.gr/proionta/kit-monwsis/",
+    "lang": "el",
+    "translations": {
+      "el": 550,
+      "en": 1850
+    },
+    "status": "publish",
+    "title": "Κιτ Μόνωσης"
+  },
+  {
+    "id": 278,
+    "slug": "etaireia",
+    "link": "https://stathis.com.gr/etaireia/",
+    "lang": "el",
+    "translations": {
+      "el": 278
+    },
+    "status": "publish",
+    "title": "Σχετικά με εμάς"
+  },
+  {
+    "id": 230,
+    "slug": "epikoinwnia",
+    "link": "https://stathis.com.gr/epikoinwnia/",
+    "lang": "el",
+    "translations": {
+      "el": 230,
+      "en": 1817
+    },
+    "status": "publish",
+    "title": "Επικοινωνία"
+  },
+  {
+    "id": 164,
+    "slug": "home",
+    "link": "https://stathis.com.gr/en/home/",
+    "lang": "en",
+    "translations": {
+      "en": 164,
+      "el": 153
+    },
+    "status": "publish",
+    "title": "Home &#8211; English"
+  },
+  {
+    "id": 153,
+    "slug": "home-2",
+    "link": "https://stathis.com.gr/",
+    "lang": "el",
+    "translations": {
+      "el": 153,
+      "en": 164
+    },
+    "status": "publish",
+    "title": "Home"
+  },
+  {
+    "id": 149,
+    "slug": "van-rent",
+    "link": "https://stathis.com.gr/van-rent/",
+    "lang": "el",
+    "translations": {
+      "el": 149,
+      "en": 1843
+    },
+    "status": "publish",
+    "title": "Ενοικιάση Van ψυγείου από την Εταιρεία Stathis"
+  }
+]

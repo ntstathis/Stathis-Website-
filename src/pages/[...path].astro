@@ -1,0 +1,25 @@
+---
+// Catch-all: renders every migrated content entry at its frozen WordPress URL.
+// Bespoke .astro pages take priority over this route automatically.
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const collections = ['koala', 'vehicles', 'products', 'news', 'pages'] as const;
+  const paths = [];
+  for (const name of collections) {
+    for (const entry of await getCollection(name)) {
+      paths.push({ params: { path: entry.data.path }, props: { entry } });
+    }
+  }
+  return paths;
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Base lang={entry.data.lang} title={entry.data.seo.title} description={entry.data.seo.description}>
+  <h1>{entry.data.title}</h1>
+  <Content />
+</Base>

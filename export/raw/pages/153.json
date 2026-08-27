@@ -1,0 +1,149 @@
+{
+  "id": 153,
+  "date": "2024-01-12T15:22:58",
+  "modified": "2026-03-26T18:21:00",
+  "slug": "home-2",
+  "status": "publish",
+  "type": "page",
+  "link": "https://stathis.com.gr/",
+  "title": {
+    "rendered": "Home"
+  },
+  "content": {
+    "rendered": "<p>&nbsp;</p>\n<div id=\"lv-root\"></div>\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>&nbsp;</p>\n",
+    "protected": false
+  },
+  "featured_media": 0,
+  "parent": 0,
+  "yoast_head_json": {
+    "title": "Home - Stathis",
+    "description": "Stathis - Η Κορυφαία Εταιρεία στην Αμαξοποίηση και την Ψύξη Μεταφορών στην Ελλάδα",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://stathis.com.gr/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Home - Stathis",
+    "og_description": "Stathis - Η Κορυφαία Εταιρεία στην Αμαξοποίηση και την Ψύξη Μεταφορών στην Ελλάδα",
+    "og_url": "https://stathis.com.gr/",
+    "og_site_name": "Stathis",
+    "article_publisher": "https://www.facebook.com/stathisrefrigeration/",
+    "article_modified_time": "2026-03-26T16:21:00+00:00",
+    "og_image": [
+      {
+        "width": 900,
+        "height": 690,
+        "url": "https://stathis.com.gr/wp-content/uploads/2024/09/stathis-sortimo_1472.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://stathis.com.gr/",
+          "url": "https://stathis.com.gr/",
+          "name": "Home - Stathis",
+          "isPartOf": {
+            "@id": "https://stathis.com.gr/#website"
+          },
+          "datePublished": "2024-01-12T15:22:58+00:00",
+          "dateModified": "2026-03-26T16:21:00+00:00",
+          "description": "Stathis - Η Κορυφαία Εταιρεία στην Αμαξοποίηση και την Ψύξη Μεταφορών στην Ελλάδα",
+          "breadcrumb": {
+            "@id": "https://stathis.com.gr/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://stathis.com.gr/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://stathis.com.gr/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://stathis.com.gr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Home"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://stathis.com.gr/#website",
+          "url": "https://stathis.com.gr/",
+          "name": "Stathis",
+          "description": "Αμαξοποίηση &amp; Ψύξη Μεταφορών",
+          "publisher": {
+            "@id": "https://stathis.com.gr/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://stathis.com.gr/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://stathis.com.gr/#organization",
+          "name": "Stathis",
+          "url": "https://stathis.com.gr/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://stathis.com.gr/#/schema/logo/image/",
+            "url": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "contentUrl": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "width": 1182,
+            "height": 384,
+            "caption": "Stathis"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/#/schema/logo/image/"
+          },
+          "sameAs": [
+            "https://www.facebook.com/stathisrefrigeration/"
+          ]
+        }
+      ]
+    }
+  },
+  "lang": "el",
+  "translations": {
+    "el": 153,
+    "en": 164
+  }
+}

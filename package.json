@@ -1,0 +1,20 @@
+{
+  "name": "stathis-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "stathis.com.gr — static site (Astro), deployed to GitHub Pages",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "parity": "node scripts/check-parity.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.9.10",
+    "@astrojs/rss": "4.0.19",
+    "astro": "7.2.9",
+    "typescript": "6.0.3"
+  }
+}

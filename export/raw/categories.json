@@ -1,0 +1,62 @@
+[
+  {
+    "id": 106,
+    "count": 17,
+    "name": "Koala",
+    "slug": "koala"
+  },
+  {
+    "id": 97,
+    "count": 17,
+    "name": "Koala",
+    "slug": "koala"
+  },
+  {
+    "id": 110,
+    "count": 8,
+    "name": "Koala Green",
+    "slug": "koala-green"
+  },
+  {
+    "id": 99,
+    "count": 8,
+    "name": "Koala Green",
+    "slug": "koala-green"
+  },
+  {
+    "id": 137,
+    "count": 2,
+    "name": "Mercedes-Benz",
+    "slug": "mercedes-benz"
+  },
+  {
+    "id": 71,
+    "count": 5,
+    "name": "News",
+    "slug": "news"
+  },
+  {
+    "id": 144,
+    "count": 4,
+    "name": "News",
+    "slug": "news"
+  },
+  {
+    "id": 1,
+    "count": 0,
+    "name": "Uncategorized",
+    "slug": "uncategorized"
+  },
+  {
+    "id": 11,
+    "count": 2,
+    "name": "Uncategorized",
+    "slug": "uncategorized-en"
+  },
+  {
+    "id": 102,
+    "count": 2,
+    "name": "Οχήματα Mercedes-Benz Sprinter Pick-Up",
+    "slug": "ochimata-mercedes-benz-sprinter-pick-up"
+  }
+]

@@ -1,0 +1,218 @@
+{
+  "id": 4974,
+  "date": "2026-03-26T19:09:11",
+  "modified": "2026-04-15T14:27:56",
+  "slug": "we-participated-in-the-food-expo-2026",
+  "status": "publish",
+  "type": "post",
+  "link": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/",
+  "title": {
+    "rendered": "We participated in the Food Expo 2026"
+  },
+  "content": {
+    "rendered": "\n<figure class=\"wp-block-video\"><video height=\"1080\" style=\"aspect-ratio: 1920 / 1080;\" width=\"1920\" controls src=\"https://stathis.com.gr/wp-content/uploads/2026/03/Recap-Video-Foodexpo-2026-Hd.webm\"></video></figure>\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "",
+    "protected": false
+  },
+  "featured_media": 4972,
+  "categories": [
+    144,
+    11
+  ],
+  "tags": [],
+  "yoast_head_json": {
+    "title": "We participated in the Food Expo 2026 - Stathis",
+    "description": "Stathis participated in Food Expo 2026 at Metropolitan Expo. See highlights from our participation and the products we presented at the exhibition.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "We participated in the Food Expo 2026 - Stathis",
+    "og_description": "Stathis participated in Food Expo 2026 at Metropolitan Expo. See highlights from our participation and the products we presented at the exhibition.",
+    "og_url": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/",
+    "og_site_name": "Stathis",
+    "article_publisher": "https://www.facebook.com/stathisrefrigeration/",
+    "article_published_time": "2026-03-26T17:09:11+00:00",
+    "article_modified_time": "2026-04-15T11:27:56+00:00",
+    "og_image": [
+      {
+        "width": 1844,
+        "height": 1040,
+        "url": "https://stathis.com.gr/wp-content/uploads/2026/03/Screenshot_6.png",
+        "type": "image/png"
+      }
+    ],
+    "author": "Stathis",
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Written by": "Stathis",
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/#article",
+          "isPartOf": {
+            "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/"
+          },
+          "author": {
+            "name": "Stathis",
+            "@id": "https://stathis.com.gr/#/schema/person/10ceec057eca085e83cc13f096db9d1d"
+          },
+          "headline": "We participated in the Food Expo 2026",
+          "datePublished": "2026-03-26T17:09:11+00:00",
+          "dateModified": "2026-04-15T11:27:56+00:00",
+          "mainEntityOfPage": {
+            "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/"
+          },
+          "wordCount": 6,
+          "publisher": {
+            "@id": "https://stathis.com.gr/#organization"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/#primaryimage"
+          },
+          "thumbnailUrl": "https://stathis.com.gr/wp-content/uploads/2026/03/Screenshot_6.png",
+          "articleSection": [
+            "News"
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/",
+          "url": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/",
+          "name": "We participated in the Food Expo 2026 - Stathis",
+          "isPartOf": {
+            "@id": "https://stathis.com.gr/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/#primaryimage"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/#primaryimage"
+          },
+          "thumbnailUrl": "https://stathis.com.gr/wp-content/uploads/2026/03/Screenshot_6.png",
+          "datePublished": "2026-03-26T17:09:11+00:00",
+          "dateModified": "2026-04-15T11:27:56+00:00",
+          "description": "Stathis participated in Food Expo 2026 at Metropolitan Expo. See highlights from our participation and the products we presented at the exhibition.",
+          "breadcrumb": {
+            "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/#primaryimage",
+          "url": "https://stathis.com.gr/wp-content/uploads/2026/03/Screenshot_6.png",
+          "contentUrl": "https://stathis.com.gr/wp-content/uploads/2026/03/Screenshot_6.png",
+          "width": 1844,
+          "height": 1040
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://stathis.com.gr/en/we-participated-in-the-food-expo-2026/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://stathis.com.gr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "We participated in the Food Expo 2026"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://stathis.com.gr/#website",
+          "url": "https://stathis.com.gr/",
+          "name": "Stathis",
+          "description": "Αμαξοποίηση &amp; Ψύξη Μεταφορών",
+          "publisher": {
+            "@id": "https://stathis.com.gr/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://stathis.com.gr/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://stathis.com.gr/#organization",
+          "name": "Stathis",
+          "url": "https://stathis.com.gr/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://stathis.com.gr/#/schema/logo/image/",
+            "url": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "contentUrl": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "width": 1182,
+            "height": 384,
+            "caption": "Stathis"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/#/schema/logo/image/"
+          },
+          "sameAs": [
+            "https://www.facebook.com/stathisrefrigeration/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://stathis.com.gr/#/schema/person/10ceec057eca085e83cc13f096db9d1d",
+          "name": "Stathis",
+          "image": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://stathis.com.gr/#/schema/person/image/",
+            "url": "https://secure.gravatar.com/avatar/96ae081c2ae067d09488678c876ab7bd807d2fd3c3a1f1b9910fb497e59b8748?s=96&d=mm&r=g",
+            "contentUrl": "https://secure.gravatar.com/avatar/96ae081c2ae067d09488678c876ab7bd807d2fd3c3a1f1b9910fb497e59b8748?s=96&d=mm&r=g",
+            "caption": "Stathis"
+          },
+          "url": "https://stathis.com.gr/author/viable/"
+        }
+      ]
+    }
+  },
+  "lang": "en",
+  "translations": {
+    "en": 4974,
+    "el": 4970
+  }
+}

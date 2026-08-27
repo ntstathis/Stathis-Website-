@@ -1,0 +1,150 @@
+{
+  "id": 1854,
+  "date": "2024-08-22T14:48:34",
+  "modified": "2024-12-13T10:11:45",
+  "slug": "prosopika-dedomena-kai-cookies-en",
+  "status": "publish",
+  "type": "page",
+  "link": "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/",
+  "title": {
+    "rendered": "Personal Data and Cookies"
+  },
+  "content": {
+    "rendered": "\n<p class=\"wp-block-paragraph\">Welcome to Stathis Company. The security and protection of your personal data is a priority for us. The data we collect and process is used exclusively to provide and improve our services, in full compliance with GDPR.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><strong>Who are the recipients of your data:</strong></h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Technology solution providers</li>\n\n\n\n<li>Accounting and financial services</li>\n\n\n\n<li>Accounting and supply chain companies</li>\n\n\n\n<li>Marketing and advertising services (with your consent)</li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Your Rights under the GDPR:</strong> You have the right of access, rectification, erasure and portability of your data, as well as the right to perpetuate or request restriction of processing.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>About Cookies</strong>:We use cookies to improve your online experience. These help us understand your preferences and tailor content accordingly. You can manage your cookie settings through your browser.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>Contact</strong>: for any questions or information about how we process your data, you can contact us at: gdpr@stathis.com.gr</p>\n\n\n\n<p class=\"wp-block-paragraph\">or write to us at:<br>DOUNAS THEOCHARIS &amp; CO S.A.<br>Sindos Industrial Area, Entrance Β’, PB. 1134 <br>Postal Code: 57022, Thessaloniki</p>\n\n\n\n<p class=\"wp-block-paragraph\">or call us at +30 2310 79 8300</p>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>Welcome to Stathis Company. The security and protection of your personal data is a priority for us. The data we collect and process is used</p>\n",
+    "protected": false
+  },
+  "featured_media": 0,
+  "parent": 0,
+  "yoast_head_json": {
+    "title": "Personal Data and Cookies - Stathis",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Personal Data and Cookies - Stathis",
+    "og_description": "Welcome to Stathis Company. The security and protection of your personal data is a priority for us. The data we collect and process is used",
+    "og_url": "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/",
+    "og_site_name": "Stathis",
+    "article_publisher": "https://www.facebook.com/stathisrefrigeration/",
+    "article_modified_time": "2024-12-13T10:11:45+00:00",
+    "og_image": [
+      {
+        "width": 900,
+        "height": 690,
+        "url": "https://stathis.com.gr/wp-content/uploads/2024/09/stathis-sortimo_1472.jpg",
+        "type": "image/jpeg"
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/",
+          "url": "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/",
+          "name": "Personal Data and Cookies - Stathis",
+          "isPartOf": {
+            "@id": "https://stathis.com.gr/#website"
+          },
+          "datePublished": "2024-08-22T14:48:34+00:00",
+          "dateModified": "2024-12-13T10:11:45+00:00",
+          "breadcrumb": {
+            "@id": "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://stathis.com.gr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Personal Data and Cookies"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://stathis.com.gr/#website",
+          "url": "https://stathis.com.gr/",
+          "name": "Stathis",
+          "description": "Αμαξοποίηση &amp; Ψύξη Μεταφορών",
+          "publisher": {
+            "@id": "https://stathis.com.gr/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://stathis.com.gr/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://stathis.com.gr/#organization",
+          "name": "Stathis",
+          "url": "https://stathis.com.gr/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://stathis.com.gr/#/schema/logo/image/",
+            "url": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "contentUrl": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "width": 1182,
+            "height": 384,
+            "caption": "Stathis"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/#/schema/logo/image/"
+          },
+          "sameAs": [
+            "https://www.facebook.com/stathisrefrigeration/"
+          ]
+        }
+      ]
+    }
+  },
+  "lang": "en",
+  "translations": {
+    "en": 1854,
+    "el": 726
+  }
+}

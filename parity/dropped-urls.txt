@@ -1,0 +1,24 @@
+# URLs from the old WordPress sitemaps that the new site intentionally does NOT serve.
+# Decided 2026-08-27 during migration. Everything here returns 404.
+
+# Draft/test leftovers (approved cleanup)
+https://stathis.com.gr/test/
+https://stathis.com.gr/archiki-2/
+https://stathis.com.gr/archiki-3/
+
+# WordPress taxonomy archives — nothing on the site links to them
+# (verified: only self-referential links from the archive pages themselves)
+https://stathis.com.gr/category/koala/
+https://stathis.com.gr/category/koala-green/
+https://stathis.com.gr/category/news/
+https://stathis.com.gr/category/ochimata-mercedes-benz-sprinter-pick-up/
+https://stathis.com.gr/en/category/koala/
+https://stathis.com.gr/en/category/koala-green/
+https://stathis.com.gr/en/category/news/
+https://stathis.com.gr/en/category/mercedes-benz/
+https://stathis.com.gr/en/category/uncategorized-en/
+https://stathis.com.gr/tag/21l/
+https://stathis.com.gr/author/viable/
+
+# NOTE kept-despite-plan: /rafia-van-old/ and both Sprinter "duplicate" posts
+# turned out to be live, distinct, paired content — they are KEPT, not dropped.

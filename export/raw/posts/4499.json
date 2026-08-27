@@ -1,0 +1,217 @@
+{
+  "id": 4499,
+  "date": "2025-07-17T09:58:31",
+  "modified": "2026-04-15T14:32:56",
+  "slug": "metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis",
+  "status": "publish",
+  "type": "post",
+  "link": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/",
+  "title": {
+    "rendered": "Relocation of our Athens branch to new and larger facilities."
+  },
+  "content": {
+    "rendered": "<p data-start=\"0\" data-end=\"141\">We are pleased to announce that on Monday, August 23, 2021, we relocated to new, larger facilities in the Industrial Area of Kifisia, Athens.</p>\n<p data-start=\"143\" data-end=\"228\">More specifically, you can now find us at:<br data-start=\"185\" data-end=\"188\" />11A Andrea Metaxa Street, 14564 Kifisia.</p>\n<p data-start=\"230\" data-end=\"268\" data-is-last-node=\"\" data-is-only-node=\"\">Our telephone numbers remain the same.</p>\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>We are pleased to announce that on Monday, August 23, 2021, we relocated to new, larger facilities in the Industrial Area of Kifisia, Athens. More specifically, you can now find us at:11A Andrea Metaxa Street, 14564 Kifisia. Our telephone numbers remain the same.</p>\n",
+    "protected": false
+  },
+  "featured_media": 216,
+  "categories": [
+    144
+  ],
+  "tags": [],
+  "yoast_head_json": {
+    "title": "Relocation of our Athens branch to new and larger facilities. - Stathis",
+    "description": "Stathis has relocated its Athens branch to new and larger facilities. Discover our expanded premises offering improved vehicle conversion and refrigeration services.",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Relocation of our Athens branch to new and larger facilities. - Stathis",
+    "og_description": "Stathis has relocated its Athens branch to new and larger facilities. Discover our expanded premises offering improved vehicle conversion and refrigeration services.",
+    "og_url": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/",
+    "og_site_name": "Stathis",
+    "article_publisher": "https://www.facebook.com/stathisrefrigeration/",
+    "article_published_time": "2025-07-17T06:58:31+00:00",
+    "article_modified_time": "2026-04-15T11:32:56+00:00",
+    "og_image": [
+      {
+        "width": 954,
+        "height": 564,
+        "url": "https://stathis.com.gr/wp-content/uploads/2021/09/blog-image.png",
+        "type": "image/png"
+      }
+    ],
+    "author": "Stathis",
+    "twitter_card": "summary_large_image",
+    "twitter_misc": {
+      "Written by": "Stathis",
+      "Est. reading time": "1 minute"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/#article",
+          "isPartOf": {
+            "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/"
+          },
+          "author": {
+            "name": "Stathis",
+            "@id": "https://stathis.com.gr/#/schema/person/10ceec057eca085e83cc13f096db9d1d"
+          },
+          "headline": "Relocation of our Athens branch to new and larger facilities.",
+          "datePublished": "2025-07-17T06:58:31+00:00",
+          "dateModified": "2026-04-15T11:32:56+00:00",
+          "mainEntityOfPage": {
+            "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/"
+          },
+          "wordCount": 51,
+          "publisher": {
+            "@id": "https://stathis.com.gr/#organization"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/#primaryimage"
+          },
+          "thumbnailUrl": "https://stathis.com.gr/wp-content/uploads/2021/09/blog-image.png",
+          "articleSection": [
+            "News"
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/",
+          "url": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/",
+          "name": "Relocation of our Athens branch to new and larger facilities. - Stathis",
+          "isPartOf": {
+            "@id": "https://stathis.com.gr/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/#primaryimage"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/#primaryimage"
+          },
+          "thumbnailUrl": "https://stathis.com.gr/wp-content/uploads/2021/09/blog-image.png",
+          "datePublished": "2025-07-17T06:58:31+00:00",
+          "dateModified": "2026-04-15T11:32:56+00:00",
+          "description": "Stathis has relocated its Athens branch to new and larger facilities. Discover our expanded premises offering improved vehicle conversion and refrigeration services.",
+          "breadcrumb": {
+            "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/#primaryimage",
+          "url": "https://stathis.com.gr/wp-content/uploads/2021/09/blog-image.png",
+          "contentUrl": "https://stathis.com.gr/wp-content/uploads/2021/09/blog-image.png",
+          "width": 954,
+          "height": 564
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://stathis.com.gr/en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://stathis.com.gr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Relocation of our Athens branch to new and larger facilities."
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://stathis.com.gr/#website",
+          "url": "https://stathis.com.gr/",
+          "name": "Stathis",
+          "description": "Αμαξοποίηση &amp; Ψύξη Μεταφορών",
+          "publisher": {
+            "@id": "https://stathis.com.gr/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://stathis.com.gr/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://stathis.com.gr/#organization",
+          "name": "Stathis",
+          "url": "https://stathis.com.gr/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://stathis.com.gr/#/schema/logo/image/",
+            "url": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "contentUrl": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "width": 1182,
+            "height": 384,
+            "caption": "Stathis"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/#/schema/logo/image/"
+          },
+          "sameAs": [
+            "https://www.facebook.com/stathisrefrigeration/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://stathis.com.gr/#/schema/person/10ceec057eca085e83cc13f096db9d1d",
+          "name": "Stathis",
+          "image": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://stathis.com.gr/#/schema/person/image/",
+            "url": "https://secure.gravatar.com/avatar/96ae081c2ae067d09488678c876ab7bd807d2fd3c3a1f1b9910fb497e59b8748?s=96&d=mm&r=g",
+            "contentUrl": "https://secure.gravatar.com/avatar/96ae081c2ae067d09488678c876ab7bd807d2fd3c3a1f1b9910fb497e59b8748?s=96&d=mm&r=g",
+            "caption": "Stathis"
+          },
+          "url": "https://stathis.com.gr/author/viable/"
+        }
+      ]
+    }
+  },
+  "lang": "en",
+  "translations": {
+    "en": 4499,
+    "el": 221
+  }
+}

@@ -1,0 +1,15 @@
+/* WebFont Helper */
+/* https://gwfh.mranftl.com/fonts */
+
+@font-face {
+    font-family: "PFDinText";
+    src: url("PFDinText-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "PFDinText";
+    src: url("PFDinText-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-display: swap;
+}

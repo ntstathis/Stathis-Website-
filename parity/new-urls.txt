@@ -1,0 +1,12 @@
+# Pages the new site serves that the old sitemaps did not list. Each must be intentional.
+
+# /en/ was a WP 301 to /en/home/ — static stub with meta-refresh + canonical
+en
+
+# contact-form thank-you pages (noindex; GA conversion trigger)
+efcharistoume
+en/thank-you
+
+# news pagination existed live (/news/page/2/) but was never in the sitemap
+news/page/2
+en/our-news/page/2

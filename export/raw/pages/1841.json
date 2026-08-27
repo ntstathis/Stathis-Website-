@@ -1,0 +1,163 @@
+{
+  "id": 1841,
+  "date": "2024-08-22T14:45:07",
+  "modified": "2024-12-17T11:25:24",
+  "slug": "eboria-kreaton-van-en",
+  "status": "publish",
+  "type": "page",
+  "link": "https://stathis.com.gr/en/eboria-kreaton-van-en/",
+  "title": {
+    "rendered": "Meat Transportation by LCV"
+  },
+  "content": {
+    "rendered": "\n<p class=\"wp-block-paragraph\"></p>\n\n\n\n<p class=\"wp-block-paragraph\">Special equipment for transporting hanging meats:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Reinforcement of the roof for the transport of hanging meats</li>\n\n\n\n<li>Italian-style meat system consisting of anodized aluminum rails, suitable also for the hooks&#8217; collection</li>\n\n\n\n<li>The aluminum rails are fixed to the roof of the vehicle with stainless brackets</li>\n\n\n\n<li>Special constructions with fixed stainless steel bars on the side walls of the loading area and on the back wall</li>\n</ul>\n\n\n\n<figure class=\"wp-block-image size-full\"><img decoding=\"async\" width=\"2271\" height=\"1703\" data-src=\"https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017.jpg\" alt=\"\" class=\"wp-image-1737 lazyload\" data-srcset=\"https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017.jpg 2271w, https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017-300x225.jpg 300w, https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017-1024x768.jpg 1024w, https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017-768x576.jpg 768w, https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017-1536x1152.jpg 1536w, https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017-2048x1536.jpg 2048w\" data-sizes=\"(max-width: 2271px) 100vw, 2271px\" src=\"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\" style=\"--smush-placeholder-width: 2271px; --smush-placeholder-aspect-ratio: 2271/1703;\" /></figure>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n",
+    "protected": false
+  },
+  "excerpt": {
+    "rendered": "<p>Special equipment for transporting hanging meats:</p>\n",
+    "protected": false
+  },
+  "featured_media": 0,
+  "parent": 0,
+  "yoast_head_json": {
+    "title": "Meat Transportation by LCV - Stathis",
+    "robots": {
+      "index": "index",
+      "follow": "follow",
+      "max-snippet": "max-snippet:-1",
+      "max-image-preview": "max-image-preview:large",
+      "max-video-preview": "max-video-preview:-1"
+    },
+    "canonical": "https://stathis.com.gr/en/eboria-kreaton-van-en/",
+    "og_locale": "en_US",
+    "og_type": "article",
+    "og_title": "Meat Transportation by LCV - Stathis",
+    "og_description": "Special equipment for transporting hanging meats:",
+    "og_url": "https://stathis.com.gr/en/eboria-kreaton-van-en/",
+    "og_site_name": "Stathis",
+    "article_publisher": "https://www.facebook.com/stathisrefrigeration/",
+    "article_modified_time": "2024-12-17T11:25:24+00:00",
+    "og_image": [
+      {
+        "url": "https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017.jpg",
+        "type": "",
+        "width": "",
+        "height": ""
+      }
+    ],
+    "twitter_card": "summary_large_image",
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://stathis.com.gr/en/eboria-kreaton-van-en/",
+          "url": "https://stathis.com.gr/en/eboria-kreaton-van-en/",
+          "name": "Meat Transportation by LCV - Stathis",
+          "isPartOf": {
+            "@id": "https://stathis.com.gr/#website"
+          },
+          "primaryImageOfPage": {
+            "@id": "https://stathis.com.gr/en/eboria-kreaton-van-en/#primaryimage"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/en/eboria-kreaton-van-en/#primaryimage"
+          },
+          "thumbnailUrl": "https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017.jpg",
+          "datePublished": "2024-08-22T14:45:07+00:00",
+          "dateModified": "2024-12-17T11:25:24+00:00",
+          "breadcrumb": {
+            "@id": "https://stathis.com.gr/en/eboria-kreaton-van-en/#breadcrumb"
+          },
+          "inLanguage": "en-US",
+          "potentialAction": [
+            {
+              "@type": "ReadAction",
+              "target": [
+                "https://stathis.com.gr/en/eboria-kreaton-van-en/"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://stathis.com.gr/en/eboria-kreaton-van-en/#primaryimage",
+          "url": "https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017.jpg",
+          "contentUrl": "https://stathis.com.gr/wp-content/uploads/2024/07/DSCN6017.jpg",
+          "width": 2271,
+          "height": 1703
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://stathis.com.gr/en/eboria-kreaton-van-en/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://stathis.com.gr/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Meat Transportation by LCV"
+            }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://stathis.com.gr/#website",
+          "url": "https://stathis.com.gr/",
+          "name": "Stathis",
+          "description": "Αμαξοποίηση &amp; Ψύξη Μεταφορών",
+          "publisher": {
+            "@id": "https://stathis.com.gr/#organization"
+          },
+          "potentialAction": [
+            {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://stathis.com.gr/?s={search_term_string}"
+              },
+              "query-input": {
+                "@type": "PropertyValueSpecification",
+                "valueRequired": true,
+                "valueName": "search_term_string"
+              }
+            }
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://stathis.com.gr/#organization",
+          "name": "Stathis",
+          "url": "https://stathis.com.gr/",
+          "logo": {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://stathis.com.gr/#/schema/logo/image/",
+            "url": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "contentUrl": "https://stathis.com.gr/wp-content/uploads/2024/06/LOGO.jpg",
+            "width": 1182,
+            "height": 384,
+            "caption": "Stathis"
+          },
+          "image": {
+            "@id": "https://stathis.com.gr/#/schema/logo/image/"
+          },
+          "sameAs": [
+            "https://www.facebook.com/stathisrefrigeration/"
+          ]
+        }
+      ]
+    }
+  },
+  "lang": "en",
+  "translations": {
+    "en": 1841,
+    "el": 1733
+  }
+}
