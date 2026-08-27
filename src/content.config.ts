@@ -23,6 +23,11 @@ const base = z.object({
   images: z
     .array(z.object({ src: z.string(), alt: z.string().default('') }))
     .optional(),
+  bodyImages: z
+    .array(z.object({ src: z.string(), alt: z.string().default('') }))
+    .optional(),
+  // repo-relative public path of a downloadable spec sheet, e.g. /files/koala/koala-80.pdf
+  datasheet: z.string().optional(),
 });
 
 const collection = (name: string, extra?: z.ZodRawShape) =>

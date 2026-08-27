@@ -1,6 +1,7 @@
 # dependencies / build
 node_modules/
 dist/
+dist-*/
 .astro/
 
 # export working data: raw JSON, HTML snapshots and parity data ARE committed

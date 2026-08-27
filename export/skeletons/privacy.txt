@@ -1,0 +1,387 @@
+﻿<header>
+  <div .navigation_color_grey id="logo_and_navigation_wrapper">
+    <a .logo_href href="https://stathis.com.gr">
+      <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+    <div .middle>
+      <nav .navlinks_wrapper.navlinks_wrapper_mega>
+        <ul .menu id="menu-primary-menu-el-mega-menu">
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-home.menu-item-34 id="menu-item-34">
+            <a href="https://stathis.com.gr/">
+              "Αρχική"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2266 id="menu-item-2266">
+            <a href="https://stathis.com.gr/etaireia/">
+              "Η Εταιρεία"
+          <li .products_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-156 id="menu-item-156">
+            <a href="#">
+              "Προϊόντα"
+          <li .services_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-157 id="menu-item-157">
+            <a href="#">
+              "Υπηρεσίες"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-3830 id="menu-item-3830">
+            <a href="https://stathis.com.gr/news/">
+              "Τα Νέα μας"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4431 id="menu-item-4431">
+            <a href="https://stathis.com.gr/diamorfwtis/">
+              "Διαμορφωτής"
+      <nav .navlinks_wrapper.navlinks_wrapper_mobile>
+        <ul .menu id="menu-primary-menu-el-mobile">
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-193 id="menu-item-193">
+            <a href="#">
+              "Αρχική"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2718 id="menu-item-2718">
+            <a href="https://stathis.com.gr/etaireia/">
+              "Η Εταιρία"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-194 id="menu-item-194">
+            <a href="#">
+              "Προϊόντα"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2719 id="menu-item-2719">
+                <a href="https://stathis.com.gr/proionta/kit-monwsis/">
+                  "Κιτ Μόνωσης"
+              … ×9 more like previous <li> sibling
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-2732 id="menu-item-2732">
+            <a href="#">
+              "Υπηρεσίες"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2733 id="menu-item-2733">
+                <a href="https://stathis.com.gr/van-rent/">
+                  "Ενοικιάσεις Van"
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2735 id="menu-item-2735">
+                <a href="https://stathis.com.gr/after-sales-service/">
+                  "After Sales Service"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-4118 id="menu-item-4118">
+            <a href="https://stathis.com.gr/diamorfwtis/">
+              "Διαμορφωτής"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2731 id="menu-item-2731">
+            <a href="https://stathis.com.gr/news/">
+              "Τα Νέα μας"
+      <div .menu_cta_mobile_wrapper>
+        <a .menu_cta_mobile href="/epikoinwnia">
+          "Επικοινωνία"
+      <a .menu_cta href="/epikoinwnia">
+        "Επικοινωνία"
+      <div .languages_outter_wrapper.languages_outter_wrapper_mobile>
+        <span .languages_wrapper>
+          <a .current href="https://stathis.com.gr/prosopika-dedomena-kai-cookies/">
+            "ΕΛ"
+          <a href="https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/">
+            "EN"
+    <div id="toggle">
+      <span .line1>
+      <span .line2>
+      <span .line3>
+    <div .languages_outter_wrapper.languages_outter_wrapper_desktop>
+      <span .languages_wrapper>
+        <a .current href="https://stathis.com.gr/prosopika-dedomena-kai-cookies/">
+          "ΕΛ"
+        <a href="https://stathis.com.gr/en/prosopika-dedomena-kai-cookies-en/">
+          "EN"
+  <div .mega_menus_close id="services_mega_menu">
+    <a .service_mega_menu_item href="/van-rent">
+      <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="BOXER L2H2 ΧΩΝΕΥΤΟ (1)">
+      <div .title>
+        <span>
+          "Ενοικιάσεις Van"
+    … ×2 more like previous <a> sibling
+  <div .mega_menus_close id="products_mega_menu">
+    <a .product_mega_menu_item href="/proionta/kit-monwsis/">
+      <div .img_wrapper.radius-12.overflow-hidden>
+        <div .nb_aspect>
+          <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+      <div .title>
+        "Κιτ Μόνωσης"
+    … ×13 more like previous <a> sibling
+<div>
+<main>
+  <div .container-fluid.margin_navigation_top.pt-md-100.pt-50>
+    <div .row>
+      <div .col-12>
+        <div id="page">
+          <div .gutenberg-content>
+            <div .container_max_content>
+              <h1 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.mb-md-60.mb-30>
+                "Προσωπικά Δεδομένα και Cookies"
+              <p>
+                "Σας ευχαριστούμε που επισκεφθήκατε την Ιστοσελίδα της εταιρείας ΝΤΟΥΝΑΣ ΘΕΟΧΑΡΗΣ &amp; ΣΙΑ"
+                <br>
+                <strong>
+                  "ΑΒΕΕ"
+                "(εφ’ εξής η επιχείρηση)."
+              <p>
+                "Πριν χρησιμοποιήσετε την ιστοσελίδα μας, παρακαλούμε διαβάστε προσεκτικά την παρούσα"
+                <br>
+                "Πολιτική Προστασίας Προσωπικών Δεδομένων (ΠΔ)."
+              <p>
+                <strong>
+                  "Εισαγωγή"
+              <p>
+                "Η επιχείρηση ως υπεύθυνος επεξεργασίας σας ενημερώνει για τον τρόπο συλλογής και"
+                <br>
+                "επεξεργασίας πληροφοριών σχετικά με εσάς."
+              <p>
+                "Τα δεδομένα προσωπικού χαρακτήρα (ΠΔ) είναι κάθε πληροφορία που αναφέρεται σε φυσικά"
+                <br>
+                "πρόσωπα των οποίων η ταυτότητα είναι γνωστή ή μπορεί να εξακριβωθεί."
+              <p>
+                "Η προστασία των δεδομένων προσωπικού χαρακτήρα σας είναι πολύ σημαντική για την"
+                <br>
+                "επιχείρηση οποία λαμβάνει μέτρα προς την κατεύθυνση αυτή όταν επισκέπτεστε την Ιστοσελίδα"
+                <br>
+                "της."
+              <p>
+                "Η παρούσα Πολιτική Προστασίας Δεδομένων Προσωπικού Χαρακτήρα παραθέτει το είδος των"
+                <br>
+                "πληροφοριών που μπορεί να συλλέξουμε κατά την επίσκεψη σας στην Ιστοσελίδα μας και σας"
+                <br>
+                "ενημερώνουμε για το πώς χρησιμοποιούμε αυτές τις πληροφορίες. Όταν μας παρέχετε"
+                <br>
+                "οικειοθελώς προσωπικές πληροφορίες, όπως το όνομα σας, τη διεύθυνση ή τη διεύθυνση"
+                <br>
+                "ηλεκτρονικού ταχυδρομείου σας, αντιμετωπίζουμε τις πληροφορίες αυτές με απόλυτη"
+                <br>
+                "εμπιστευτικότητα. Με την επιφύλαξη ειδικών προβλέψεων της Παρούσας Πολιτικής Προστασίας"
+                <br>
+                "Δεδομένων Προσωπικού Χαρακτήρα καμία προσωπική πληροφορία δεν αποτελεί αντικείμενο"
+                <br>
+                "ενοικίασης, πώλησης, δημόσιας ανάρτησης ή κοινοποίησης σε άλλες εταιρείες, οργανισμούς ή"
+                <br>
+                "ιστοσελίδες."
+              <p>
+                "Όπως αποτυπώνεται στους Όρους Χρήσης της ιστοσελίδας οι υπηρεσίες που παρέχονται μέσω"
+                <br>
+                "της ιστοσελίδας απευθύνονται προς ένα γενικό κοινό, δεν στοχεύουν σε παιδιά και δεν"
+                <br>
+                "συλλέγουν – εν γνώση τους – προσωπικές πληροφορίες από παιδιά ηλικίας κάτω των 16 ετών."
+              <p>
+                "Η Πολιτική Προστασίας Δεδομένων Προσωπικού Χαρακτήρα εφαρμόζεται προς όλους τους"
+                <br>
+                "χρήστες της ιστοσελίδας. Η παρούσα Πολιτική εφαρμόζεται στη συλλογή και χρήση των"
+                <br>
+                "προσωπικών σας πληροφοριών από την επιχείρηση."
+              <p>
+                "Όταν επισκέπτεστε την ιστοσελίδα της επιχείρησης, ενδέχεται να συλλέξουμε δεδομένα από"
+                <br>
+                "εσάς. Ορισμένα από αυτά τα δεδομένα ενδέχεται να είναι προσωπικής φύσης. Αυτά τα"
+                <br>
+                "δεδομένα μπορεί να περιλαμβάνουν το ιστορικό αναζήτησης, τη διεύθυνση IP, την ανάλυση"
+                <br>
+                "οθόνης, το πρόγραμμα περιήγησης που χρησιμοποιήσατε, το λειτουργικό σύστημα και τις"
+                <br>
+                "ρυθμίσεις, τις ώρες πρόσβασης και το URL αναφοράς σας. Αν χρησιμοποιείτε κάποια φορητή"
+              <p>
+                "συσκευή, ενδέχεται επίσης να συλλέξουμε δεδομένα που να αναγνωρίζουν τη συσκευή, τις"
+                <br>
+                "ρυθμίσεις και την τοποθεσία σας."
+              <p>
+                "Η επιχείρηση διατηρεί το δικαίωμα να συγκεντρώνει μη προσωπικά στοιχεία αναγνώρισης των"
+                <br>
+                "χρηστών [τύπος φυλλομετρητή (browser), είδος υπολογιστή, λειτουργικό σύστημα, παρόχους"
+                <br>
+                "διαδικτύου κτλ] ή/και να παρακολουθεί διευθύνσεις Πρωτοκόλλου Internet (IP Address)"
+                <br>
+                "χρησιμοποιώντας αντίστοιχες τεχνολογίες (cookies). Τα cookies είναι μικρά αρχεία κειμένου "
+                <br>
+                "αποθηκεύονται στο σκληρό δίσκο κάθε χρήστη χωρίς να είναι δυνατή η πρόσβαση σε έγγραφα"
+                <br>
+                "ή αρχεία από τον υπολογιστή του χρήστη. Χρησιμοποιούνται για την διευκόλυνση πρόσβασης"
+                <br>
+                "του χρήστη κατά τη χρήση συγκεκριμένων υπηρεσιών ή/και σελίδων της Ιστοσελίδας, καθώς και"
+                <br>
+                "για στατιστικούς λόγους. Για περισσότερες πληροφορίες σχετικά με τα cookies που χρησιμοποι"
+                <br>
+                "η Ιστοσελίδα, παρακαλούνται οι χρήστες να επισκεφτούν τη σελίδα της&nbsp;"
+                <a href="https://stathis.com.gr/politiki-cookies/">
+                  "https://stathis.com.gr/politiki-cookies/"
+                <br>
+                "(Cookies Policy)."
+              <p>
+                "Αν ενδιαφέρεστε να επικοινωνήσουμε μαζί σας μέσω της φόρμας επικοινωνίας, θα συλλέξουμε"
+                <br>
+                "υποχρεωτικά το όνομά σας και τη διεύθυνση email."
+                <br>
+                "Αν επιλέξετε να κάνετε εγγραφή στο newsletter της επιχείρησης, θα συλλέξουμε τη διεύθυνση"
+                <br>
+                "email σας."
+              <p>
+                <strong>
+                  "Πως συλλέγουμε τα προσωπικά σας δεδομένα"
+              <p>
+                "Συλλέγουμε τα προσωπικά σας δεδομένα απευθείας από εσάς. Μάς παρέχετε τα προσωπικά"
+                <br>
+                "σας δεδομένα όταν συμπληρώνεται τις φόρμες εγγραφής/επικοινωνίας που είναι διαθέσιμες"
+                <br>
+                "στην ιστοσελίδα μας (φόρμα επικοινωνίας, αίτηση εγγραφής στο newsletter, αίτηση εγγραφής"
+                <br>
+                "μέλους κ.α)"
+              <p>
+                <strong>
+                  "Χρήση – κοινοποίηση των προσωπικών δεδομένων"
+              <p>
+                "Χρησιμοποιούμε τα προσωπικά σας δεδομένα για να ανταποκριθούμε στα δικά σας αιτήματα με"
+                <br>
+                "στόχο: Διαρκής ενημέρωση με λήψη προσφόρων και νέων, επικοινωνία για θέματα που σας"
+                <br>
+                "αφορούν, συμμετοχή σε διαγωνισμούς της εταιρείας."
+              <p>
+                "Τα προσωπικά δεδομένα σας που συλλέγουμε μέσω της ιστοσελίδας δεν κοινοποιούνται/"
+                <br>
+                "μεταφέρονται σε τρίτα μέρη."
+              <p>
+                "Αποθήκευση – προστασία των προσωπικών δεδομένων"
+              … ×2 more like previous <p> sibling
+              <p>
+                "1. Στην περίπτωση που συμπληρώσετε την φόρμα επικοινωνίας τα προσωπικά σας δεδομένα"
+                <br>
+                "διατηρούνται έως τις 31-12-2035."
+              <p>
+                "2. Στην περίπτωση που εγγραφείτε στην υπηρεσία αποστολής newsletter τα προσωπικά σας"
+                <br>
+                "δεδομένα διατηρούνται έως τις 31-12-2028."
+              <p>
+                "Μπορείτε βέβαια να μας ενημερώσετε ανά πάσα στιγμή ότι πλέον δεν επιθυμείτε να σας"
+                <br>
+                "αποστέλλουμε newsletter με αποστολή σχετικού e-mail στο athens@stathis.com.gr οπότε τα"
+                <br>
+                "δεδομένα σας θα διαγραφούν."
+              <p>
+                "Μετά το πέρας του χρονικού διαστήματος που ορίζεται από την εκάστοτε νομική-φορολογική"
+                <br>
+                "υποχρέωση (εφ’ όσον υπάρχει), τα προσωπικά σας δεδομένα διαγράφονται."
+              <p>
+                <strong>
+                  "Δικαιώματα σας σχετικά με την επεξεργασία των προσωπικών δεδομένων."
+              <p>
+                "Έχετε το δικαίωμα τα αποκτήσετε πληροφορίες σχετικά με τα προσωπικά σας δεδομένα που"
+                <br>
+                "έχουμε αποθηκεύσει ανά πάσα στιγμή, σύμφωνα με την ισχύουσα νομοθεσία και χωρίς"
+                <br>
+                "οποιαδήποτε χρέωση. Ενδέχεται να ζητήσουμε αποδεικτικό της ταυτότητάς σας πριν σας"
+                <br>
+                "δώσουμε αυτά τα δεδομένα. Σε ορισμένες περιπτώσεις, ενδέχεται να μην μπορέσουμε να"
+                <br>
+                "επιτρέψουμε την πρόσβαση σε συγκεκριμένα προσωπικά δεδομένα. Για παράδειγμα, αν τα"
+                <br>
+                "προσωπικά σας δεδομένα σχετίζονται με προσωπικά δεδομένα άλλων ατόμων ή εάν"
+                <br>
+                "διατηρούνται για νομικούς λόγους. Σε αυτές τις περιπτώσεις, θα σας εξηγήσουμε τον λόγο για"
+                <br>
+                "τον οποίο δεν μπορείτε να αποκτήσετε τα δεδομένα αυτά."
+              <p>
+                "Έχετε το δικαίωμα να αιτηθείτε την διόρθωση – επικαιροποίηση των στοιχείων σας και η"
+                <br>
+                "επιχείρηση θα προβεί στην άμεση διόρθωση τους."
+              <p>
+                "Έχετε το δικαίωμα να αιτηθείτε τη διαγραφή των προσωπικών σας δεδομένων και η"
+                <br>
+                "επιχείρησηθα προβεί στην άμεση διαγραφή τους. Ωστόσο, σε ορισμένες περιπτώσεις που οι"
+                <br>
+                "ισχύουσες νομικές και φορολογικές υποχρεώσεις απαιτούν την υποχρεωτική διατήρηση"
+                <br>
+                "δεδομένων, ενδέχεται να απαγορεύεται η διαγραφή των δεδομένων. Σε αυτές τις περιπτώσεις,"
+                <br>
+                "θα σας εξηγήσουμε τον λόγο για τον οποίο δεν μπορούμε να διαγράψουμε τα προσωπικά σας"
+                <br>
+                "δεδομένα και για πόσο διάστημα."
+              <p>
+                "Έχετε το δικαίωμα να αιτηθείτε την παύση επεξεργασίας από την επιχείρηση των προσωπικών"
+                <br>
+                "σας δεδομένων και η επιχείρηση θα προβεί στην άμεση παύση επεξεργασίας αυτών. Εάν αυτό"
+                <br>
+                "δεν είναι εφικτό, θα σας εξηγήσουμε τον λόγο για τον οποίο δεν μπορούμε να παύσουμε την"
+                <br>
+                "επεξεργασία των ΠΔ σας."
+              … ×2 more like previous <p> sibling
+              <p>
+                "Σε περίπτωση που αποδειχθεί ότι έγινε διαρροή των προσωπικών σας δεδομένων από την"
+                <br>
+                "επιχείρηση με αποτέλεσμα να υποστείτε υλική ή όχι ζημία, έχετε το δικαίωμα καταγγελίας στη"
+                <br>
+                "αρμόδια εποπτική αρχή (Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα)."
+              <p>
+                "Για να ασκήσετε τα παραπάνω δικαιώματά σας ή αν έχετε ερωτήσεις σχετικά με την πολιτική"
+                <br>
+                "προστασίας προσωπικών δεδομένων ή αν χρειάζεστε βοήθεια σχετικά με την άσκηση ή την"
+                <br>
+                "κατανόηση των επιλογών απορρήτου, επικοινωνήστε με την ομάδα απορρήτου στην"
+                <br>
+                "ηλεκτρονική μας διεύθυνση gdpr@stathis.com.gr"
+                <br>
+                "ή γράψτε μας στη διεύθυνση:"
+                <br>
+                "ΝΤΟΥΝΑΣ ΘΕΟΧΑΡΗΣ &amp; ΣΙΑ ΑΒΕΕ"
+                <br>
+                "ΟΙΚ. 6-Α’ ΖΩΝΗ ΒΙΠΕ ΣΙΝΔΟΥ-ΤΘ 1134"
+                <br>
+                "Θεσσαλονίκη, ΤΚ: 57013"
+                <br>
+                "ή καλέσετε μας στο τηλέφωνο 2310 798 300"
+              <p>
+                <strong>
+                  "Αλλαγές στην πολιτική προστασίας προσωπικών δεδομένων"
+              <p>
+                "Η επιχείρηση μπορεί να τροποποιεί την παρούσα Πολιτική Προστασίας Δεδομένων"
+                <br>
+                "Προσωπικού Χαρακτήρα. Παρακαλούμε να ελέγχετε την έκδοση της παρούσας Πολιτικής, για να"
+                <br>
+                "δείτε πότε η παρούσα Πολιτική, αναθεωρήθηκε για τελευταία φορά. Κάθε αναθεώρηση θα"
+                <br>
+                "τίθεται σε εφαρμογή μόλις αναρτούμε την αναθεωρημένη Πολιτική."
+              <p>
+<footer .mt-md-150.mt-70 id="site_footer">
+  <div .container-fluid>
+    <div .row.mb-md-65.mb-50>
+      <div .col-lg-4.col-md-6>
+        <div .footer_logo.text-md-start.text-center.mb-md-45.mb-30>
+          <a href="https://stathis.com.gr">
+            <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+        <p .fs-16.text-md-start.text-center.mb-25>
+          "Από το 1961 μέχρι και σήμερα η «Stathis» αποτελεί την κορυφαία εταιρεία στο χώρο της αμαξο"
+        <ul .socials.list-unstyled.d-flex.align-items-center.justify-content-md-start.justify-content-center>
+          <li>
+            <a href="https://www.linkedin.com/company/stathis/">
+          <li>
+            <a href="https://www.facebook.com/stathisrefrigeration/">
+      <div .col-lg-2.col-md-6.mt-md-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Η Εταιρεία μας"
+        <nav .menu-i-etaireia-mas-container>
+          <ul .footer_links.list-unstyled id="menu-i-etaireia-mas">
+            <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.menu-item-202 id="menu-item-202">
+              <a href="https://stathis.com.gr/">
+                "Αρχική"
+            … ×3 more like previous <li> sibling
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Κεντρικά / Εργοστάσιο Θεσσαλονίκη"
+        <nav .menu-kentrika-ergostasio-thessaloniki-container>
+          <ul .footer_links.list-unstyled id="menu-kentrika-ergostasio-thessaloniki">
+            <li .unclickable.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-205 id="menu-item-205">
+              <a href="#">
+                "ΒI.ΠE. Σίνδου, Είσοδος B’, Θεσσαλονίκη"
+            … ×2 more like previous <li> sibling
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-207 id="menu-item-207">
+              <a href="tel:2310798300">
+                "Τηλ: 2310 798 300"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-209 id="menu-item-209">
+              <a href="mailto:contact@stathis.com.gr">
+                "contact@stathis.com.gr"
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Υποκατάστημα Αθήνα"
+        <nav .menu-ypokatastima-athina-container>
+          <ul .footer_links.list-unstyled id="menu-ypokatastima-athina">
+            <li .unclickable.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-210 id="menu-item-210">
+              <a href="#">
+                "Ανδρέα Μεταξά 11Α, 14564 Κηφισιά Αθήνα"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-212 id="menu-item-212">
+              <a href="tel:2105584160">
+                "Τηλ: 210 55 84 160"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-211 id="menu-item-211">
+              <a href="mailto:athens@stathis.com.gr">
+                "athens@stathis.com.gr"
+    <div .row.mb-md-20.mb-15>
+      <div .col-12>
+        <p .text-center.text-text_grey.fs-16>
+          "Copyright &copy; 2026 stathis.com.gr - All rights reserved."

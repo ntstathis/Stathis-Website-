@@ -1,0 +1,124 @@
+---
+// Cookie-consent banner + Google Tag Manager, Consent Mode v2.
+// Default is denied; GTM (container GTM-N6Q5JL4S, carried over from the old
+// site) loads ONLY after the visitor accepts. The choice persists in
+// localStorage and the banner stays hidden afterwards.
+import type { Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const text = {
+  el: {
+    msg: 'Χρησιμοποιούμε cookies για τη μέτρηση της επισκεψιμότητας μέσω Google Analytics. Θα ενεργοποιηθούν μόνο αν συμφωνήσετε.',
+    more: 'Περισσότερα',
+    moreHref: '/prosopika-dedomena-kai-cookies/',
+    accept: 'Αποδοχή',
+    decline: 'Απόρριψη',
+  },
+  en: {
+    msg: 'We use cookies to measure site traffic via Google Analytics. They are only enabled if you agree.',
+    more: 'Learn more',
+    moreHref: '/en/prosopika-dedomena-kai-cookies-en/',
+    accept: 'Accept',
+    decline: 'Decline',
+  },
+}[lang];
+---
+
+<div id="consent_banner" hidden>
+  <p class="fs-16">
+    {text.msg}
+    <a href={text.moreHref} class="more_link">{text.more}</a>
+  </p>
+  <div class="consent_actions">
+    <button type="button" class="btn_black" data-consent="granted">{text.accept}</button>
+    <button type="button" class="consent_decline" data-consent="denied">{text.decline}</button>
+  </div>
+</div>
+
+<style>
+  #consent_banner {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 300;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    border-top: 1px solid var(--black);
+    padding: 1.6rem var(--container_padding_x);
+  }
+  #consent_banner[hidden] { display: none; }
+  #consent_banner p { margin: 0; max-width: 90rem; }
+  .more_link { text-decoration: underline; }
+  .consent_actions { display: flex; gap: 1.2rem; align-items: center; }
+  .consent_actions .btn_black { padding: 1.2rem 3rem; font-size: 1.6rem; }
+  .consent_decline {
+    background: none;
+    border: 1px solid var(--text-grey);
+    color: var(--black);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 1.2rem 3rem;
+  }
+</style>
+
+<script>
+  const GTM_ID = 'GTM-N6Q5JL4S';
+  const KEY = 'stathis-consent';
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(...args: unknown[]) {
+    window.dataLayer.push(args);
+  }
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    wait_for_update: 500,
+  });
+
+  function loadGtm() {
+    gtag('consent', 'update', {
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+      analytics_storage: 'granted',
+    });
+    if (document.getElementById('gtm-src')) return;
+    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+    const s = document.createElement('script');
+    s.id = 'gtm-src';
+    s.async = true;
+    s.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
+    document.head.appendChild(s);
+  }
+
+  let stored: string | null = null;
+  try {
+    stored = localStorage.getItem(KEY);
+  } catch {}
+
+  const banner = document.getElementById('consent_banner');
+  if (stored === 'granted') loadGtm();
+  else if (stored !== 'denied' && banner) {
+    banner.hidden = false;
+    banner.querySelectorAll<HTMLButtonElement>('[data-consent]').forEach((btn) =>
+      btn.addEventListener('click', () => {
+        const v = btn.dataset.consent!;
+        try {
+          localStorage.setItem(KEY, v);
+        } catch {}
+        banner.hidden = true;
+        if (v === 'granted') loadGtm();
+      }),
+    );
+  }
+</script>

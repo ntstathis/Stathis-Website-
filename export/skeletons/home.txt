@@ -1,0 +1,346 @@
+﻿<header>
+  <div .navigation_color_white id="logo_and_navigation_wrapper">
+    <a .logo_href href="https://stathis.com.gr">
+      <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+    <div .middle>
+      <nav .navlinks_wrapper.navlinks_wrapper_mega>
+        <ul .menu id="menu-primary-menu-el-mega-menu">
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home id="menu-item-34">
+            <a href="https://stathis.com.gr/">
+              "Αρχική"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2266 id="menu-item-2266">
+            <a href="https://stathis.com.gr/etaireia/">
+              "Η Εταιρεία"
+          <li .products_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-156 id="menu-item-156">
+            <a href="#">
+              "Προϊόντα"
+          <li .services_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-157 id="menu-item-157">
+            <a href="#">
+              "Υπηρεσίες"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-3830 id="menu-item-3830">
+            <a href="https://stathis.com.gr/news/">
+              "Τα Νέα μας"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4431 id="menu-item-4431">
+            <a href="https://stathis.com.gr/diamorfwtis/">
+              "Διαμορφωτής"
+      <nav .navlinks_wrapper.navlinks_wrapper_mobile>
+        <ul .menu id="menu-primary-menu-el-mobile">
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-193 id="menu-item-193">
+            <a href="#">
+              "Αρχική"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2718 id="menu-item-2718">
+            <a href="https://stathis.com.gr/etaireia/">
+              "Η Εταιρία"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-194 id="menu-item-194">
+            <a href="#">
+              "Προϊόντα"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2719 id="menu-item-2719">
+                <a href="https://stathis.com.gr/proionta/kit-monwsis/">
+                  "Κιτ Μόνωσης"
+              … ×9 more like previous <li> sibling
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-2732 id="menu-item-2732">
+            <a href="#">
+              "Υπηρεσίες"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2733 id="menu-item-2733">
+                <a href="https://stathis.com.gr/van-rent/">
+                  "Ενοικιάσεις Van"
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2735 id="menu-item-2735">
+                <a href="https://stathis.com.gr/after-sales-service/">
+                  "After Sales Service"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-4118 id="menu-item-4118">
+            <a href="https://stathis.com.gr/diamorfwtis/">
+              "Διαμορφωτής"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2731 id="menu-item-2731">
+            <a href="https://stathis.com.gr/news/">
+              "Τα Νέα μας"
+      <div .menu_cta_mobile_wrapper>
+        <a .menu_cta_mobile href="/epikoinwnia">
+          "Επικοινωνία"
+      <a .menu_cta href="/epikoinwnia">
+        "Επικοινωνία"
+      <div .languages_outter_wrapper.languages_outter_wrapper_mobile>
+        <span .languages_wrapper>
+          <a .current href="https://stathis.com.gr/">
+            "ΕΛ"
+          <a href="https://stathis.com.gr/en/home/">
+            "EN"
+    <div id="toggle">
+      <span .line1>
+      <span .line2>
+      <span .line3>
+    <div .languages_outter_wrapper.languages_outter_wrapper_desktop>
+      <span .languages_wrapper>
+        <a .current href="https://stathis.com.gr/">
+          "ΕΛ"
+        <a href="https://stathis.com.gr/en/home/">
+          "EN"
+  <div .mega_menus_close id="services_mega_menu">
+    <a .service_mega_menu_item href="/van-rent">
+      <img src="https://stathis.com.gr/wp-content/uploads/2024/08/BOXER-L2H2-ΧΩΝΕΥΤΟ-1-scaled.jp" alt="BOXER L2H2 ΧΩΝΕΥΤΟ (1)">
+      <div .title>
+        <span>
+          "Ενοικιάσεις Van"
+    … ×2 more like previous <a> sibling
+  <div .mega_menus_close id="products_mega_menu">
+    <a .product_mega_menu_item href="/proionta/kit-monwsis/">
+      <div .img_wrapper.radius-12.overflow-hidden>
+        <div .nb_aspect>
+          <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+      <div .title>
+        "Κιτ Μόνωσης"
+    … ×13 more like previous <a> sibling
+<div>
+<main>
+  <div id="flexiblePage">
+    <section .hero_home_slider>
+      <div .swiper-container.slider-hero_home_slider>
+        <div .swiper-wrapper>
+          <div .swiper-slide>
+            <div .bgs.lazyload>
+          … ×2 more like previous <div> sibling
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6.the_col.the_col_1.d-flex.flex-column.Xjustify-content-end>
+            <h1 .title.text-white.text-md-start.text-center.ff-pfdin-bold.Xfs-xl-64>
+              "Η Κορυφαία Εταιρεία στην Αμαξοποίηση και την Ψύξη Μεταφορών στην Ελλάδα"
+          <div .col-md-6.the_col.the_col_2.d-flex.flex-column.justify-content-md-end>
+    <div .spacer.big_top_space>
+    <section .content_in_black_and_image_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-7>
+            <div .black_box.bg-black.d-flex.flex-column.justify-content-center.radius-24-16>
+              <p .ff-pfdin-bold.fs-md-32.fs-20.text-white.mb-20.mb-10>
+                "Καλώς ήλθατε στην ιστοσελίδα της εταιρείας Stathis"
+              <div .subtitle_wrapper.nb_split_text_outter>
+                <p>
+                  "Από το 1961 μέχρι και σήμερα, η “Stathis” αποτελεί μία από τις κορυφαίες εταιρείες στο χώρ"
+                <p>
+                  "Η εταιρεία αυξάνει σταθερά τα μεγέθη της, επεκτείνεται χωροταξικά, προσθέτει καινούργια πρ"
+                  <br>
+                  "κορυφαίους οίκους του εξωτερικού, πάντα με βασική αρχή την ποιότητα των προϊόντων και την "
+                <p>
+                  "Με νέες εγκαταστάσεις σε Θεσσαλονίκη και Αθήνα, με σύγχρονο μηχανολογικό εξοπλισμό, αναβαθ"
+          <div .col-md-5>
+            <div .img_wrapper.radius-24-16.overflow-hidden>
+              <video>
+                <source src="https://stathis.com.gr/wp-content/uploads/2026/03/Final-Video-Hd.webm" type="video/webm">
+    <div .spacer.big>
+    <section .home_four_pistopoihseis>
+      <div .container-fluid>
+        <div .row>
+          <div .col-12>
+            <div .gallery_contain>
+              <div .img_wrapper>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Mercedes Van (Sprinter_Citan_Vito) exp 06-12-26-2">
+              … ×5 more like previous <div> sibling
+    <section .hero_title>
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-64.fs-md-48.fs-40.nb_split_text>
+              <p>
+                "Η εταιρεία"
+                <strong>
+                  "Stathis"
+                ", εγγυάται την διατήρηση της εργοστασιακής εγγύησης και μετά την μετασκευή του οχήματος σε"
+                <strong>
+                  "Mercedes"
+                … ×2 more like previous <strong> sibling
+                ","
+                <strong>
+                  "Volkswagen"
+                ","
+                <strong>
+                  "Ford"
+                "και του"
+                <strong>
+                  "Ομίλου"
+                <strong>
+                  "Stellantis"
+                "."
+    <div .spacer.big>
+    <section .homepage_black_section>
+      <div .container-fluid.bg-black.pt-md-30.pt-40.pb-md-120.pb-60>
+        <div .row.pb-md-50.pb-30>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.text-white.nb_split_text>
+              "Προϊόντα"
+          <div .col-md-5.offset-md-1.mt-md-0.mt-15.pt-md-20>
+            <div .content_wrapper.text-white.nb_split_text_outter>
+              <p>
+                "&nbsp;"
+              <div id="lv-root">
+        <div .row.d-md-block.d-none>
+          <div .items_wrapper>
+            <a .block href="/proionta/kit-monwsis/">
+              <div .radius-12.overflow-hidden>
+                <div .nb_aspect>
+                  <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+              <p .ff-pfdin-bold.fs-xl-20.fs-lg-18.fs-16.text-white.mt-15>
+                "Κιτ Μόνωσης Χώρου Φόρτωσης"
+            … ×13 more like previous <a> sibling
+      <div .mobile_slider.d-md-none.d-block.bg-black.pb-md-120.pb-60>
+        <div .swiper-container.slider-homepage_black_services>
+          <div .swiper-wrapper>
+            <div .swiper-slide>
+              <a .the_slide href="/proionta/kit-monwsis/">
+                <div .radius-12.overflow-hidden>
+                  <div .nb_aspect>
+                    <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+                <p .ff-pfdin-bold.fs-20.text-white.mt-15>
+                  "Κιτ Μόνωσης Χώρου Φόρτωσης"
+            … ×13 more like previous <div> sibling
+      <div .container-fluid.bg-black.pb-md-80.pb-60.bg-white>
+        <div .row.pt-md-120.pt-40>
+          <div .col-12>
+            <p .slider_title.text-black.ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32>
+              "Ολοκληρωμένες προτάσεις βάσει των αναγκών σας"
+          <div .col-1.d-md-flex.d-none.flex-column.justify-content-center>
+            <div .swiper-button-prev.simple_text-button-prev>
+          <div .col-md-10>
+            <div .swiper-container.slider-simple_text>
+              <div .swiper-wrapper>
+                <div .swiper-slide>
+                  <div .the_slide.test-start>
+                    <div .nb_aspect>
+                      <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Συμβουλευτική">
+                    <p .text-black.ff-pfdin-bold.fs-24.mt-md-45.mt-30>
+                      "Συμβουλευτική για την βέλτιστη δυνατή λύση"
+                … ×3 more like previous <div> sibling
+          <div .col-1.d-md-flex.d-none.flex-column.justify-content-center>
+            <div .swiper-button-next.simple_text-button-next>
+        <div .row.d-md-none.d-block>
+          <div .col-12>
+            <div .buttons_wrapper_simple_text>
+              <div .swiper-button-prev.simple_text-button-prev>
+              <div .swiper-button-next.simple_text-button-next>
+    <section .homepage_black_section_smaller>
+      <div .container-fluid.bg-black.pt-md-30.pt-40.pb-md-120.pb-60>
+        <div .row.pb-md-50.pb-30>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.text-white.nb_split_text>
+              "Υπηρεσίες"
+        <div .row>
+          <div .items_wrapper>
+            <a .block href="https://stathis.com.gr/van-rent/">
+              <div .radius-12.overflow-hidden>
+                <div .nb_aspect>
+                  <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="mega menu 1">
+              <p .ff-pfdin-bold.fs-xl-20.fs-lg-18.fs-16.text-white.mt-15>
+                "Ενοικιάσεις Van"
+            … ×2 more like previous <a> sibling
+    <section .grey_blog_preview>
+      <div .container-fluid.pt-md-45.pt-20.bg-grey>
+        <div .row.pb-md-65.pb-30>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-64.fs-md-48.fs-40.nb_split_text>
+              "Τα Νέα μας"
+        <div .row.d-md-flex.d-none>
+          <div .col-md-4>
+            <a .post_preview href="https://stathis.com.gr/paradosi-mobile-command-center-gia-ton-diethni-aerolimena">
+              <div .featured_img_wrapper.mb-20>
+                <div .nb_aspect>
+                  <img .attachment-full.size-full.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Παράδοση Mobile Command Center για τον Διεθνή Αερολιμένα Αθηνών">
+              <div .post_title_wrapper>
+                <h1 .title.ff-pfdin-bold.fs-20>
+                  "Παράδοση Mobile Command Center για τον Διεθνή Αερολιμένα Αθηνών"
+                <p .date.ff-pfdin-bold.fs-18.text-text_grey>
+                  "26 Μαρ"
+          … ×2 more like previous <div> sibling
+      <div .mobile_slider.d-md-none.d-block.bg-grey>
+        <div .swiper-container.slider-grey_blog_preview>
+          <div .swiper-wrapper>
+            <div .swiper-slide>
+              <a .post_preview href="https://stathis.com.gr/paradosi-mobile-command-center-gia-ton-diethni-aerolimena">
+                <div .featured_img_wrapper.mb-20>
+                  <div .nb_aspect>
+                    <img .attachment-full.size-full.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Παράδοση Mobile Command Center για τον Διεθνή Αερολιμένα Αθηνών">
+                <div .post_title_wrapper>
+                  <h1 .title.ff-pfdin-bold.fs-20>
+                    "Παράδοση Mobile Command Center για τον Διεθνή Αερολιμένα Αθηνών"
+                  <p .date.ff-pfdin-bold.fs-18.text-text_grey>
+                    "26 Μαρ"
+            … ×2 more like previous <div> sibling
+      <div .container-fluid.pb-25.bg-grey>
+        <div .row.pt-30>
+          <div .col-12.text-center>
+            <a .theme_button href="https://stathis.com.gr/news/">
+              "Δείτε περισσότερα"
+    <div .spacer.big>
+    <section .collaborators>
+      <div .container-fluid>
+        <div .row.mb-md-70.mb-25>
+          <div .col-md-7>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.nb_split_text>
+              "Πελάτες"
+        <div .row.row_logos>
+          <div .col-12>
+            <div .logos_wrapper>
+              <div .img_wrapper>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Ανώνυμο_σχέδιο__5_-removebg-preview">
+              … ×6 more like previous <div> sibling
+        <div .row.mt-md-80.mt-40>
+          <div .col-12.text-center>
+            <a .theme_button href="https://stathis.com.gr/pelates/">
+              "Δείτε Περισσότερα"
+<footer .mt-md-150.mt-70 id="site_footer">
+  <div .container-fluid>
+    <div .row.mb-md-65.mb-50>
+      <div .col-lg-4.col-md-6>
+        <div .footer_logo.text-md-start.text-center.mb-md-45.mb-30>
+          <a href="https://stathis.com.gr">
+            <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+        <p .fs-16.text-md-start.text-center.mb-25>
+          "Από το 1961 μέχρι και σήμερα η «Stathis» αποτελεί την κορυφαία εταιρεία στο χώρο της αμαξο"
+        <ul .socials.list-unstyled.d-flex.align-items-center.justify-content-md-start.justify-content-center>
+          <li>
+            <a href="https://www.linkedin.com/company/stathis/">
+          <li>
+            <a href="https://www.facebook.com/stathisrefrigeration/">
+      <div .col-lg-2.col-md-6.mt-md-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Η Εταιρεία μας"
+        <nav .menu-i-etaireia-mas-container>
+          <ul .footer_links.list-unstyled id="menu-i-etaireia-mas">
+            <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.current-menu-item.page_item id="menu-item-202">
+              <a href="https://stathis.com.gr/">
+                "Αρχική"
+            … ×3 more like previous <li> sibling
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Κεντρικά / Εργοστάσιο Θεσσαλονίκη"
+        <nav .menu-kentrika-ergostasio-thessaloniki-container>
+          <ul .footer_links.list-unstyled id="menu-kentrika-ergostasio-thessaloniki">
+            <li .unclickable.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-205 id="menu-item-205">
+              <a href="#">
+                "ΒI.ΠE. Σίνδου, Είσοδος B’, Θεσσαλονίκη"
+            … ×2 more like previous <li> sibling
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-207 id="menu-item-207">
+              <a href="tel:2310798300">
+                "Τηλ: 2310 798 300"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-209 id="menu-item-209">
+              <a href="mailto:contact@stathis.com.gr">
+                "contact@stathis.com.gr"
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Υποκατάστημα Αθήνα"
+        <nav .menu-ypokatastima-athina-container>
+          <ul .footer_links.list-unstyled id="menu-ypokatastima-athina">
+            <li .unclickable.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-210 id="menu-item-210">
+              <a href="#">
+                "Ανδρέα Μεταξά 11Α, 14564 Κηφισιά Αθήνα"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-212 id="menu-item-212">
+              <a href="tel:2105584160">
+                "Τηλ: 210 55 84 160"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-211 id="menu-item-211">
+              <a href="mailto:athens@stathis.com.gr">
+                "athens@stathis.com.gr"
+    <div .row.mb-md-20.mb-15>
+      <div .col-12>
+        <p .text-center.text-text_grey.fs-16>
+          "Copyright &copy; 2026 stathis.com.gr - All rights reserved."

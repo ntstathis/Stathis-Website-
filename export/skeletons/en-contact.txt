@@ -1,0 +1,228 @@
+﻿<header>
+  <div .navigation_color_white id="logo_and_navigation_wrapper">
+    <a .logo_href href="https://stathis.com.gr/en/home">
+      <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+    <div .middle>
+      <nav .navlinks_wrapper.navlinks_wrapper_mega>
+        <ul .menu id="menu-primary-menu-en-mega-menu">
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.menu-item-1863 id="menu-item-1863">
+            <a href="https://stathis.com.gr/en/home/">
+              "Home"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-1874 id="menu-item-1874">
+            <a href="https://stathis.com.gr/en/about-us/">
+              "About"
+          <li .products_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1875 id="menu-item-1875">
+            <a href="#">
+              "Products"
+          <li .services_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1876 id="menu-item-1876">
+            <a href="#">
+              "Services"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4515 id="menu-item-4515">
+            <a href="https://stathis.com.gr/en/configurator/">
+              "Configurator"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4506 id="menu-item-4506">
+            <a href="https://stathis.com.gr/en/our-news/">
+              "Our news"
+      <nav .navlinks_wrapper.navlinks_wrapper_mobile>
+        <ul .menu id="menu-primary-menu-en-mobile">
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-1877 id="menu-item-1877">
+            <a href="https://stathis.com.gr/">
+              "Home"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2736 id="menu-item-2736">
+            <a href="https://stathis.com.gr/en/about-us/">
+              "About"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-2737 id="menu-item-2737">
+            <a href="#">
+              "Products"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2739 id="menu-item-2739">
+                <a href="https://stathis.com.gr/en/insulation-kit/">
+                  "Insulation Kit"
+              … ×2 more like previous <li> sibling
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2752 id="menu-item-2752">
+                <a href="https://stathis.com.gr/en/truck-refrigerators/">
+                  "Refrigerated Truck Compartments"
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2743 id="menu-item-2743">
+                <a href="https://stathis.com.gr/en/isothermalbox/">
+                  "Isothermal Box"
+              … ×3 more like previous <li> sibling
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2747 id="menu-item-2747">
+                <a href="https://stathis.com.gr/en/road-ranger/">
+                  "Road Range"
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2748 id="menu-item-2748">
+                <a href="https://stathis.com.gr/en/temperature-recorders/">
+                  "Euroscan Temperature Recorders"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-2738 id="menu-item-2738">
+            <a href="#">
+              "Services"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2749 id="menu-item-2749">
+                <a href="https://stathis.com.gr/en/van-rent/">
+                  "Van rental"
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2750 id="menu-item-2750">
+                <a href="https://stathis.com.gr/en/after-sales-service-en/">
+                  "After Sales Service"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2751 id="menu-item-2751">
+            <a href="https://stathis.com.gr/diamorfwtis/">
+              "Configurator"
+      <div .menu_cta_mobile_wrapper>
+        <a .menu_cta_mobile href="https://stathis.com.gr/en/contact/">
+          "Contact"
+      <a .menu_cta href="https://stathis.com.gr/en/contact/">
+        "Contact"
+      <div .languages_outter_wrapper.languages_outter_wrapper_mobile>
+        <span .languages_wrapper>
+          <a href="https://stathis.com.gr/epikoinwnia/">
+            "ΕΛ"
+          <a .current href="https://stathis.com.gr/en/contact/">
+            "EN"
+    <div id="toggle">
+      <span .line1>
+      <span .line2>
+      <span .line3>
+    <div .languages_outter_wrapper.languages_outter_wrapper_desktop>
+      <span .languages_wrapper>
+        <a href="https://stathis.com.gr/epikoinwnia/">
+          "ΕΛ"
+        <a .current href="https://stathis.com.gr/en/contact/">
+          "EN"
+  <div .mega_menus_close id="services_mega_menu">
+    <a .service_mega_menu_item href="https://stathis.com.gr/en/van-rent/">
+      <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="BOXER L2H2 ΧΩΝΕΥΤΟ (1)">
+      <div .title>
+        <span>
+          "Van Rental"
+    … ×2 more like previous <a> sibling
+  <div .mega_menus_close id="products_mega_menu">
+    <a .product_mega_menu_item href="https://stathis.com.gr/en/insulation-kit/">
+      <div .img_wrapper.radius-12.overflow-hidden>
+        <div .nb_aspect>
+          <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+      <div .title>
+        "Insulation Kit"
+    … ×13 more like previous <a> sibling
+<div>
+<main>
+  <div id="contactPage">
+    <section .hero.bg-grey>
+      <div .container-fluid>
+        <div .row.mb-md-65.mb-40>
+          <div .col-md-7>
+            <h1 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.nb_split_text>
+              "Contact"
+          <div .col-md-5.d-flex.align-items-end>
+            <p .fs-18.nb_split_text>
+              ""Stathis" is located in Thessaloniki and Athens"
+        <div .row.pb-md-80.pb-40.row_map>
+          <div .col-md-6>
+            <div .map_wrapper>
+              <div .black_box>
+                <ul .links.list-unstyled>
+                  <li>
+                    <p>
+                      "Building Block 6, A' Zoni, Symvoli 4-A9, Sindos Industrial Area, 57022, Echedoro 570 22, G"
+                  … ×2 more like previous <li> sibling
+              <div .acf-map>
+                <div .marker>
+          <div .col-md-6>
+            <div .map_wrapper>
+              <div .black_box>
+                <ul .links.list-unstyled>
+                  <li>
+                    <p>
+                      "Andrea Metaxa 11Α, Kifisia 145 64, Greece"
+                  … ×2 more like previous <li> sibling
+              <div .acf-map>
+                <div .marker>
+    <section .form.mt-md-80.mt-40>
+      <div .container-fluid>
+        <div .row>
+          <div .col-12>
+            <p .form_title.ff-pfdin-bold.fs-20.nb_split_text>
+              "If you have any question or how we can support your business, please contact with us or fi"
+        <div .row>
+          <div .col-12>
+            <div id="theme_form">
+              <div .wpforms-container.wpforms-container-full id="wpforms-2399">
+                <form .wpforms-validate.wpforms-form.wpforms-ajax-form action="/en/contact/" id="wpforms-form-2399">
+                  <div .wpforms-field-container>
+                    <div .wpforms-field.wpforms-field-name.wpforms-one-half.wpforms-first id="wpforms-2399-field_2-container">
+                      <label .wpforms-field-label.wpforms-label-hide>
+                        "Name"
+                        <span .wpforms-required-label>
+                          "*"
+                      <input .wpforms-field-large.wpforms-field-required placeholder="Name" type="text" name="wpforms[fields][2]" id="wpforms-2399-field_2">
+                    <div .wpforms-field.wpforms-field-name.wpforms-one-half id="wpforms-2399-field_6-container">
+                      <label .wpforms-field-label.wpforms-label-hide>
+                        "Surname"
+                        <span .wpforms-required-label>
+                          "*"
+                      <input .wpforms-field-large.wpforms-field-required placeholder="Surname *" type="text" name="wpforms[fields][6]" id="wpforms-2399-field_6">
+                    <div .wpforms-field.wpforms-field-email id="wpforms-2399-field_3-container">
+                      <label .wpforms-field-label.wpforms-label-hide>
+                        "Email"
+                        <span .wpforms-required-label>
+                          "*"
+                      <input .wpforms-field-large.wpforms-field-required placeholder="Email" type="email" name="wpforms[fields][3]" id="wpforms-2399-field_3">
+                    <div .wpforms-field.wpforms-field-text id="wpforms-2399-field_4-container">
+                      <label .wpforms-field-label.wpforms-label-hide>
+                        "Single Line Text"
+                      <input .wpforms-field-large placeholder="Subject" type="text" name="wpforms[fields][4]" id="wpforms-2399-field_4">
+                    <div .wpforms-field.wpforms-field-textarea id="wpforms-2399-field_5-container">
+                      <label .wpforms-field-label.wpforms-label-hide>
+                        "Paragraph Text"
+                      <textarea .wpforms-field-large placeholder="Message" name="wpforms[fields][5]" id="wpforms-2399-field_5">
+                  <div .wpforms-submit-container>
+                    <input type="hidden" name="wpforms[id]">
+                    … ×4 more like previous <input> sibling
+                    <button .wpforms-submit type="submit" name="wpforms[submit]" id="wpforms-submit-2399">
+                      "Send"
+                    <img .wpforms-submit-spinner.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Loading">
+<footer .mt-md-150.mt-70 id="site_footer">
+  <div .container-fluid>
+    <div .row.mb-md-65.mb-50>
+      <div .col-lg-4.col-md-6>
+        <div .footer_logo.text-md-start.text-center.mb-md-45.mb-30>
+          <a href="https://stathis.com.gr/en/home">
+            <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+        <p .fs-16.text-md-start.text-center.mb-25>
+          "Since 1961 ‘Stathis’ is one of the top companies in the field of body-building and refrige"
+        <ul .socials.list-unstyled.d-flex.align-items-center.justify-content-md-start.justify-content-center>
+          <li>
+            <a href="https://www.linkedin.com/company/stathis/">
+          <li>
+            <a href="https://www.facebook.com/stathisrefrigeration/">
+      <div .col-lg-2.col-md-6.mt-md-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Our Company"
+        <nav .menu-our-company-container>
+          <ul .footer_links.list-unstyled id="menu-our-company">
+            <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.menu-item-2483 id="menu-item-2483">
+              <a href="https://stathis.com.gr/en/home/">
+                "Home"
+            … ×4 more like previous <li> sibling
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Head Office / Factory Thessaloniki"
+        <nav .menu-head-office-factory-thessaloniki-container>
+          <ul .footer_links.list-unstyled id="menu-head-office-factory-thessaloniki">
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2488 id="menu-item-2488">
+              <a href="#">
+                "Sindos Industrial Zone, Entrance B’"
+            … ×4 more like previous <li> sibling
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Athens Branch"
+        <nav .menu-athens-branch-container>
+          <ul .footer_links.list-unstyled id="menu-athens-branch">
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2494 id="menu-item-2494">
+              <a href="#">
+                "11A Andrea Metaxa, 14564 Kifissia Athens"
+            … ×2 more like previous <li> sibling
+    <div .row.mb-md-20.mb-15>
+      <div .col-12>
+        <p .text-center.text-text_grey.fs-16>
+          "Copyright &copy; 2026 stathis.com.gr - All rights reserved."
+<link href="https://stathis.com.gr/wp-content/plugins/wpforms-lite/assets/css/frontend/class" id="wpforms-classic-full-css">

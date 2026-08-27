@@ -1,0 +1,480 @@
+﻿<header>
+  <div .navigation_color_grey id="logo_and_navigation_wrapper">
+    <a .logo_href href="https://stathis.com.gr">
+      <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+    <div .middle>
+      <nav .navlinks_wrapper.navlinks_wrapper_mega>
+        <ul .menu id="menu-primary-menu-el-mega-menu">
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-home.menu-item-34 id="menu-item-34">
+            <a href="https://stathis.com.gr/">
+              "Αρχική"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2266 id="menu-item-2266">
+            <a href="https://stathis.com.gr/etaireia/">
+              "Η Εταιρεία"
+          <li .products_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-156 id="menu-item-156">
+            <a href="#">
+              "Προϊόντα"
+          <li .services_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-157 id="menu-item-157">
+            <a href="#">
+              "Υπηρεσίες"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-3830 id="menu-item-3830">
+            <a href="https://stathis.com.gr/news/">
+              "Τα Νέα μας"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4431 id="menu-item-4431">
+            <a href="https://stathis.com.gr/diamorfwtis/">
+              "Διαμορφωτής"
+      <nav .navlinks_wrapper.navlinks_wrapper_mobile>
+        <ul .menu id="menu-primary-menu-el-mobile">
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-193 id="menu-item-193">
+            <a href="#">
+              "Αρχική"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2718 id="menu-item-2718">
+            <a href="https://stathis.com.gr/etaireia/">
+              "Η Εταιρία"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-ancestor.current-menu-parent.menu-item-has-children id="menu-item-194">
+            <a href="#">
+              "Προϊόντα"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2719 id="menu-item-2719">
+                <a href="https://stathis.com.gr/proionta/kit-monwsis/">
+                  "Κιτ Μόνωσης"
+              … ×9 more like previous <li> sibling
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-2732 id="menu-item-2732">
+            <a href="#">
+              "Υπηρεσίες"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2733 id="menu-item-2733">
+                <a href="https://stathis.com.gr/van-rent/">
+                  "Ενοικιάσεις Van"
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2735 id="menu-item-2735">
+                <a href="https://stathis.com.gr/after-sales-service/">
+                  "After Sales Service"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-4118 id="menu-item-4118">
+            <a href="https://stathis.com.gr/diamorfwtis/">
+              "Διαμορφωτής"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2731 id="menu-item-2731">
+            <a href="https://stathis.com.gr/news/">
+              "Τα Νέα μας"
+      <div .menu_cta_mobile_wrapper>
+        <a .menu_cta_mobile href="/epikoinwnia">
+          "Επικοινωνία"
+      <a .menu_cta href="/epikoinwnia">
+        "Επικοινωνία"
+      <div .languages_outter_wrapper.languages_outter_wrapper_mobile>
+        <span .languages_wrapper>
+          <a .current href="https://stathis.com.gr/proionta/psuktika-mixanimata/">
+            "ΕΛ"
+          <a href="https://stathis.com.gr/en/refrigerated-units/">
+            "EN"
+    <div id="toggle">
+      <span .line1>
+      <span .line2>
+      <span .line3>
+    <div .languages_outter_wrapper.languages_outter_wrapper_desktop>
+      <span .languages_wrapper>
+        <a .current href="https://stathis.com.gr/proionta/psuktika-mixanimata/">
+          "ΕΛ"
+        <a href="https://stathis.com.gr/en/refrigerated-units/">
+          "EN"
+  <div .mega_menus_close id="services_mega_menu">
+    <a .service_mega_menu_item href="/van-rent">
+      <img src="https://stathis.com.gr/wp-content/uploads/2024/08/BOXER-L2H2-ΧΩΝΕΥΤΟ-1-scaled.jp" alt="BOXER L2H2 ΧΩΝΕΥΤΟ (1)">
+      <div .title>
+        <span>
+          "Ενοικιάσεις Van"
+    … ×2 more like previous <a> sibling
+  <div .mega_menus_close id="products_mega_menu">
+    <a .product_mega_menu_item href="/proionta/kit-monwsis/">
+      <div .img_wrapper.radius-12.overflow-hidden>
+        <div .nb_aspect>
+          <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+      <div .title>
+        "Κιτ Μόνωσης"
+    … ×13 more like previous <a> sibling
+<div>
+<main>
+  <div id="flexiblePage">
+    <div .spacer.big_top_space>
+    <section .hero_title>
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-64.fs-md-48.fs-40.nb_split_text>
+              "Ψυκτικά"
+              <br>
+              "Μηχανήματα"
+          <div .col-md-6.mt-md-0.mt-15>
+            <p .fs-md-18.fs-16.nb_split_text>
+              "Η επιλογή του ψυκτικού μηχανήματος, που θα εγκατασταθεί στον χώρο φόρτωσης, αποτελεί τον κ"
+    <div .spacer.medium>
+    <section .simple_title_subtitle_columns.mb-md-50.mb-25>
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.nb_split_text>
+              "Ηλεκτρικά Ψυκτικά Μηχανήματα"
+          <div .col-md-5.offset-md-1.mt-md-0.mt-15.pt-md-20>
+            <div .subtitle_wrapper.nb_split_text_outter>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Carrier_1">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Carrier"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Neos-100S.pdf">
+                  "Neos 100S"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Neos-100S-1.pdf">
+                  "Neos 100S+"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Neos-200S.pdf">
+                  "Neos 200S"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Neos-200S-1.pdf">
+                  "Neos 200S+"
+    <div .spacer.small>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Thermoking_1">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Thermoking"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/B100-10.pdf">
+                  "B100 – 10"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/B100-20.pdf">
+                  "B100 – 20"
+    <div .spacer.big_top_space>
+    <section .simple_title_subtitle_columns.mb-md-50.mb-25>
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.nb_split_text>
+              "Μηχανήματα με κίνηση από τον κινητήρα του οχήματος"
+          <div .col-md-5.offset-md-1.mt-md-0.mt-15.pt-md-20>
+            <div .subtitle_wrapper.nb_split_text_outter>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Carrier_5_">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Carrier"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Citimax-280.pdf">
+                  "Citimax 280"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Citimax-350.pdf">
+                  "Citimax 350"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Citimax-400.pdf">
+                  "Citimax 400"
+    <div .spacer.small>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Thermoking_5">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Thermoking"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/C-350.pdf">
+                  "C-350e Max 10"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/C-450.pdf">
+                  "C-450e Max 10"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/C-550.pdf">
+                  "C-550e Max 10"
+    <div .spacer.medium>
+    <section .simple_title_subtitle_columns.mb-md-50.mb-25>
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.nb_split_text>
+              "Μηχανήματα με κίνηση από τον κινητήρα του οχήματος και από ρεύμα"
+          <div .col-md-5.offset-md-1.mt-md-0.mt-15.pt-md-20>
+            <div .subtitle_wrapper.nb_split_text_outter>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Carrier_2">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Carrier"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-300.pdf">
+                  "Xarios 300"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-350.pdf">
+                  "Xarios 350"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-5.pdf">
+                  "Xarios 5"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-6.pdf">
+                  "Xarios 6"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-8.pdf">
+                  "Xarios 8"
+    <div .spacer.small>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Thermoking_2">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Thermoking"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/V200-20.pdf">
+                  "V-200 Max 20"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/V300-20.pdf">
+                  "V-300 Max 20"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/V500X.pdf">
+                  "V-500X Max 20"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/V600X.pdf">
+                  "V-600X Max 20"
+    <div .spacer.medium>
+    <section .simple_title_subtitle_columns.mb-md-50.mb-25>
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.nb_split_text>
+              "Αυτόνομα μηχανήματα με κίνηση από πετρελαιοκινητήρα και ρεύμα"
+          <div .col-md-5.offset-md-1.mt-md-0.mt-15.pt-md-20>
+            <div .subtitle_wrapper.nb_split_text_outter>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Carrier_3">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Carrier"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2025/07/Supra-HE-6.pdf">
+                  "Supra HE 6"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2025/07/Supra-HE-8.pdf">
+                  "Supra HE 8"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2025/07/Supra-HE-9.pdf">
+                  "Supra HE 9"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2025/07/Supra-HE-11.pdf">
+                  "Supra HE 11"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2025/07/Supra-HE-13.pdf">
+                  "Supra HE 13"
+    <div .spacer.small>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Thermoking_3">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Thermoking"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/10/T-560R.pdf">
+                  "T-500R"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/10/T-600R.pdf">
+                  "T-600R"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/10/T-800R.pdf">
+                  "T-800R"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/10/T-1000R.pdf">
+                  "T-1000R"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/10/T-1200R.pdf">
+                  "T-1200R"
+    <div .spacer.big_top_space>
+    <section .simple_title_subtitle_columns.mb-md-50.mb-25>
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.nb_split_text>
+              "Αυτόνομα μηχανήματα με κίνηση από πετρελαιοκινητήρα και ρεύμα και διπλό evaporator"
+          <div .col-md-5.offset-md-1.mt-md-0.mt-15.pt-md-20>
+            <div .subtitle_wrapper.nb_split_text_outter>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Carrier_3">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Carrier"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-300.pdf">
+                  "Supra 750 MT"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-350.pdf">
+                  "Supra 850 MT"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-5.pdf">
+                  "Supra 1150 MT"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/Xarios-6.pdf">
+                  "Supra 1250 MT"
+    <div .spacer.small>
+    <section .content_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-6.d-flex.flex-column.justify-content-center.align-items-center>
+            <div .radius-24-16.overflow-hidden>
+              <div .nb_aspect>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Thermoking_4">
+          <div .col-md-6.d-flex.flex-column.justify-content-center>
+            <div .content_wrapper.nb_split_text_outter>
+              <h3 .ff-pfdin-bold.fs-md-32.fs-24.mb-20>
+                "Thermoking"
+              <p>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/V200-20.pdf">
+                  "T-800R Spectrum"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/V300-20.pdf">
+                  "T-1000R Spectrum"
+                <br>
+                <a href="https://stathis.com.gr/wp-content/uploads/2024/09/V500X.pdf">
+                  "T-1200R Spectrum"
+    <section .homepage_black_section>
+      <div .container-fluid.bg-black.pt-md-30.pt-40.pb-md-120.pb-60>
+        <div .row.pb-md-50.pb-30>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.text-white.nb_split_text>
+              "Δείτε ακόμα"
+          <div .col-md-5.offset-md-1.mt-md-0.mt-15.pt-md-20>
+        <div .row.d-md-block.d-none>
+          <div .items_wrapper>
+            <a .block href="https://stathis.com.gr/proionta/monwseis-autokinitwn-van/">
+              <div .radius-12.overflow-hidden>
+                <div .nb_aspect>
+                  <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Μονώσεις-αυτοκινήτων-Van-1">
+              <p .ff-pfdin-bold.fs-xl-20.fs-lg-18.fs-16.text-white.mt-15>
+                "Μονώσεις Αυτοκινήτων Van"
+            <a .block href="https://stathis.com.gr/diamorfwtis/">
+              <div .radius-12.overflow-hidden>
+                <div .nb_aspect>
+                  <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="mega menu 2">
+              <p .ff-pfdin-bold.fs-xl-20.fs-lg-18.fs-16.text-white.mt-15>
+                "Διαμορφωτής"
+      <div .mobile_slider.d-md-none.d-block.bg-black.pb-md-120.pb-60>
+        <div .swiper-container.slider-homepage_black_services>
+          <div .swiper-wrapper>
+            <div .swiper-slide>
+              <a .the_slide href="https://stathis.com.gr/proionta/monwseis-autokinitwn-van/">
+                <div .radius-12.overflow-hidden>
+                  <div .nb_aspect>
+                    <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Μονώσεις-αυτοκινήτων-Van-1">
+                <p .ff-pfdin-bold.fs-20.text-white.mt-15>
+                  "Μονώσεις Αυτοκινήτων Van"
+            <div .swiper-slide>
+              <a .the_slide href="https://stathis.com.gr/diamorfwtis/">
+                <div .radius-12.overflow-hidden>
+                  <div .nb_aspect>
+                    <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="mega menu 2">
+                <p .ff-pfdin-bold.fs-20.text-white.mt-15>
+                  "Διαμορφωτής"
+      <div .container-fluid.bg-black.pb-md-80.pb-60.bg-white>
+    <div .spacer.big_top_space>
+<footer .mt-md-150.mt-70 id="site_footer">
+  <div .container-fluid>
+    <div .row.mb-md-65.mb-50>
+      <div .col-lg-4.col-md-6>
+        <div .footer_logo.text-md-start.text-center.mb-md-45.mb-30>
+          <a href="https://stathis.com.gr">
+            <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+        <p .fs-16.text-md-start.text-center.mb-25>
+          "Από το 1961 μέχρι και σήμερα η «Stathis» αποτελεί την κορυφαία εταιρεία στο χώρο της αμαξο"
+        <ul .socials.list-unstyled.d-flex.align-items-center.justify-content-md-start.justify-content-center>
+          <li>
+            <a href="https://www.linkedin.com/company/stathis/">
+          <li>
+            <a href="https://www.facebook.com/stathisrefrigeration/">
+      <div .col-lg-2.col-md-6.mt-md-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Η Εταιρεία μας"
+        <nav .menu-i-etaireia-mas-container>
+          <ul .footer_links.list-unstyled id="menu-i-etaireia-mas">
+            <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.menu-item-202 id="menu-item-202">
+              <a href="https://stathis.com.gr/">
+                "Αρχική"
+            … ×3 more like previous <li> sibling
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Κεντρικά / Εργοστάσιο Θεσσαλονίκη"
+        <nav .menu-kentrika-ergostasio-thessaloniki-container>
+          <ul .footer_links.list-unstyled id="menu-kentrika-ergostasio-thessaloniki">
+            <li .unclickable.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-205 id="menu-item-205">
+              <a href="#">
+                "ΒI.ΠE. Σίνδου, Είσοδος B’, Θεσσαλονίκη"
+            … ×2 more like previous <li> sibling
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-207 id="menu-item-207">
+              <a href="tel:2310798300">
+                "Τηλ: 2310 798 300"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-209 id="menu-item-209">
+              <a href="mailto:contact@stathis.com.gr">
+                "contact@stathis.com.gr"
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Υποκατάστημα Αθήνα"
+        <nav .menu-ypokatastima-athina-container>
+          <ul .footer_links.list-unstyled id="menu-ypokatastima-athina">
+            <li .unclickable.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-210 id="menu-item-210">
+              <a href="#">
+                "Ανδρέα Μεταξά 11Α, 14564 Κηφισιά Αθήνα"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-212 id="menu-item-212">
+              <a href="tel:2105584160">
+                "Τηλ: 210 55 84 160"
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-211 id="menu-item-211">
+              <a href="mailto:athens@stathis.com.gr">
+                "athens@stathis.com.gr"
+    <div .row.mb-md-20.mb-15>
+      <div .col-12>
+        <p .text-center.text-text_grey.fs-16>
+          "Copyright &copy; 2026 stathis.com.gr - All rights reserved."

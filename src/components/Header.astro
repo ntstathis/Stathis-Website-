@@ -1,0 +1,197 @@
+---
+// Fixed header with logo, main nav, products/services mega-menus,
+// contact CTA, ΕΛ/EN switcher and the mobile slide-in menu.
+// Faithful recreation of the old StathisTheme header.
+import { Image } from 'astro:assets';
+import type { Lang } from '../lib/i18n';
+import { mainNav, megaProducts, megaServices, ui, langHome, toUrl } from '../lib/i18n';
+import logo from '../assets/img/site/logo-stathis.png';
+
+interface Props {
+  lang: Lang;
+  /** current page stored path ('' | 'en/home' | …) for current-menu-item marking */
+  path: string;
+  /** twin page path for the language switcher; null → other-language home */
+  twinPath?: string | null;
+  /** header background variant: home uses white, inner pages grey */
+  color?: 'white' | 'grey';
+}
+const { lang, path, twinPath = null, color = 'grey' } = Astro.props;
+
+const megaImages = import.meta.glob<{ default: ImageMetadata }>(
+  '../assets/img/site/mega/*.{jpg,png}',
+  { eager: true },
+);
+const megaImg = (name: string) => {
+  const hit = Object.entries(megaImages).find(([p]) => p.includes(`/${name}.`));
+  return hit ? hit[1].default : null;
+};
+
+const nav = mainNav[lang];
+const products = megaProducts[lang];
+const services = megaServices[lang];
+const here = toUrl(path);
+const otherLang: Lang = lang === 'el' ? 'en' : 'el';
+const otherUrl = twinPath != null ? toUrl(twinPath) : langHome[otherLang];
+const ownUrl = here;
+---
+
+<header>
+  <div id="logo_and_navigation_wrapper" class={color === 'white' ? 'navigation_color_white' : 'navigation_color_grey'}>
+    <a class="logo_href" href={langHome[lang]}>
+      <Image class="logo_img" src={logo} alt="Stathis Logo" width={277} height={68} loading="eager" />
+    </a>
+
+    <div class="middle">
+      <nav class="navlinks_wrapper navlinks_wrapper_mega" aria-label="Main">
+        <ul class="menu">
+          {nav.map((item) => (
+            <li
+              class:list={[
+                'menu-item',
+                item.mega && `${item.mega}_mega_menu`,
+                item.href === here && 'current-menu-item',
+              ]}
+              data-mega={item.mega}
+            >
+              <a href={item.mega ? '#' : item.href}>{item.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <nav class="navlinks_wrapper navlinks_wrapper_mobile" aria-label="Main mobile">
+        <ul class="menu">
+          {nav.map((item) =>
+            item.mega ? (
+              <li class="menu-item menu-item-has-children">
+                <a href="#">{item.label}</a>
+                <span class="caret"></span>
+                <ul class="sub-menu">
+                  {(item.mega === 'products' ? products : services).map((s) => (
+                    <li class="menu-item">
+                      <a href={s.href}>{s.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li class="menu-item">
+                <a href={item.href}>{item.label}</a>
+              </li>
+            ),
+          )}
+        </ul>
+      </nav>
+
+      <div class="menu_cta_mobile_wrapper">
+        <a class="menu_cta_mobile" href={ui[lang].contactHref}>{ui[lang].contact}</a>
+      </div>
+      <div class="languages_outter_wrapper languages_outter_wrapper_mobile">
+        <span class="languages_wrapper">
+          <a class="current" href={ownUrl}>{lang === 'el' ? 'ΕΛ' : 'EN'}</a>
+          <a href={otherUrl}>{otherLang === 'el' ? 'ΕΛ' : 'EN'}</a>
+        </span>
+      </div>
+    </div>
+
+    <a class="menu_cta" href={ui[lang].contactHref}>{ui[lang].contact}</a>
+
+    <div id="toggle" aria-label="Menu" role="button" tabindex="0">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </div>
+
+    <div class="languages_outter_wrapper languages_outter_wrapper_desktop">
+      <span class="languages_wrapper">
+        <a class="current" href={ownUrl}>{lang === 'el' ? 'ΕΛ' : 'EN'}</a>
+        <a href={otherUrl}>{otherLang === 'el' ? 'ΕΛ' : 'EN'}</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="mega_menus_close" id="services_mega_menu">
+    {services.map((s) => {
+      const img = megaImg(s.img);
+      return (
+        <a class="service_mega_menu_item" href={s.href}>
+          {img && <Image src={img} alt={s.label} width={640} />}
+          <div class="title">
+            <span>{s.label}</span>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+
+  <div class="mega_menus_close" id="products_mega_menu">
+    {products.map((p) => {
+      const img = megaImg(p.img);
+      return (
+        <a class="product_mega_menu_item" href={p.href}>
+          <div class="img_wrapper radius-12 overflow-hidden">
+            {img && <Image src={img} alt={p.label} width={380} />}
+          </div>
+          <div class="title">{p.label}</div>
+        </a>
+      );
+    })}
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById('logo_and_navigation_wrapper');
+  const toggle = document.getElementById('toggle');
+  const panels = {
+    products: document.getElementById('products_mega_menu'),
+    services: document.getElementById('services_mega_menu'),
+  };
+
+  // grey background once scrolled away from the top
+  const onScroll = () => header?.classList.toggle('scrolled', window.scrollY > 10);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // mega menus: open on hover/focus of their nav item, close on leave
+  let closeTimer: ReturnType<typeof setTimeout> | undefined;
+  const closeAll = () => Object.values(panels).forEach((p) => p?.classList.remove('active'));
+  document.querySelectorAll<HTMLElement>('.navlinks_wrapper_mega li[data-mega]').forEach((li) => {
+    const key = li.dataset.mega as keyof typeof panels;
+    const open = () => {
+      clearTimeout(closeTimer);
+      closeAll();
+      panels[key]?.classList.add('active');
+    };
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('click', (e) => {
+      e.preventDefault();
+      panels[key]?.classList.contains('active') ? closeAll() : open();
+    });
+    li.addEventListener('mouseleave', () => {
+      closeTimer = setTimeout(closeAll, 200);
+    });
+  });
+  Object.values(panels).forEach((p) => {
+    p?.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+    p?.addEventListener('mouseleave', () => {
+      closeTimer = setTimeout(closeAll, 200);
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if (!(e.target as HTMLElement).closest('header')) closeAll();
+  });
+
+  // mobile menu
+  toggle?.addEventListener('click', () => header?.classList.toggle('mobile_active'));
+
+  // mobile accordions
+  document.querySelectorAll<HTMLElement>('.navlinks_wrapper_mobile .menu-item-has-children').forEach((li) => {
+    const activate = (e: Event) => {
+      e.preventDefault();
+      li.classList.toggle('open');
+    };
+    li.querySelector(':scope > a')?.addEventListener('click', activate);
+    li.querySelector(':scope > .caret')?.addEventListener('click', activate);
+  });
+</script>

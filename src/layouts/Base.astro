@@ -1,11 +1,39 @@
 ---
-// Minimal shell — replaced with the real StathisTheme recreation in P3.
+// Site shell: head (Seo, fonts), fixed Header, page content, Footer.
+// Analytics + consent banner are added site-wide in the P5 SEO phase.
+import '../styles/theme.css';
+import type { Lang } from '../lib/i18n';
+import Seo from '../components/Seo.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Consent from '../components/Consent.astro';
+
 interface Props {
-  lang: 'el' | 'en';
+  lang: Lang;
   title: string;
   description?: string;
+  /** stored path: '' | 'en/home' | 'proionta/kit-monwsis' … */
+  path: string;
+  /** twin-language path or null (no translation) */
+  twinPath?: string | null;
+  ogImage?: string;
+  noindex?: boolean;
+  /** header background: 'white' on the two home pages, 'grey' elsewhere */
+  headerColor?: 'white' | 'grey';
+  /** set false on pages that manage their own top offset (e.g. full-bleed heroes) */
+  padTop?: boolean;
 }
-const { lang, title, description } = Astro.props;
+const {
+  lang,
+  title,
+  description,
+  path,
+  twinPath = null,
+  ogImage,
+  noindex = false,
+  headerColor = 'grey',
+  padTop = true,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -13,10 +41,18 @@ const { lang, title, description } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    {description && <meta name="description" content={description} />}
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+    <link rel="preload" href="/fonts/PFDinText-Regular.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/fonts/PFDinText-Bold.otf" as="font" type="font/otf" crossorigin />
+    <Seo {lang} {title} {description} {path} {twinPath} {ogImage} {noindex} />
+    <meta name="generator" content={Astro.generator} />
   </head>
   <body>
-    <slot />
+    <Header {lang} {path} {twinPath} color={headerColor} />
+    <main class={padTop ? 'margin_navigation_top' : ''}>
+      <slot />
+    </main>
+    <Footer {lang} />
+    <Consent {lang} />
   </body>
 </html>

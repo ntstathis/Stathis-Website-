@@ -1,0 +1,334 @@
+﻿<header>
+  <div .navigation_color_grey id="logo_and_navigation_wrapper">
+    <a .logo_href href="https://stathis.com.gr/en/home">
+      <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+    <div .middle>
+      <nav .navlinks_wrapper.navlinks_wrapper_mega>
+        <ul .menu id="menu-primary-menu-en-mega-menu">
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.current-menu-item.page_item id="menu-item-1863">
+            <a href="https://stathis.com.gr/en/home/">
+              "Home"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-1874 id="menu-item-1874">
+            <a href="https://stathis.com.gr/en/about-us/">
+              "About"
+          <li .products_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1875 id="menu-item-1875">
+            <a href="#">
+              "Products"
+          <li .services_mega_menu.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-1876 id="menu-item-1876">
+            <a href="#">
+              "Services"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4515 id="menu-item-4515">
+            <a href="https://stathis.com.gr/en/configurator/">
+              "Configurator"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-4506 id="menu-item-4506">
+            <a href="https://stathis.com.gr/en/our-news/">
+              "Our news"
+      <nav .navlinks_wrapper.navlinks_wrapper_mobile>
+        <ul .menu id="menu-primary-menu-en-mobile">
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-1877 id="menu-item-1877">
+            <a href="https://stathis.com.gr/">
+              "Home"
+          <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2736 id="menu-item-2736">
+            <a href="https://stathis.com.gr/en/about-us/">
+              "About"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-2737 id="menu-item-2737">
+            <a href="#">
+              "Products"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2739 id="menu-item-2739">
+                <a href="https://stathis.com.gr/en/insulation-kit/">
+                  "Insulation Kit"
+              … ×2 more like previous <li> sibling
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2752 id="menu-item-2752">
+                <a href="https://stathis.com.gr/en/truck-refrigerators/">
+                  "Refrigerated Truck Compartments"
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2743 id="menu-item-2743">
+                <a href="https://stathis.com.gr/en/isothermalbox/">
+                  "Isothermal Box"
+              … ×3 more like previous <li> sibling
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2747 id="menu-item-2747">
+                <a href="https://stathis.com.gr/en/road-ranger/">
+                  "Road Range"
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2748 id="menu-item-2748">
+                <a href="https://stathis.com.gr/en/temperature-recorders/">
+                  "Euroscan Temperature Recorders"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-2738 id="menu-item-2738">
+            <a href="#">
+              "Services"
+            <span .caret>
+            <ul .sub-menu>
+              <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-2749 id="menu-item-2749">
+                <a href="https://stathis.com.gr/en/van-rent/">
+                  "Van rental"
+              <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2750 id="menu-item-2750">
+                <a href="https://stathis.com.gr/en/after-sales-service-en/">
+                  "After Sales Service"
+          <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2751 id="menu-item-2751">
+            <a href="https://stathis.com.gr/diamorfwtis/">
+              "Configurator"
+      <div .menu_cta_mobile_wrapper>
+        <a .menu_cta_mobile href="https://stathis.com.gr/en/contact/">
+          "Contact"
+      <a .menu_cta href="https://stathis.com.gr/en/contact/">
+        "Contact"
+      <div .languages_outter_wrapper.languages_outter_wrapper_mobile>
+        <span .languages_wrapper>
+          <a href="https://stathis.com.gr/">
+            "ΕΛ"
+          <a .current href="https://stathis.com.gr/en/home/">
+            "EN"
+    <div id="toggle">
+      <span .line1>
+      <span .line2>
+      <span .line3>
+    <div .languages_outter_wrapper.languages_outter_wrapper_desktop>
+      <span .languages_wrapper>
+        <a href="https://stathis.com.gr/">
+          "ΕΛ"
+        <a .current href="https://stathis.com.gr/en/home/">
+          "EN"
+  <div .mega_menus_close id="services_mega_menu">
+    <a .service_mega_menu_item href="https://stathis.com.gr/en/van-rent/">
+      <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="BOXER L2H2 ΧΩΝΕΥΤΟ (1)">
+      <div .title>
+        <span>
+          "Van Rental"
+    … ×2 more like previous <a> sibling
+  <div .mega_menus_close id="products_mega_menu">
+    <a .product_mega_menu_item href="https://stathis.com.gr/en/insulation-kit/">
+      <div .img_wrapper.radius-12.overflow-hidden>
+        <div .nb_aspect>
+          <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+      <div .title>
+        "Insulation Kit"
+    … ×13 more like previous <a> sibling
+<div>
+<main>
+  <div id="flexiblePage">
+    <section .hero_home_slider>
+      <div .swiper-container.slider-hero_home_slider>
+        <div .swiper-wrapper>
+          <div .swiper-slide>
+            <div .bgs.lazyload>
+          … ×2 more like previous <div> sibling
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6.the_col.the_col_1.d-flex.flex-column.Xjustify-content-end>
+            <h1 .title.text-white.text-md-start.text-center.ff-pfdin-bold.Xfs-xl-64>
+              "Superior Solutions for Transport Since 1961"
+          <div .col-md-6.the_col.the_col_2.d-flex.flex-column.justify-content-md-end>
+    <div .spacer.big>
+    <section .content_in_black_and_image_columns>
+      <div .container-fluid>
+        <div .row.the_row>
+          <div .col-md-7>
+            <div .black_box.bg-black.d-flex.flex-column.justify-content-center.radius-24-16>
+              <p .ff-pfdin-bold.fs-md-32.fs-20.text-white.mb-20.mb-10>
+                "Welcome to Stathis company"
+              <div .subtitle_wrapper.nb_split_text_outter>
+                <p>
+                  "Since 1961 ”Stathis” is one of the top companies in the field of body-building and refrige"
+                <p>
+                  "The company constantly increases its figures, expands its facilities, adds new products an"
+                  <br>
+                  "Its basic principle has always been product quality and customer service."
+                <p>
+                  "With new facilities in Thessaloniki and Athens, modern mechanical equipment, upgraded ΙΤ i"
+          <div .col-md-5>
+            <div .img_wrapper.radius-24-16.overflow-hidden>
+    <div .spacer.big>
+    <section .home_four_pistopoihseis>
+      <div .container-fluid>
+        <div .row>
+          <div .col-12>
+            <div .gallery_contain>
+              <div .img_wrapper>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Mercedes Van (Sprinter_Citan_Vito) exp 06-12-26-2">
+              … ×5 more like previous <div> sibling
+    <section .hero_title>
+      <div .container-fluid>
+        <div .row>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-64.fs-md-48.fs-40.nb_split_text>
+              <p>
+                "The company"
+                <strong>
+                  "Stathis"
+                ", guarantees the maintenance of the factory warranty even after the vehicle has been conve"
+                <strong>
+                  "Mercedes"
+                … ×2 more like previous <strong> sibling
+                ","
+                <strong>
+                  "Volkswagen"
+                ","
+                <strong>
+                  "Ford"
+                "and the"
+                <strong>
+                  "Stellantis"
+                <strong>
+                  "Group"
+                "."
+    <div .spacer.big>
+    <section .homepage_black_section>
+      <div .container-fluid.bg-black.pt-md-30.pt-40.pb-md-120.pb-60>
+        <div .row.pb-md-50.pb-30>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.text-white.nb_split_text>
+              "Products"
+          <div .col-md-5.offset-md-1.mt-md-0.mt-15.pt-md-20>
+        <div .row.d-md-block.d-none>
+          <div .items_wrapper>
+            <a .block href="https://stathis.com.gr/en/insulation-kit/">
+              <div .radius-12.overflow-hidden>
+                <div .nb_aspect>
+                  <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+              <p .ff-pfdin-bold.fs-xl-20.fs-lg-18.fs-16.text-white.mt-15>
+                "Insulation Kit"
+            … ×13 more like previous <a> sibling
+      <div .mobile_slider.d-md-none.d-block.bg-black.pb-md-120.pb-60>
+        <div .swiper-container.slider-homepage_black_services>
+          <div .swiper-wrapper>
+            <div .swiper-slide>
+              <a .the_slide href="https://stathis.com.gr/en/insulation-kit/">
+                <div .radius-12.overflow-hidden>
+                  <div .nb_aspect>
+                    <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Κιτ-Μόνωσης-Χώρου-Φόρτωσης 2">
+                <p .ff-pfdin-bold.fs-20.text-white.mt-15>
+                  "Insulation Kit"
+            … ×13 more like previous <div> sibling
+      <div .container-fluid.bg-black.pb-md-80.pb-60.bg-white>
+        <div .row.pt-md-120.pt-40>
+          <div .col-12>
+            <p .slider_title.text-black.ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32>
+              "Comprehensive proposals based on your needs"
+          <div .col-1.d-md-flex.d-none.flex-column.justify-content-center>
+            <div .swiper-button-prev.simple_text-button-prev>
+          <div .col-md-10>
+            <div .swiper-container.slider-simple_text>
+              <div .swiper-wrapper>
+                <div .swiper-slide>
+                  <div .the_slide.test-start>
+                    <div .nb_aspect>
+                      <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Συμβουλευτική">
+                    <p .text-black.ff-pfdin-bold.fs-24.mt-md-45.mt-30>
+                      "Consulting for the best possible solution"
+                … ×3 more like previous <div> sibling
+          <div .col-1.d-md-flex.d-none.flex-column.justify-content-center>
+            <div .swiper-button-next.simple_text-button-next>
+        <div .row.d-md-none.d-block>
+          <div .col-12>
+            <div .buttons_wrapper_simple_text>
+              <div .swiper-button-prev.simple_text-button-prev>
+              <div .swiper-button-next.simple_text-button-next>
+    <section .homepage_black_section_smaller>
+      <div .container-fluid.bg-black.pt-md-30.pt-40.pb-md-120.pb-60>
+        <div .row.pb-md-50.pb-30>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.text-white.nb_split_text>
+              "Services"
+        <div .row>
+          <div .items_wrapper>
+            <a .block href="https://stathis.com.gr/en/van-rent/">
+              <div .radius-12.overflow-hidden>
+                <div .nb_aspect>
+                  <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="mega menu 1">
+              <p .ff-pfdin-bold.fs-xl-20.fs-lg-18.fs-16.text-white.mt-15>
+                "Van rental"
+            … ×2 more like previous <a> sibling
+    <section .grey_blog_preview>
+      <div .container-fluid.pt-md-45.pt-20.bg-grey>
+        <div .row.pb-md-65.pb-30>
+          <div .col-md-6>
+            <h2 .ff-pfdin-bold.fs-xl-64.fs-md-48.fs-40.nb_split_text>
+        <div .row.d-md-flex.d-none>
+          <div .col-md-4>
+            <a .post_preview href="https://stathis.com.gr/en/delivery-of-a-mobile-command-center-for-athens-interna">
+              <div .featured_img_wrapper.mb-20>
+                <div .nb_aspect>
+                  <img .attachment-full.size-full.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Delivery of a Mobile Command Center for Athens International Airport">
+              <div .post_title_wrapper>
+                <h1 .title.ff-pfdin-bold.fs-20>
+                  "Delivery of a Mobile Command Center for Athens International Airport"
+                <p .date.ff-pfdin-bold.fs-18.text-text_grey>
+                  "26 Mar"
+          … ×2 more like previous <div> sibling
+      <div .mobile_slider.d-md-none.d-block.bg-grey>
+        <div .swiper-container.slider-grey_blog_preview>
+          <div .swiper-wrapper>
+            <div .swiper-slide>
+              <a .post_preview href="https://stathis.com.gr/en/delivery-of-a-mobile-command-center-for-athens-interna">
+                <div .featured_img_wrapper.mb-20>
+                  <div .nb_aspect>
+                    <img .attachment-full.size-full.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Delivery of a Mobile Command Center for Athens International Airport">
+                <div .post_title_wrapper>
+                  <h1 .title.ff-pfdin-bold.fs-20>
+                    "Delivery of a Mobile Command Center for Athens International Airport"
+                  <p .date.ff-pfdin-bold.fs-18.text-text_grey>
+                    "26 Mar"
+            … ×2 more like previous <div> sibling
+      <div .container-fluid.pb-25.bg-grey>
+    <div .spacer.big_top_space>
+    <section .collaborators>
+      <div .container-fluid>
+        <div .row.mb-md-70.mb-25>
+          <div .col-md-7>
+            <h2 .ff-pfdin-bold.fs-xl-48.fs-md-40.fs-32.nb_split_text>
+              "Our Customers"
+        <div .row.row_logos>
+          <div .col-12>
+            <div .logos_wrapper>
+              <div .img_wrapper>
+                <img .lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="kotsovolos">
+              … ×6 more like previous <div> sibling
+        <div .row.mt-md-80.mt-40>
+          <div .col-12.text-center>
+            <a .theme_button href="https://stathis.com.gr/en/customers/">
+              "See More"
+<footer .mt-md-150.mt-70 id="site_footer">
+  <div .container-fluid>
+    <div .row.mb-md-65.mb-50>
+      <div .col-lg-4.col-md-6>
+        <div .footer_logo.text-md-start.text-center.mb-md-45.mb-30>
+          <a href="https://stathis.com.gr/en/home">
+            <img .logo_img.lazyload src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stathis Logo">
+        <p .fs-16.text-md-start.text-center.mb-25>
+          "Since 1961 ‘Stathis’ is one of the top companies in the field of body-building and refrige"
+        <ul .socials.list-unstyled.d-flex.align-items-center.justify-content-md-start.justify-content-center>
+          <li>
+            <a href="https://www.linkedin.com/company/stathis/">
+          <li>
+            <a href="https://www.facebook.com/stathisrefrigeration/">
+      <div .col-lg-2.col-md-6.mt-md-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Our Company"
+        <nav .menu-our-company-container>
+          <ul .footer_links.list-unstyled id="menu-our-company">
+            <li .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.current-menu-item.page_item id="menu-item-2483">
+              <a href="https://stathis.com.gr/en/home/">
+                "Home"
+            … ×4 more like previous <li> sibling
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Head Office / Factory Thessaloniki"
+        <nav .menu-head-office-factory-thessaloniki-container>
+          <ul .footer_links.list-unstyled id="menu-head-office-factory-thessaloniki">
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2488 id="menu-item-2488">
+              <a href="#">
+                "Sindos Industrial Zone, Entrance B’"
+            … ×4 more like previous <li> sibling
+      <div .col-lg-3.col-md-6.mt-lg-0.mt-50>
+        <h4 .ff-pfdin-bold.fs-20.mb-25>
+          "Athens Branch"
+        <nav .menu-athens-branch-container>
+          <ul .footer_links.list-unstyled id="menu-athens-branch">
+            <li .menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-2494 id="menu-item-2494">
+              <a href="#">
+                "11A Andrea Metaxa, 14564 Kifissia Athens"
+            … ×2 more like previous <li> sibling
+    <div .row.mb-md-20.mb-15>
+      <div .col-12>
+        <p .text-center.text-text_grey.fs-16>
+          "Copyright &copy; 2026 stathis.com.gr - All rights reserved."

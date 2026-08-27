@@ -1,0 +1,45 @@
+---
+// Head metadata: title/description ported verbatim from Yoast, canonical,
+// GR↔EN hreflang pairs (+ x-default → Greek), OpenGraph basics.
+// No hreflang is emitted for unpaired pages (mirrors the old Polylang setup).
+import type { Lang } from '../lib/i18n';
+import { toUrl } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  /** own path, stored form: '' | 'en/home' | 'proionta/kit-monwsis' */
+  path: string;
+  /** twin page's stored path, or null when the page has no translation */
+  twinPath?: string | null;
+  ogImage?: string;
+  noindex?: boolean;
+}
+const { lang, title, description, path, twinPath = null, ogImage, noindex = false } = Astro.props;
+
+const site = Astro.site!.href.replace(/\/$/, '');
+const abs = (p: string) => site + toUrl(p)!;
+const canonical = abs(path);
+const elUrl = lang === 'el' ? canonical : twinPath != null ? abs(twinPath) : null;
+const enUrl = lang === 'en' ? canonical : twinPath != null ? abs(twinPath) : null;
+---
+
+<title>{title}</title>
+{description && <meta name="description" content={description} />}
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+<link rel="canonical" href={canonical} />
+{elUrl && enUrl && (
+  <>
+    <link rel="alternate" hreflang="el" href={elUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={elUrl} />
+  </>
+)}
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+{description && <meta property="og:description" content={description} />}
+<meta property="og:url" content={canonical} />
+<meta property="og:locale" content={lang === 'el' ? 'el_GR' : 'en_US'} />
+<meta property="og:site_name" content="Stathis" />
+{ogImage && <meta property="og:image" content={ogImage.startsWith('http') ? ogImage : site + ogImage} />}
