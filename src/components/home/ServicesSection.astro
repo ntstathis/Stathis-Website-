@@ -1,0 +1,65 @@
+---
+// homepage_black_section_smaller — "Υπηρεσίες": three service cards.
+// Links/labels come from the shared mega-menu data; the van-rent card image
+// on home is the old mega-menu-1.png (not the BOXER photo the mega menu
+// itself uses), the other two are the same files as the mega menu's.
+import { Image } from 'astro:assets';
+import type { Lang } from '../../lib/i18n';
+import { megaServices } from '../../lib/i18n';
+import serviceVanRent from '../../assets/img/home/service-van-rent.png';
+import serviceConfigurator from '../../assets/img/site/mega/mega-configurator.png';
+import serviceAfterSales from '../../assets/img/site/mega/mega-after-sales.png';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const cardImages: Record<string, ImageMetadata> = {
+  'van-rent': serviceVanRent,
+  'van-rent-en': serviceVanRent,
+  'mega-configurator': serviceConfigurator,
+  'mega-after-sales': serviceAfterSales,
+};
+// caption as printed on the live EN home ("Van rental", lowercase r)
+const homeLabels: Record<Lang, Record<string, string>> = {
+  el: {},
+  en: { 'van-rent-en': 'Van rental' },
+};
+const services = megaServices[lang].map((s) => ({
+  href: s.href,
+  label: homeLabels[lang][s.img] ?? s.label,
+  img: cardImages[s.img],
+}));
+const heading = lang === 'el' ? 'Υπηρεσίες' : 'Services';
+---
+
+<section class="homepage_black_section_smaller">
+  <svg width="1600" height="194" viewBox="0 0 1600 194" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_size svg_size_top">
+    <path d="M0 0L800 111.421L1600 193.5H0V0Z" fill="black" />
+    <path d="M800 111.5L1600 0V193.5L800 111.5Z" fill="#EAEBED" />
+  </svg>
+
+  <div class="container-fluid bg-black pt-md-30 pt-40 pb-md-120 pb-60">
+    <div class="row pb-md-50 pb-30">
+      <div class="col-md-6">
+        <h2 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32 text-white">{heading}</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="items_wrapper">
+        {services.map((s) => (
+          <a href={s.href} class="block">
+            <div class="radius-12 overflow-hidden">
+              <div class="nb_aspect" style="--w: 46;--h: 30;">
+                {s.img && <Image src={s.img} alt={s.label} width={466} />}
+              </div>
+            </div>
+            <p class="ff-pfdin-bold fs-xl-20 fs-lg-18 fs-16 text-white mt-15">{s.label}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

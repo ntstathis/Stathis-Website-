@@ -1,0 +1,116 @@
+---
+// grey_blog_preview — "Τα Νέα μας": the 3 newest posts from the news
+// collection (being populated in parallel — everything here tolerates an
+// empty collection), date badge like the live site ("26 Μαρ" / "26 Mar"),
+// and the see-more button to the news index.
+// The live EN page had an empty heading and no button (WP content bug);
+// both are filled in here per the migration brief.
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import type { Lang } from '../../lib/i18n';
+import { toUrl } from '../../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+let posts: Awaited<ReturnType<typeof getCollection<'news'>>> = [];
+try {
+  posts = (await getCollection('news', (e) => e.data.lang === lang))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+    .slice(0, 3);
+} catch {
+  posts = []; // collection not populated yet — render heading + button only
+}
+
+const monthsEl = ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαϊ', 'Ιουν', 'Ιουλ', 'Αυγ', 'Σεπ', 'Οκτ', 'Νοε', 'Δεκ'];
+const monthsEn = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const badge = (d: Date) => `${d.getDate()} ${(lang === 'el' ? monthsEl : monthsEn)[d.getMonth()]}`;
+
+// featured images live in src/assets (frontmatter src like /src/assets/img/news/…)
+const newsImages = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/img/news/**/*.{jpg,jpeg,png,webp,gif,avif}',
+  { eager: true },
+);
+const featured = (p: (typeof posts)[number]) => {
+  const first = p.data.images?.[0];
+  if (!first?.src) return null;
+  const meta = newsImages[first.src]?.default ?? null;
+  if (meta) return { meta, url: null, alt: first.alt ?? p.data.title };
+  if (!first.src.startsWith('/src/')) return { meta: null, url: first.src, alt: first.alt ?? p.data.title };
+  return null;
+};
+
+const heading = lang === 'el' ? 'Τα Νέα μας' : 'Our news';
+const seeMore = lang === 'el' ? 'Δείτε περισσότερα' : 'See more';
+const newsIndex = lang === 'el' ? '/news/' : '/en/our-news/';
+---
+
+<section class="grey_blog_preview">
+  <div class="container-fluid pt-md-45 pt-20 bg-grey">
+    <div class="row pb-md-65 pb-30">
+      <div class="col-md-6">
+        <h2 class="ff-pfdin-bold fs-xl-64 fs-md-48 fs-40">{heading}</h2>
+      </div>
+    </div>
+
+    <!-- Desktop posts -->
+    <div class="row d-md-flex d-none">
+      {posts.map((p) => {
+        const img = featured(p);
+        return (
+          <div class="col-md-4">
+            <a href={toUrl(p.data.path)} class="post_preview">
+              <div class="featured_img_wrapper mb-20">
+                <div class="nb_aspect" style="--w: 95;--h: 56;">
+                  {img?.meta ? <Image src={img.meta} alt={img.alt} width={900} /> : img?.url ? <img src={img.url} alt={img.alt} /> : null}
+                </div>
+              </div>
+              <div class="post_title_wrapper">
+                <p class="title ff-pfdin-bold fs-20">{p.data.title}</p>
+                <p class="date ff-pfdin-bold fs-18 text-text_grey">{badge(p.data.pubDate)}</p>
+              </div>
+            </a>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+
+  <!-- Mobile swipe row -->
+  <div class="mobile_slider d-md-none d-block bg-grey">
+    <div class="hscroll">
+      {posts.map((p) => {
+        const img = featured(p);
+        return (
+          <a href={toUrl(p.data.path)} class="post_preview">
+            <div class="featured_img_wrapper mb-20">
+              <div class="nb_aspect" style="--w: 95;--h: 56;">
+                {img?.meta ? <Image src={img.meta} alt={img.alt} width={700} /> : img?.url ? <img src={img.url} alt={img.alt} /> : null}
+              </div>
+            </div>
+            <div class="post_title_wrapper">
+              <p class="title ff-pfdin-bold fs-20">{p.data.title}</p>
+              <p class="date ff-pfdin-bold fs-18 text-text_grey">{badge(p.data.pubDate)}</p>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+
+  <!-- CTA button -->
+  <div class="container-fluid pb-25 bg-grey">
+    <div class="row pt-30">
+      <div class="col-12 text-center">
+        <a href={newsIndex} class="theme_button">{seeMore}</a>
+      </div>
+    </div>
+  </div>
+
+  <svg width="1600" height="194" viewBox="0 0 1600 194" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_size svg_size_bottom">
+    <path d="M1600 193.5L800.002 82.0796L0.00176239 0.000221074H1600V193.5Z" fill="#EAEBED" />
+    <path d="M800.002 82.0002L0.00185776 193.5V0.000221074L800.002 82.0002Z" fill="black" />
+  </svg>
+</section>

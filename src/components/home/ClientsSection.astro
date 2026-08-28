@@ -1,0 +1,73 @@
+---
+// collaborators — "Πελάτες" / "Our Customers": client logo row + see-more
+// button to the customers page. The two languages show different logo sets
+// on the live site; alt texts verbatim.
+import { Image } from 'astro:assets';
+import type { Lang } from '../../lib/i18n';
+import clientAnonymo5 from '../../assets/img/home/client-anonymo-5.png';
+import clientAnonymo3 from '../../assets/img/home/client-anonymo-3.png';
+import clientAnonymo4 from '../../assets/img/home/client-anonymo-4.png';
+import clientSklavenitis from '../../assets/img/home/client-sklavenitis.png';
+import clientNitsiakos from '../../assets/img/home/client-nitsiakos.png';
+import clientStergiou from '../../assets/img/home/client-stergiou.png';
+import clientLogos0004 from '../../assets/img/home/client-logos-0004.png';
+import clientKotsovolos from '../../assets/img/home/client-kotsovolos.png';
+import clientDedhe from '../../assets/img/home/client-dedhe.png';
+import clientEydap from '../../assets/img/home/client-eydap.png';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const logos =
+  lang === 'el'
+    ? [
+        { img: clientAnonymo5, alt: 'Ανώνυμο_σχέδιο__5_-removebg-preview' },
+        { img: clientSklavenitis, alt: 'sklavenitis' },
+        { img: clientNitsiakos, alt: 'nitsiakos' },
+        { img: clientAnonymo3, alt: 'Ανώνυμο_σχέδιο__3_-removebg-preview' },
+        { img: clientStergiou, alt: 'stergiou' },
+        { img: clientAnonymo4, alt: 'Ανώνυμο_σχέδιο__4_-removebg-preview' },
+        { img: clientLogos0004, alt: 'LOGOS_0004_Layer-1' },
+      ]
+    : [
+        { img: clientKotsovolos, alt: 'kotsovolos' },
+        { img: clientDedhe, alt: 'dedhe' },
+        { img: clientEydap, alt: 'eydap' },
+        { img: clientSklavenitis, alt: 'sklavenitis' },
+        { img: clientNitsiakos, alt: 'nitsiakos' },
+        { img: clientStergiou, alt: 'stergiou' },
+        { img: clientLogos0004, alt: 'LOGOS_0004_Layer-1' },
+      ];
+const heading = lang === 'el' ? 'Πελάτες' : 'Our Customers';
+const seeMore = lang === 'el' ? 'Δείτε Περισσότερα' : 'See More';
+const href = lang === 'el' ? '/pelates/' : '/en/customers/';
+---
+
+<section class="collaborators">
+  <div class="container-fluid">
+    <div class="row mb-md-70 mb-25">
+      <div class="col-md-7">
+        <h2 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32">{heading}</h2>
+      </div>
+    </div>
+    <div class="row row_logos">
+      <div class="col-12">
+        <div class="logos_wrapper">
+          {logos.map((l) => (
+            <div class="img_wrapper">
+              <Image src={l.img} alt={l.alt} width={l.img.width} height={l.img.height} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-md-80 mt-40">
+      <div class="col-12 text-center">
+        <a href={href} class="theme_button">{seeMore}</a>
+      </div>
+    </div>
+  </div>
+</section>

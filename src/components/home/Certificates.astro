@@ -1,0 +1,56 @@
+---
+// home_four_pistopoihseis — the six certificate images in one row.
+// Stellantis / ISO 9001 / ISO 14001 have language-specific scans on the
+// live site; Mercedes, Ford and VW are shared. Alt texts verbatim.
+import { Image } from 'astro:assets';
+import type { Lang } from '../../lib/i18n';
+import certMercedes from '../../assets/img/home/cert-mercedes.jpg';
+import certStellantisGr from '../../assets/img/home/cert-stellantis-gr.png';
+import certStellantisEn from '../../assets/img/home/cert-stellantis-en.jpg';
+import certFord from '../../assets/img/home/cert-ford.jpg';
+import certVw from '../../assets/img/home/cert-vw.jpg';
+import certIso9001Gr from '../../assets/img/home/cert-iso9001-gr.jpg';
+import certIso9001En from '../../assets/img/home/cert-iso9001-en.jpg';
+import certIso14001Gr from '../../assets/img/home/cert-iso14001-gr.jpg';
+import certIso14001En from '../../assets/img/home/cert-iso14001-en.jpg';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const certs =
+  lang === 'el'
+    ? [
+        { img: certMercedes, alt: 'Mercedes Van (Sprinter_Citan_Vito) exp 06-12-26-2' },
+        { img: certStellantisGr, alt: 'Stellantis 236 - STATHIS THESS valid 2028-1' },
+        { img: certFord, alt: 'FORD PRO CONVERTOR CERTIFICATE - exp 2026_page-0001' },
+        { img: certVw, alt: 'VOLKSWAGEN 2023 - 2026_page-0001' },
+        { img: certIso9001Gr, alt: 'STATHIS-9001' },
+        { img: certIso14001Gr, alt: 'Certificate ISO 14001 GR NTOUNAS-1' },
+      ]
+    : [
+        { img: certMercedes, alt: 'Mercedes Van (Sprinter_Citan_Vito) exp 06-12-26-2' },
+        { img: certStellantisEn, alt: 'Stellantis 236' },
+        { img: certFord, alt: 'FORD PRO CONVERTOR CERTIFICATE - exp 2026_page-0001' },
+        { img: certVw, alt: 'VOLKSWAGEN 2023 - 2026_page-0001' },
+        { img: certIso9001En, alt: 'STATHIS-9001' },
+        { img: certIso14001En, alt: 'Certificate ISO 14001 EN NTOUNAS-1' },
+      ];
+---
+
+<section class="home_four_pistopoihseis">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="gallery_contain">
+          {certs.map((c) => (
+            <div class="img_wrapper">
+              <Image src={c.img} alt={c.alt} width={480} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

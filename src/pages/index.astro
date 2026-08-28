@@ -1,18 +1,41 @@
 ---
+// Greek home page — faithful rebuild of the old WordPress front page.
+// Section order and spacers mirror export/skeletons/home.txt.
 import Base from '../layouts/Base.astro';
+import '../components/home/home.css';
+import HomeHero from '../components/home/HomeHero.astro';
+import WelcomeBlack from '../components/home/WelcomeBlack.astro';
+import Certificates from '../components/home/Certificates.astro';
+import WarrantyTitle from '../components/home/WarrantyTitle.astro';
+import ProductsSection from '../components/home/ProductsSection.astro';
+import ServicesSection from '../components/home/ServicesSection.astro';
+import NewsSection from '../components/home/NewsSection.astro';
+import ClientsSection from '../components/home/ClientsSection.astro';
+import ogHome from '../assets/img/home/og-home.jpg';
 ---
 
 <Base
   lang="el"
   title="Home - Stathis"
+  description="Stathis - Η Κορυφαία Εταιρεία στην Αμαξοποίηση και την Ψύξη Μεταφορών στην Ελλάδα"
   path=""
   twinPath="en/home"
   headerColor="white"
   padTop={false}
+  ogImage={ogHome.src}
 >
-  <div class="spacer big_top_space"></div>
-  <div class="container-fluid">
-    <h1>Η Κορυφαία Εταιρεία στην Αμαξοποίηση και την Ψύξη Μεταφορών στην Ελλάδα</h1>
-    <p>Placeholder — rebuilt in P3.</p>
+  <div id="flexiblePage">
+    <HomeHero title="Η Κορυφαία Εταιρεία στην Αμαξοποίηση και την Ψύξη Μεταφορών στην Ελλάδα" />
+    <div class="spacer big_top_space" aria-hidden="true"></div>
+    <WelcomeBlack lang="el" />
+    <div class="spacer big" aria-hidden="true"></div>
+    <Certificates lang="el" />
+    <WarrantyTitle lang="el" />
+    <div class="spacer big" aria-hidden="true"></div>
+    <ProductsSection lang="el" />
+    <ServicesSection lang="el" />
+    <NewsSection lang="el" />
+    <div class="spacer big" aria-hidden="true"></div>
+    <ClientsSection lang="el" />
   </div>
 </Base>

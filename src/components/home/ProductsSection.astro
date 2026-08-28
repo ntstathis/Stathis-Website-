@@ -1,0 +1,275 @@
+---
+// homepage_black_section — "Προϊόντα": diagonal svg divider, black band with
+// the 14 product cards (desktop grid / mobile swipe row), then the white
+// "Ολοκληρωμένες προτάσεις" carousel (old Swiper slider-simple_text) rebuilt
+// as a scroll-snap row driven by a few lines of vanilla JS.
+// Product links/images come from the shared mega-menu data (src/lib/i18n.ts);
+// the card captions the home page shows differently are overridden below.
+import { Image } from 'astro:assets';
+import type { Lang } from '../../lib/i18n';
+import { megaProducts } from '../../lib/i18n';
+import proposalConsulting from '../../assets/img/home/proposal-consulting.jpg';
+import proposalRental from '../../assets/img/home/proposal-rental.jpg';
+import proposalRentalEn from '../../assets/img/home/proposal-rental-en.jpg';
+import proposalFinancing from '../../assets/img/home/proposal-financing.jpg';
+import proposalRetrofit from '../../assets/img/home/proposal-retrofit.jpg';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const megaImages = import.meta.glob<{ default: ImageMetadata }>(
+  '../../assets/img/site/mega/*.{jpg,png}',
+  { eager: true },
+);
+const megaImg = (name: string) => {
+  const hit = Object.entries(megaImages).find(([p]) => p.includes(`/${name}.`));
+  return hit ? hit[1].default : null;
+};
+
+// captions as printed on the live home page where they differ from the mega menu
+const homeLabels: Record<Lang, Record<string, string>> = {
+  el: {
+    'kit-monwsis': 'Κιτ Μόνωσης Χώρου Φόρτωσης',
+  },
+  en: {
+    'psuktikoi-thalamoi': 'Truck Refrigerators',
+    'ydraulikes-portes': 'Tail Lifts',
+    'katagrafika-euroscan': 'Temperature Recorders',
+    'karotses-alouminiou': 'Aluminum Bodies',
+  },
+};
+const products = megaProducts[lang].map((p) => ({
+  href: p.href,
+  label: homeLabels[lang][p.img] ?? p.label,
+  img: megaImg(p.img),
+}));
+
+const heading = lang === 'el' ? 'Προϊόντα' : 'Products';
+const sliderTitle =
+  lang === 'el'
+    ? 'Ολοκληρωμένες προτάσεις βάσει των αναγκών σας'
+    : 'Comprehensive proposals based on your needs';
+const proposals =
+  lang === 'el'
+    ? [
+        { img: proposalConsulting, alt: 'Συμβουλευτική', text: 'Συμβουλευτική για την βέλτιστη δυνατή λύση' },
+        { img: proposalRental, alt: 'Αυτοκίνητο-Ενοικίασης', text: 'Αυτοκίνητο Ενοικίασης για να δοκιμάσετε την βέλτιστη λύση στην πραγματικότητα' },
+        { img: proposalFinancing, alt: 'Λύσεις-Χρηματοδότησης', text: 'Λύσεις χρηματοδότησης σε συνεργασία με τις μεγαλύτερες εταιρείες Leasing της Ελλάδας' },
+        { img: proposalRetrofit, alt: 'Μετασκευή-Οχήματος', text: 'Μετασκευή του οχήματός σας' },
+      ]
+    : [
+        { img: proposalConsulting, alt: 'Συμβουλευτική', text: 'Consulting for the best possible solution' },
+        { img: proposalRentalEn, alt: 'Αυτοκίνητο-Ενοικίασης', text: 'Car Rental to experience the optimal solution in reality' },
+        { img: proposalFinancing, alt: 'Λύσεις-Χρηματοδότησης', text: 'Financing solutions in cooperation with the largest leasing companies in Greece' },
+        { img: proposalRetrofit, alt: 'Μετασκευή-Οχήματος', text: 'Retrofitting your vehicle' },
+      ];
+---
+
+<section class="homepage_black_section">
+  <svg width="1600" height="194" viewBox="0 0 1600 194" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_size svg_size_top">
+    <path d="M0 0L800 111.421L1600 193.5H0V0Z" fill="black" />
+    <path d="M800 111.5L1600 0V193.5L800 111.5Z" fill="#EAEBED" />
+  </svg>
+
+  <div class="container-fluid bg-black pt-md-30 pt-40 pb-md-120 pb-60">
+    <div class="row pb-md-50 pb-30">
+      <div class="col-md-6">
+        <h2 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32 text-white">{heading}</h2>
+      </div>
+      <div class="col-md-5 offset-md-1 mt-md-0 mt-15 pt-md-20">
+        {lang === 'el' && (
+          <div class="content_wrapper text-white">
+            <p>{' '}</p>
+          </div>
+        )}
+      </div>
+    </div>
+
+    <div class="row d-md-block d-none">
+      <div class="items_wrapper">
+        {products.map((p) => (
+          <a href={p.href} class="block">
+            <div class="radius-12 overflow-hidden">
+              <div class="nb_aspect" style="--w: 1;--h: 1;">
+                {p.img && <Image src={p.img} alt={p.label} width={350} />}
+              </div>
+            </div>
+            <p class="ff-pfdin-bold fs-xl-20 fs-lg-18 fs-16 text-white mt-15">{p.label}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile_slider d-md-none d-block bg-black pb-60">
+    <div class="hscroll">
+      {products.map((p) => (
+        <a href={p.href} class="the_slide">
+          <div class="radius-12 overflow-hidden">
+            <div class="nb_aspect" style="--w: 27;--h: 32;">
+              {p.img && <Image src={p.img} alt={p.label} width={350} />}
+            </div>
+          </div>
+          <p class="ff-pfdin-bold fs-20 text-white mt-15">{p.label}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <svg width="1600" height="194" viewBox="0 0 1600 194" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg_size svg_size_bottom">
+    <path d="M1600 193.5L800.002 82.0796L0.00176239 0.000221074H1600V193.5Z" fill="black" />
+    <path d="M800.002 82.0002L0.00185776 193.5V0.000221074L800.002 82.0002Z" fill="#EAEBED" />
+  </svg>
+
+  <div class="container-fluid pb-md-80 pb-60 bg-white">
+    <div class="row pt-md-120 pt-40">
+      <div class="col-12">
+        <p class="slider_title text-black ff-pfdin-bold fs-xl-48 fs-md-40 fs-32 mb-180">{sliderTitle}</p>
+      </div>
+      <div class="col-1 d-md-flex d-none flex-column justify-content-center">
+        <div class="swiper-button-prev simple_text-button-prev" role="button" aria-label="Previous" tabindex="0">
+          <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_31_567)">
+              <path d="M33.0548 16.9941H1.94556" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+              <path d="M17.6282 1.75977L2.29773 17.0902" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+              <path d="M17.6281 32.4208L2.29767 17.0903" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+            </g>
+            <defs>
+              <clipPath id="clip0_31_567">
+                <rect width="35" height="32.1094" fill="#000" transform="translate(0 0.939941)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div class="col-md-10">
+        <div class="slider-simple_text">
+          {proposals.map((s) => (
+            <div class="swiper-slide">
+              <div class="the_slide test-start">
+                <div class="nb_aspect" style="--w: 4;--h: 2;">
+                  <Image src={s.img} alt={s.alt} width={900} />
+                </div>
+                <p class="text-black ff-pfdin-bold fs-24 mt-md-45 mt-30">{s.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div class="col-1 d-md-flex d-none flex-column justify-content-center">
+        <div class="swiper-button-next simple_text-button-next" role="button" aria-label="Next" tabindex="0">
+          <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_31_576)">
+              <path d="M1.94489 16.9941H33.0541" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+              <path d="M17.3723 1.76074L32.7027 17.0912" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+              <path d="M17.3715 32.4208L32.702 17.0903" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+            </g>
+            <defs>
+              <clipPath id="clip0_31_576">
+                <rect width="35" height="32.1094" fill="#000" transform="translate(0 0.939941)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="row d-md-none d-block">
+      <div class="col-12">
+        <div class="buttons_wrapper_simple_text">
+          <div class="swiper-button-prev simple_text-button-prev" role="button" aria-label="Previous" tabindex="0">
+            <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip1_31_567)">
+                <path d="M33.0548 16.9941H1.94556" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+                <path d="M17.6282 1.75977L2.29773 17.0902" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+                <path d="M17.6281 32.4208L2.29767 17.0903" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+              </g>
+              <defs>
+                <clipPath id="clip1_31_567">
+                  <rect width="35" height="32.1094" fill="#000" transform="translate(0 0.939941)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="swiper-button-next simple_text-button-next" role="button" aria-label="Next" tabindex="0">
+            <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip1_31_576)">
+                <path d="M1.94489 16.9941H33.0541" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+                <path d="M17.3723 1.76074L32.7027 17.0912" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+                <path d="M17.3715 32.4208L32.702 17.0903" stroke="#000" stroke-width="0.999888" stroke-miterlimit="10" />
+              </g>
+              <defs>
+                <clipPath id="clip1_31_576">
+                  <rect width="35" height="32.1094" fill="#000" transform="translate(0 0.939941)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // "Ολοκληρωμένες προτάσεις" carousel: scroll-snap row + prev/next scroll,
+  // active/prev/next classes reproduce the old Swiper scale effect.
+  document.querySelectorAll<HTMLElement>('section.homepage_black_section').forEach((root) => {
+    const track = root.querySelector<HTMLElement>('.slider-simple_text');
+    if (!track) return;
+    const slides = [...track.querySelectorAll<HTMLElement>('.swiper-slide')];
+    if (!slides.length) return;
+    const prevBtns = [...root.querySelectorAll<HTMLElement>('.simple_text-button-prev')];
+    const nextBtns = [...root.querySelectorAll<HTMLElement>('.simple_text-button-next')];
+    let active = 0;
+
+    const apply = () => {
+      slides.forEach((s, i) => {
+        s.classList.toggle('swiper-slide-active', i === active);
+        s.classList.toggle('swiper-slide-prev', i === active - 1);
+        s.classList.toggle('swiper-slide-next', i === active + 1);
+      });
+      prevBtns.forEach((b) => b.classList.toggle('swiper-button-disabled', active === 0));
+      nextBtns.forEach((b) => b.classList.toggle('swiper-button-disabled', active === slides.length - 1));
+    };
+
+    const goto = (i: number) => {
+      active = Math.max(0, Math.min(slides.length - 1, i));
+      const s = slides[active];
+      track.scrollTo({ left: s.offsetLeft - (track.clientWidth - s.offsetWidth) / 2, behavior: 'smooth' });
+      apply();
+    };
+
+    prevBtns.forEach((b) => b.addEventListener('click', () => goto(active - 1)));
+    nextBtns.forEach((b) => b.addEventListener('click', () => goto(active + 1)));
+
+    // keep the active slide in sync when the user swipes/scrolls by hand
+    let raf = 0;
+    track.addEventListener(
+      'scroll',
+      () => {
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(() => {
+          const center = track.scrollLeft + track.clientWidth / 2;
+          let best = 0;
+          let dist = Infinity;
+          slides.forEach((s, i) => {
+            const d = Math.abs(s.offsetLeft + s.offsetWidth / 2 - center);
+            if (d < dist) {
+              dist = d;
+              best = i;
+            }
+          });
+          if (best !== active) {
+            active = best;
+            apply();
+          }
+        });
+      },
+      { passive: true },
+    );
+
+    apply();
+  });
+</script>

@@ -1,0 +1,27 @@
+---
+// hero_title — the big manufacturer-warranty statement with bold brand names.
+// Markup mirrors the live page (a <p> inside the sized <h2>); the old
+// split-text animation is gone, so the text just inherits the h2 sizes.
+import type { Lang } from '../../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+---
+
+<section class="hero_title">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="ff-pfdin-bold fs-xl-64 fs-md-48 fs-40">
+          {lang === 'el' ? (
+            <p style="text-align: left;">Η εταιρεία <strong>Stathis</strong>, εγγυάται την διατήρηση της εργοστασιακής εγγύησης και μετά την μετασκευή του οχήματος σε ψυγείο, καθώς είναι πιστοποιημένος συνεργάτης των κορυφαίων εργοστασίων <strong>Mercedes</strong><strong> – </strong><strong>Benz</strong>, <strong>Volkswagen</strong>, <strong>Ford</strong> και του <strong>Ομίλου</strong> <strong>Stellantis</strong>.</p>
+          ) : (
+            <p style="text-align: left;">The company <strong>Stathis</strong>, guarantees the maintenance of the factory warranty even after the vehicle has been converted into a refrigerator, as it is a certified partner of the leading factories <strong>Mercedes</strong><strong> – </strong><strong>Benz</strong>, <strong>Volkswagen</strong>, <strong>Ford</strong> and the <strong>Stellantis</strong> <strong>Group</strong>.</p>
+          )}
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>

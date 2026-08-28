@@ -1,0 +1,44 @@
+---
+// Full-viewport hero: 3 auto-fading background slides + white H1 (left column).
+// The old site ran this on Swiper; rebuilt as a few lines of vanilla JS with
+// the same visual result (no arrows/dots — the live markup had none).
+import hero1 from '../../assets/img/home/hero-1.jpg';
+import hero2 from '../../assets/img/home/hero-2.jpg';
+import hero3 from '../../assets/img/home/hero-3.jpg';
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+const slides = [hero1, hero2, hero3];
+---
+
+<section class="hero_home_slider">
+  <div class="slider-hero_home_slider">
+    {slides.map((img, i) => (
+      <div class:list={['bgs', i === 0 && 'active']} style={`background-image:url('${img.src}')`}></div>
+    ))}
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 the_col the_col_1 d-flex flex-column">
+        <h1 class="title text-white text-md-start text-center ff-pfdin-bold mt-50">{title}</h1>
+      </div>
+      <div class="col-md-6 the_col the_col_2 d-flex flex-column justify-content-md-end justify-content-start"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.slider-hero_home_slider').forEach((slider) => {
+    const slides = slider.querySelectorAll<HTMLElement>('.bgs');
+    if (slides.length < 2) return;
+    let i = 0;
+    setInterval(() => {
+      slides[i].classList.remove('active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('active');
+    }, 5000);
+  });
+</script>

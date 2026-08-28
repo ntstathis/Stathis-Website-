@@ -1,0 +1,240 @@
+/* ==========================================================================
+   Home pages (GR + EN) — section styles and the utility classes the home
+   templates use that are not part of src/styles/theme.css.
+   Values are verbatim from the old theme bundle (export/css/…app.bundle.css)
+   plus the WP Customizer "Additional CSS" that shipped on the live pages.
+   Imported by src/pages/index.astro and src/pages/en/home/index.astro AFTER
+   Base.astro (theme.css), so equal-specificity rules here win, as they did
+   in the original bundle order.
+   ========================================================================== */
+
+/* ---------- utilities missing from theme.css ---------- */
+.d-none { display: none !important; }
+.justify-content-start { justify-content: flex-start !important; }
+.col-1 { flex: 0 0 auto; width: 8.33333%; }
+.pt-20 { padding-top: 2rem !important; }
+.pt-30 { padding-top: 3rem !important; }
+.pt-40 { padding-top: 4rem !important; }
+.pb-25 { padding-bottom: 2.5rem !important; }
+.pb-30 { padding-bottom: 3rem !important; }
+.pb-60 { padding-bottom: 6rem !important; }
+.px-15 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+.py-25 { padding-bottom: 2.5rem !important; padding-top: 2.5rem !important; }
+.mt-15 { margin-top: 1.5rem !important; }
+.mt-30 { margin-top: 3rem !important; }
+.mt-40 { margin-top: 4rem !important; }
+.mb-180 { margin-bottom: 18rem !important; }
+
+@media (min-width: 768px) {
+  .d-md-block { display: block !important; }
+  .d-md-flex { display: flex !important; }
+  .d-md-none { display: none !important; }
+  .justify-content-md-end { justify-content: flex-end !important; }
+  .col-md-10 { flex: 0 0 auto; width: 83.33333%; }
+  .offset-md-1 { margin-left: 8.33333%; }
+  .pt-md-20 { padding-top: 2rem !important; }
+  .pt-md-30 { padding-top: 3rem !important; }
+  .pt-md-45 { padding-top: 4.5rem !important; }
+  .pt-md-120 { padding-top: 12rem !important; }
+  .pb-md-50 { padding-bottom: 5rem !important; }
+  .pb-md-65 { padding-bottom: 6.5rem !important; }
+  .pb-md-80 { padding-bottom: 8rem !important; }
+  .pb-md-120 { padding-bottom: 12rem !important; }
+  .px-md-45 { padding-left: 4.5rem !important; padding-right: 4.5rem !important; }
+  .py-md-45 { padding-bottom: 4.5rem !important; padding-top: 4.5rem !important; }
+  .mt-md-45 { margin-top: 4.5rem !important; }
+  .mt-md-80 { margin-top: 8rem !important; }
+  .mb-md-70 { margin-bottom: 7rem !important; }
+}
+@media (min-width: 992px) {
+  .fs-lg-18 { font-size: 1.8rem; }
+}
+@media (min-width: 1200px) {
+  .fs-xl-20 { font-size: 2rem; }
+  .fs-xl-48 { font-size: 4.8rem; }
+}
+
+/* the rounded black button (grey_blog_preview / collaborators CTAs) */
+a.theme_button,
+button.theme_button {
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 0.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'PFDinText', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.5rem 4.6rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+a.theme_button:hover,
+button.theme_button:hover { background-color: #fff; border-color: #000; color: #000; }
+
+/* ---------- section dividers (diagonal svg strips) ---------- */
+#flexiblePage .svg_size { height: auto; width: 100%; display: block; }
+#flexiblePage .svg_size.svg_size_top { margin-bottom: -1px; }
+#flexiblePage .svg_size.svg_size_bottom { margin-top: -1px; }
+
+/* ---------- hero_home_slider ---------- */
+#flexiblePage .hero_home_slider { position: relative; }
+#flexiblePage .hero_home_slider .the_col {
+  min-height: 100vh;
+  padding-bottom: var(--navigation_height);
+  padding-top: calc(var(--navigation_height) + 2rem);
+}
+#flexiblePage .hero_home_slider .slider-hero_home_slider {
+  bottom: 0; left: 0; right: 0; top: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+#flexiblePage .hero_home_slider .slider-hero_home_slider .bgs {
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0; left: 0; right: 0; top: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s linear;
+}
+#flexiblePage .hero_home_slider .slider-hero_home_slider .bgs.active { opacity: 1; }
+#flexiblePage .hero_home_slider::before {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  bottom: 0; left: 0; right: 0; top: 0;
+  content: '';
+  position: absolute;
+  z-index: 2;
+}
+#flexiblePage .hero_home_slider .title { font-size: 3.7rem; position: relative; z-index: 3; }
+
+/* ---------- content_in_black_and_image_columns ---------- */
+#flexiblePage section.content_in_black_and_image_columns .subtitle_wrapper p { color: #939393; font-size: 1.8rem; }
+#flexiblePage section.content_in_black_and_image_columns .subtitle_wrapper p:not(:last-of-type) { margin-bottom: 1.5rem; }
+#flexiblePage section.content_in_black_and_image_columns .the_row { margin-inline: -1rem; row-gap: 2rem; }
+#flexiblePage section.content_in_black_and_image_columns .the_row > * { padding-inline: 1rem; }
+#flexiblePage section.content_in_black_and_image_columns .black_box { height: 100%; min-height: 380px; }
+#flexiblePage section.content_in_black_and_image_columns .img_wrapper { height: 100%; min-height: 170px; width: 100%; }
+#flexiblePage section.content_in_black_and_image_columns .img_wrapper img { height: 100%; object-fit: cover; width: 100%; }
+/* WP Customizer additional CSS (live site overrides) */
+#flexiblePage section.content_in_black_and_image_columns .img_wrapper.radius-24-16.overflow-hidden { border-radius: 0 !important; }
+#flexiblePage section.content_in_black_and_image_columns .img_wrapper {
+  display: flex !important;
+  align-items: center !important;
+}
+.img_wrapper video { width: 100%; height: auto !important; object-fit: contain; display: block; }
+
+/* ---------- home_four_pistopoihseis (certificates) ---------- */
+#flexiblePage section.home_four_pistopoihseis .gallery_contain { display: flex; gap: 2rem; justify-content: space-between; }
+
+/* ---------- homepage_black_section (products) + _smaller (services) ---------- */
+#flexiblePage section.homepage_black_section .content_wrapper p { font-size: 1.8rem; }
+#flexiblePage section.homepage_black_section .content_wrapper p:not(:last-of-type) { margin-bottom: 1.5rem; }
+#flexiblePage section.homepage_black_section .items_wrapper { display: grid; gap: 4.5rem 2rem; grid-template-columns: repeat(5, 1fr); }
+#flexiblePage section.homepage_black_section .items_wrapper .block img { transform: scale(1); transition: all 0.1s linear; }
+#flexiblePage section.homepage_black_section .items_wrapper .block:hover img { transform: scale(1.05); }
+#flexiblePage section.homepage_black_section .slider_title { max-width: 550px; }
+#flexiblePage section.homepage_black_section_smaller .items_wrapper { display: grid; gap: 4.5rem 2rem; grid-template-columns: repeat(3, 1fr); }
+#flexiblePage section.homepage_black_section_smaller .items_wrapper .block img { transform: scale(1); transition: all 0.1s linear; }
+#flexiblePage section.homepage_black_section_smaller .items_wrapper .block:hover img { transform: scale(1.05); }
+
+/* mobile swipe rows (replace the old swiper mobile sliders) */
+#flexiblePage .mobile_slider .hscroll {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-inline: 2rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+#flexiblePage .mobile_slider .hscroll::-webkit-scrollbar { display: none; }
+#flexiblePage .mobile_slider .hscroll > * { flex: 0 0 72%; scroll-snap-align: start; }
+#flexiblePage .mobile_slider .the_slide { text-align: start; display: block; }
+
+/* ---------- "Ολοκληρωμένες προτάσεις" carousel (old slider-simple_text) ---------- */
+#flexiblePage .slider-simple_text {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+#flexiblePage .slider-simple_text::-webkit-scrollbar { display: none; }
+#flexiblePage .slider-simple_text .swiper-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  transition: all 0.2s linear;
+}
+#flexiblePage .slider-simple_text .the_slide { text-align: start; width: 100%; }
+@media (min-width: 768px) {
+  /* room for the scaled-up active slide inside the scroll box, without
+     shifting the layout (the old swiper let it overflow visibly) */
+  #flexiblePage .slider-simple_text { margin-block: -15rem; padding-block: 15rem; }
+  #flexiblePage .slider-simple_text::before,
+  #flexiblePage .slider-simple_text::after { content: ''; flex: 0 0 33.3333%; }
+  #flexiblePage .slider-simple_text .swiper-slide { flex-basis: 33.3333%; }
+  #flexiblePage .slider-simple_text .swiper-slide.swiper-slide-active { transform: scale(1.9); }
+  #flexiblePage .slider-simple_text .swiper-slide:not(.swiper-slide-active) { filter: grayscale(1); opacity: 0.3; transform: scale(0.3); }
+  #flexiblePage .slider-simple_text .swiper-slide.swiper-slide-prev { filter: grayscale(1); opacity: 0.3; transform: scale(0.3) translateX(-70%); }
+  #flexiblePage .slider-simple_text .swiper-slide.swiper-slide-next { filter: grayscale(1); opacity: 0.3; transform: scale(0.3) translateX(70%); }
+  #flexiblePage .slider-simple_text .swiper-slide.swiper-slide-active p { font-size: 1.4rem; margin-top: 1.5rem !important; }
+}
+
+/* carousel arrows (old theme swiper buttons) */
+#flexiblePage .swiper-button-prev,
+#flexiblePage .swiper-button-next {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  opacity: 1;
+  outline: none;
+  position: relative;
+  transition: all 0.1s linear;
+  width: 48px;
+}
+#flexiblePage .swiper-button-prev:hover,
+#flexiblePage .swiper-button-next:hover { opacity: 0.7; }
+#flexiblePage .swiper-button-prev.swiper-button-disabled,
+#flexiblePage .swiper-button-next.swiper-button-disabled { cursor: context-menu; opacity: 0.5; }
+#flexiblePage .buttons_wrapper_simple_text { align-items: center; display: flex; gap: 2.4rem; justify-content: center; position: relative; }
+
+/* ---------- grey_blog_preview (news) ---------- */
+#flexiblePage section.grey_blog_preview .post_preview { display: block; }
+#flexiblePage section.grey_blog_preview .post_preview .featured_img_wrapper { border-radius: 2.4rem; overflow: hidden; }
+#flexiblePage section.grey_blog_preview .post_preview .featured_img_wrapper img { transform: scale(1); transition: all 0.1s linear; }
+#flexiblePage section.grey_blog_preview .post_preview:hover img { transform: scale(1.05); }
+#flexiblePage section.grey_blog_preview .post_preview .post_title_wrapper { align-items: flex-end; display: flex; gap: 1rem; justify-content: space-between; }
+#flexiblePage section.grey_blog_preview .post_preview .post_title_wrapper .title { width: 100%; }
+#flexiblePage section.grey_blog_preview .post_preview .post_title_wrapper .date { max-width: 70px; text-align: end; width: 100%; }
+
+/* ---------- collaborators (clients) ---------- */
+#flexiblePage section.collaborators .logos_wrapper { align-items: center; display: flex; flex-wrap: wrap; gap: 3.5rem; }
+#flexiblePage section.collaborators .logos_wrapper .img_wrapper { max-width: 250px; }
+/* WP Customizer additional CSS */
+section.collaborators img { width: 150px !important; }
+
+/* ---------- mobile ---------- */
+@media (max-width: 767.98px) {
+  a.theme_button,
+  button.theme_button { font-size: 1.6rem; padding: 1.4rem 4rem; }
+  #flexiblePage .hero_home_slider .the_col { min-height: auto; }
+  #flexiblePage .hero_home_slider .the_col.the_col_1 { margin-top: 4rem; padding-bottom: 6rem; }
+  #flexiblePage .hero_home_slider .the_col.the_col_2 { padding-top: 0; }
+  #flexiblePage .hero_home_slider .title { font-size: 2.4rem; }
+  #flexiblePage section.content_in_black_and_image_columns .subtitle_wrapper p { font-size: 1.6rem; }
+  #flexiblePage section.content_in_black_and_image_columns .the_row { margin-inline: -0.8rem; row-gap: 1.6rem; }
+  #flexiblePage section.content_in_black_and_image_columns .the_row > * { padding-inline: 0.8rem; }
+  #flexiblePage section.content_in_black_and_image_columns .black_box { margin-bottom: 1.6rem; min-height: 170px; }
+  #flexiblePage section.home_four_pistopoihseis .gallery_contain { gap: 1.5rem; }
+  #flexiblePage section.homepage_black_section .content_wrapper p { font-size: 1.6rem; }
+  #flexiblePage section.homepage_black_section_smaller .content_wrapper p { font-size: 1.6rem; }
+  #flexiblePage section.homepage_black_section_smaller .items_wrapper { grid-template-columns: repeat(1, 1fr); }
+  #flexiblePage section.collaborators .logos_wrapper .img_wrapper { max-width: 100px; }
+}

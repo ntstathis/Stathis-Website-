@@ -1,0 +1,53 @@
+---
+// "Καλώς ήλθατε" black rounded box + media column.
+// GR shows the company video (self-hosted in public/media/).
+// EN mirrors the live page: the media wrapper is empty.
+import type { Lang } from '../../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const VIDEO_SRC = '/media/final-video-hd.webm';
+---
+
+<section class="content_in_black_and_image_columns">
+  <div class="container-fluid">
+    <div class="row the_row">
+      <div class="col-md-7">
+        <div class="black_box bg-black d-flex flex-column justify-content-center radius-24-16 overflow-hidden px-md-45 px-15 py-md-45 py-25">
+          {lang === 'el' ? (
+            <>
+              <p class="ff-pfdin-bold fs-md-32 fs-20 text-white mb-20">Καλώς ήλθατε στην ιστοσελίδα της εταιρείας Stathis</p>
+              <div class="subtitle_wrapper">
+                <p>Από το 1961 μέχρι και σήμερα, η “Stathis” αποτελεί μία από τις κορυφαίες εταιρείες στο χώρο της αμαξοποίησης στην Ελλάδα.</p>
+                <p>Η εταιρεία αυξάνει σταθερά τα μεγέθη της, επεκτείνεται χωροταξικά, προσθέτει καινούργια προϊόντα, διευρύνει τις συνεργασίες της με<br />
+κορυφαίους οίκους του εξωτερικού, πάντα με βασική αρχή την ποιότητα των προϊόντων και την εξυπηρέτηση των πελατών.</p>
+                <p>Με νέες εγκαταστάσεις σε Θεσσαλονίκη και Αθήνα, με σύγχρονο μηχανολογικό εξοπλισμό, αναβαθμισμένη μηχανοργάνωση και άρτια καταρτισμένο προσωπικό, η “Stathis” παρέχει πλήρεις λύσεις σε όλο το φάσμα της αμαξοποίησης και ασφαλώς ολοκληρωμένη υποστήριξη μετά την πώληση.</p>
+              </div>
+            </>
+          ) : (
+            <>
+              <p class="ff-pfdin-bold fs-md-32 fs-20 text-white mb-20">Welcome to Stathis company </p>
+              <div class="subtitle_wrapper">
+                <p>Since 1961 ”Stathis” is one of the top companies in the field of body-building and refrigerated bodies in Greece.</p>
+                <p>The company constantly increases its figures, expands its facilities, adds new products and broadens its collaborations with top foreign companies.<br />
+Its basic principle has always been product quality and customer service.</p>
+                <p>With new facilities in Thessaloniki and Athens, modern mechanical equipment, upgraded ΙΤ infrastructure and well-trained staff, “Stathis” provides complete solutions covering the whole spectrum of transport refrigeration, and of course, full after-sales support.</p>
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="img_wrapper radius-24-16 overflow-hidden">
+          {lang === 'el' && (
+            <video controls>
+              <source src={VIDEO_SRC} type="video/webm" />
+            </video>
+          )}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
