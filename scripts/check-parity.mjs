@@ -80,11 +80,13 @@ const linkRe = /(?:href|src)=["'](\/[^"'#?]*)["'#?]/g;
 let checkedLinks = 0;
 for (const f of built) {
   if (!f.endsWith('.html')) continue;
+  // the 404 page's hidden language-switcher self-links point at /404/ by design
+  if (f === '404.html') continue;
   const html = await readFile(path.join(DIST, f), 'utf8');
   for (const m of html.matchAll(linkRe)) {
     const target = decodeURI(m[1]);
     checkedLinks++;
-    if (/\.(css|js|json|xml|txt|ico|svg|png|jpe?g|webp|gif|woff2?|ttf|pdf|mp4)$/i.test(target)) {
+    if (/\.(css|js|json|xml|txt|ico|svg|png|jpe?g|webp|gif|woff2?|ttf|otf|pdf|mp4|webm)$/i.test(target)) {
       if (!built.has(toPath(target))) fail(`broken asset link in /${f}: ${target}`);
     } else if (!builtPages.has(toPath(target))) {
       fail(`broken internal link in /${f}: ${target}`);

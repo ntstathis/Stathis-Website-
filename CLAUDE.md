@@ -47,5 +47,5 @@ to `main`. Bilingual: Greek at root, English under `/en/`.
 
 ```bash
 npm run dev        # live dev server
-npm run build && npm run parity   # what CI runs
+npm run build && npm run parity && npm run meta   # what CI runs
 ```

@@ -1,0 +1,23 @@
+# Approved intentional meta differences vs the old site (checked by scripts/check-meta.mjs).
+#
+# All entries below share one cause: the old theme overrode Yoast's own meta
+# description with the site tagline «Αμαξοποίηση & Ψύξη Μεταφορών» at render
+# time. The new site emits the description Yoast itself declared for the page
+# (verified present in the entry's yoast_head_json in export/raw/) — verbatim
+# Yoast data, strictly more specific. Decided 2026-08-28.
+
+en/about-us
+en/delivery-of-a-mobile-command-center-for-athens-international-airport
+en/metafora-ypokatastimatos-athinon-se-kainouries-kai-megalyteres-egkatastaseis
+en/refrigerated-units
+en/the-gradual-delivery-of-45-vehicles-to-ayvens-for-liafarm-has-begun
+en/we-participated-in-the-food-expo-2026
+etaireia
+metafora-ypokatastimatos-athinon-se-kainouries-3
+metropolitan-expo
+paradosi-mobile-command-center-gia-ton-diethni-aerolimena-athinon
+proionta/psuktika-mixanimata
+proionta/psuktikoi-thalamoi-autokinitwn
+symmeteichame-stin-food-expo-2026
+van-rent
+xekinise-i-stadiaki-paradosi-45-ochimaton-stin-ayvens-gia-tin-liafarm

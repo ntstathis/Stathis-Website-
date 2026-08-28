@@ -16,7 +16,18 @@ interface Props {
   ogImage?: string;
   noindex?: boolean;
 }
-const { lang, title, description, path, twinPath = null, ogImage, noindex = false } = Astro.props;
+const {
+  lang,
+  title,
+  description: descriptionProp,
+  path,
+  twinPath = null,
+  ogImage,
+  noindex = false,
+} = Astro.props;
+// The old WordPress site emitted the site tagline as the meta description on
+// every page without a specific one (including English pages — mirrored as-is).
+const description = descriptionProp ?? 'Αμαξοποίηση & Ψύξη Μεταφορών';
 
 const site = Astro.site!.href.replace(/\/$/, '');
 const abs = (p: string) => site + toUrl(p)!;

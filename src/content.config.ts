@@ -30,25 +30,25 @@ const base = z.object({
   datasheet: z.string().optional(),
 });
 
-const collection = (name: string, extra?: z.ZodRawShape) =>
-  defineCollection({
-    loader: glob({ pattern: '**/*.md', base: `./src/content/${name}` }),
-    schema: extra ? base.extend(extra) : base,
-  });
+const loaderFor = (name: string) =>
+  glob({ pattern: '**/*.md', base: `./src/content/${name}` });
 
 export const collections = {
   // 25 Koala refrigerated-container catalog entries × 2 languages
-  koala: collection('koala'),
+  koala: defineCollection({ loader: loaderFor('koala'), schema: base }),
   // ready-to-deliver vehicle listings (Sprinter pick-ups), listed on
   // /ochimata-mercedes-benz-sprinter-pick-up/
-  vehicles: collection('vehicles'),
+  vehicles: defineCollection({ loader: loaderFor('vehicles'), schema: base }),
   // product pages (kit monwsis, psyktika mixanimata, sortimo, …)
-  products: collection('products'),
-  // real news posts, listed on /news/ (paginated) and /feed/
-  news: collection('news', {
-    pubDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
+  products: defineCollection({ loader: loaderFor('products'), schema: base }),
+  // real news posts, listed on /news/ (paginated)
+  news: defineCollection({
+    loader: loaderFor('news'),
+    schema: base.extend({
+      pubDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+    }),
   }),
   // remaining prose pages (etaireia, privacy, terms, micro-landing pages, …)
-  pages: collection('pages'),
+  pages: defineCollection({ loader: loaderFor('pages'), schema: base }),
 };

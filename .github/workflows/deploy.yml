@@ -28,6 +28,7 @@ jobs:
       - run: npm run check
       - run: npm run build
       - run: npm run parity
+      - run: npm run meta
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

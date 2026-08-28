@@ -25,7 +25,7 @@ const ogImage = d.seo.ogImage
   ? (meta(d.seo.ogImage)?.src ?? d.seo.ogImage)
   : meta(d.images?.[0]?.src)?.src;
 
-const bodyImages = (d.bodyImages ?? []).map((im) => {
+const bodyImages = (d.bodyImages ?? []).map((im: { src: string; alt: string }) => {
   const m = meta(im.src);
   if (!m) console.warn(`[CatalogLayout] body image not found in src/assets glob, using raw path: ${im.src}`);
   return { ...im, meta: m };

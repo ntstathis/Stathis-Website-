@@ -1,0 +1,118 @@
+---
+// Filterable grid of the Koala container catalog, used by the two Melform
+// pages (/psyktika-docheia-melform/ + /en/refrigerated-containers-melform/).
+// The old WordPress page was a dynamic Elementor listing (filters Koala /
+// Koala Green, 12 per page); here every card is rendered statically and the
+// filter toggles visibility client-side (no pagination — all cards on one page).
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import type { Lang } from '../lib/i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const ASSETS = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/img/**/*.{jpg,jpeg,png,webp,gif}',
+  { eager: true },
+);
+
+const entries = (await getCollection('koala'))
+  .filter((e) => e.data.lang === lang)
+  .map((e) => ({
+    href: `/${e.data.path}/`,
+    title: e.data.title,
+    cat: e.id.includes('koala-green') ? 'koala-green' : 'koala',
+    img: e.data.images?.[0] ?? null,
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title, lang));
+
+const labels =
+  lang === 'el'
+    ? { all: 'Όλα', koala: 'Koala', green: 'Koala Green' }
+    : { all: 'All', koala: 'Koala', green: 'Koala Green' };
+---
+
+<div class="koala_filter" role="group" aria-label="Filter">
+  <button type="button" class="active" data-filter="all">{labels.all}</button>
+  <button type="button" data-filter="koala">{labels.koala}</button>
+  <button type="button" data-filter="koala-green">{labels.green}</button>
+</div>
+
+<div class="koala_cards row">
+  {entries.map((e) => {
+    const meta = e.img ? ASSETS[e.img.src]?.default : null;
+    return (
+      <div class="col-lg-3 col-md-4 koala_card" data-cat={e.cat}>
+        <a class="d-block" href={e.href}>
+          <div class="img_wrapper radius-16 overflow-hidden">
+            {meta ? (
+              <Image src={meta} alt={e.img?.alt ?? e.title} width={480} />
+            ) : (
+              e.img && <img src={e.img.src} alt={e.img.alt ?? e.title} loading="lazy" />
+            )}
+          </div>
+          <p class="ff-pfdin-bold fs-18 text-center">{e.title}</p>
+        </a>
+      </div>
+    );
+  })}
+</div>
+
+<style>
+  .koala_filter {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .koala_filter button {
+    background: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    font-family: 'PFDinText', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1rem 2.4rem;
+    transition: all 0.15s linear;
+  }
+  .koala_filter button.active,
+  .koala_filter button:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+  .koala_card {
+    margin-bottom: 3rem;
+  }
+  .koala_card.hidden {
+    display: none;
+  }
+  .koala_card .img_wrapper :global(img) {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.2s linear;
+  }
+  .koala_card a:hover .img_wrapper :global(img) {
+    transform: scale(1.05);
+  }
+  .koala_card p {
+    margin-top: 1.5rem;
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.koala_filter').forEach((group) => {
+    const cards = group.parentElement?.querySelectorAll<HTMLElement>('.koala_card') ?? [];
+    group.querySelectorAll<HTMLButtonElement>('button').forEach((btn) =>
+      btn.addEventListener('click', () => {
+        group.querySelectorAll('button').forEach((b) => b.classList.toggle('active', b === btn));
+        const f = btn.dataset.filter;
+        cards.forEach((c) => c.classList.toggle('hidden', f !== 'all' && c.dataset.cat !== f));
+      }),
+    );
+  });
+</script>

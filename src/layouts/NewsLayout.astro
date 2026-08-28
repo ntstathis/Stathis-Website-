@@ -35,7 +35,7 @@ const MONTHS: Record<'el' | 'en', string[]> = {
   el: ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαΐ', 'Ιούν', 'Ιούλ', 'Αύγ', 'Σεπ', 'Οκτ', 'Νοέ', 'Δεκ'],
   en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 };
-const fmtDate = (date: Date) => `${date.getUTCDate()} ${MONTHS[d.lang][date.getUTCMonth()]}`;
+const fmtDate = (date: Date) => `${date.getUTCDate()} ${MONTHS[d.lang as 'el' | 'en'][date.getUTCMonth()]}`;
 
 const backHref = d.lang === 'el' ? '/news/' : '/en/our-news/';
 const backLabel = d.lang === 'el' ? 'Τα Νέα μας' : 'Our news';
