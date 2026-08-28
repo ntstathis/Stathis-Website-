@@ -1,6 +1,7 @@
 ---
 // Catch-all: renders every migrated content entry at its frozen WordPress URL.
 // Bespoke .astro pages take priority over this route automatically.
+// The language twin is resolved via translationKey across the same collection.
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
 
@@ -8,18 +9,36 @@ export async function getStaticPaths() {
   const collections = ['koala', 'vehicles', 'products', 'news', 'pages'] as const;
   const paths = [];
   for (const name of collections) {
-    for (const entry of await getCollection(name)) {
-      paths.push({ params: { path: entry.data.path }, props: { entry } });
+    const entries = await getCollection(name);
+    const twins = new Map<string, string>();
+    for (const e of entries) {
+      if (e.data.translationKey) twins.set(`${e.data.translationKey}:${e.data.lang}`, e.data.path);
+    }
+    for (const entry of entries) {
+      const twinPath = entry.data.translationKey
+        ? (twins.get(`${entry.data.translationKey}:${entry.data.lang === 'el' ? 'en' : 'el'}`) ?? null)
+        : null;
+      paths.push({ params: { path: entry.data.path }, props: { entry, twinPath } });
     }
   }
   return paths;
 }
 
-const { entry } = Astro.props;
+const { entry, twinPath } = Astro.props;
 const { Content } = await render(entry);
 ---
 
-<Base lang={entry.data.lang} title={entry.data.seo.title} description={entry.data.seo.description}>
-  <h1>{entry.data.title}</h1>
-  <Content />
+<Base
+  lang={entry.data.lang}
+  title={entry.data.seo.title}
+  description={entry.data.seo.description}
+  path={entry.data.path}
+  {twinPath}
+  noindex={entry.data.seo.noindex}
+>
+  <div class="spacer big_top_space"></div>
+  <div class="container-fluid">
+    <h1 class="fs-md-40 fs-32">{entry.data.title}</h1>
+    <Content />
+  </div>
 </Base>
