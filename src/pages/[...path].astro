@@ -3,10 +3,12 @@
 // Bespoke .astro pages take priority over this route automatically.
 // The language twin is resolved via translationKey across the same collection.
 // Rendering dispatches per collection: koala/vehicles → CatalogLayout,
-// news → NewsLayout, products/pages → ProseLayout.
+// news → NewsLayout, products → ProductLayout (full-width, old flexiblePage
+// template), pages → ProseLayout (narrow prose, old gutenberg template).
 import { getCollection, render } from 'astro:content';
 import CatalogLayout from '../layouts/CatalogLayout.astro';
 import NewsLayout from '../layouts/NewsLayout.astro';
+import ProductLayout from '../layouts/ProductLayout.astro';
 import ProseLayout from '../layouts/ProseLayout.astro';
 
 export async function getStaticPaths() {
@@ -35,7 +37,7 @@ const layouts = {
   koala: CatalogLayout,
   vehicles: CatalogLayout,
   news: NewsLayout,
-  products: ProseLayout,
+  products: ProductLayout,
   pages: ProseLayout,
 } as const;
 const Layout = layouts[entry.collection];

@@ -1,0 +1,169 @@
+---
+// Product page template — mirrors the old #flexiblePage product template
+// (export/skeletons/product-monwseis.txt): full-width container-fluid
+// sections, big left-aligned hero title (old: h2.fs-xl-64.fs-md-48.fs-40),
+// black_box+image bands and card grids coming from the entry body.
+// Frontmatter `images` are NOT rendered here (bodies embed their own);
+// they only feed og:image. The two Melform pages append the Koala grid.
+import type { CollectionEntry } from 'astro:content';
+import Base from './Base.astro';
+import KoalaGrid from '../components/KoalaGrid.astro';
+
+interface Props {
+  entry: CollectionEntry<'products'>;
+  twinPath: string | null;
+}
+const { entry, twinPath } = Astro.props;
+const d = entry.data;
+
+const ASSETS = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/img/**/*.{jpg,jpeg,png,webp,gif}',
+  { eager: true },
+);
+const meta = (src?: string) => (src && ASSETS[src]?.default) || null;
+const ogImage = d.seo.ogImage
+  ? (meta(d.seo.ogImage)?.src ?? d.seo.ogImage)
+  : meta(d.images?.[0]?.src)?.src;
+
+const hasKoalaGrid = (entry.body ?? '').includes('koala-grid');
+---
+
+<Base
+  lang={d.lang}
+  title={d.seo.title}
+  description={d.seo.description}
+  path={d.path}
+  {twinPath}
+  {ogImage}
+  noindex={d.seo.noindex}
+  padTop={false}
+>
+  <div id="productPage">
+    <div class="spacer big_top_space" aria-hidden="true"></div>
+
+    <section class="hero_title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="ff-pfdin-bold">{d.title}</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer medium" aria-hidden="true"></div>
+
+    <div class="container-fluid product_body">
+      <slot />
+      {hasKoalaGrid && <KoalaGrid lang={d.lang} />}
+    </div>
+  </div>
+</Base>
+
+<style>
+  /* hero title — old h2.fs-xl-64.fs-md-48.fs-40 */
+  .hero_title h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 0;
+  }
+  @media (min-width: 768px) {
+    .hero_title h1 { font-size: 4.8rem; }
+  }
+  @media (min-width: 1200px) {
+    .hero_title h1 { font-size: 6.4rem; }
+  }
+
+  /* ---- body band styling, values from the old bundle ---- */
+
+  /* black boxes: px-md-45 px-15 py-md-45 py-25 + min-heights */
+  .product_body :global(.black_box) {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 1.6rem;
+    min-height: 170px;
+  }
+  @media (min-width: 768px) {
+    .product_body :global(.black_box) {
+      padding: 4.5rem;
+      margin-bottom: 0;
+      min-height: 380px;
+      height: 100%;
+    }
+  }
+  .product_body :global(.black_box p) { color: var(--text-grey); font-size: 1.8rem; }
+  .product_body :global(.black_box p:not(:last-of-type)) { margin-bottom: 1.5rem; }
+  /* the band's lead line stays white and big (markup carries text-white/fs classes) */
+  .product_body :global(.black_box .text-white),
+  .product_body :global(.black_box .ff-pfdin-bold) { color: var(--white); }
+
+  /* rows behave like the old .the_row (2rem gutters incl. vertical) */
+  .product_body :global(.row) {
+    margin-inline: -1rem;
+    row-gap: 2rem;
+  }
+  .product_body :global(.row > *) { padding-inline: 1rem; }
+  .product_body :global(.row:not(:last-child)) { margin-bottom: 4rem; }
+
+  /* images fill their column wrappers */
+  .product_body :global(.img_wrapper img),
+  .product_body :global(.overflow-hidden > img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* base typography */
+  .product_body :global(p),
+  .product_body :global(li) { font-size: 1.8rem; line-height: 1.5; }
+  .product_body :global(h3) { font-size: 2.4rem; }
+  @media (min-width: 768px) {
+    .product_body :global(h3) { font-size: 3.2rem; }
+  }
+
+  /* section titles (## in the body) — old: centered fs-xl-48/md-40/32 */
+  .product_body :global(h2) {
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 6rem 0 4rem;
+  }
+  @media (min-width: 768px) {
+    .product_body :global(h2) { font-size: 4rem; }
+  }
+  @media (min-width: 1200px) {
+    .product_body :global(h2) { font-size: 4.8rem; }
+  }
+
+  /* link cards (Ειδικές Κατασκευές grids) — zoom on hover, no underline */
+  .product_body :global(a.d-block) { text-decoration: none; }
+  .product_body :global(a.d-block img) { transform: scale(1); transition: all 0.1s linear; }
+  .product_body :global(a.d-block:hover img) { transform: scale(1.05); }
+  .product_body :global(a.d-block span) { margin-top: 1.5rem; }
+
+  /* plain text links (model/PDF lists) keep the underline affordance */
+  .product_body :global(p a) { text-decoration: underline; }
+
+  /* the closing "Δείτε ακόμα / See more" link list — bold, roomy */
+  .product_body :global(h2 + ul) {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  .product_body :global(h2 + ul li) { margin-bottom: 1.5rem; }
+  .product_body :global(h2 + ul a) {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .product_body :global(h2 + ul a:hover) { text-decoration: underline; }
+
+  /* iframes (YouTube embeds on kit-monwsis) */
+  .product_body :global(iframe) {
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 1.6rem;
+    max-width: 90rem;
+    width: 100%;
+  }
+
+  #productPage { padding-bottom: 2rem; }
+</style>

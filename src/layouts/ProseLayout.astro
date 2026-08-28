@@ -6,17 +6,13 @@
 import type { CollectionEntry } from 'astro:content';
 import Base from './Base.astro';
 import Gallery from '../components/Gallery.astro';
-import KoalaGrid from '../components/KoalaGrid.astro';
 
 interface Props {
-  entry: CollectionEntry<'pages'> | CollectionEntry<'products'>;
+  entry: CollectionEntry<'pages'>;
   twinPath: string | null;
 }
 const { entry, twinPath } = Astro.props;
 const d = entry.data;
-// the two Melform pages carry a koala-grid marker instead of prose — the grid
-// is rendered from the koala collection (see KoalaGrid.astro)
-const hasKoalaGrid = (entry.body ?? '').includes('koala-grid');
 
 const ASSETS = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/img/**/*.{jpg,jpeg,png,webp,gif}',
@@ -55,8 +51,6 @@ const ogImage = d.seo.ogImage
               <div class="prose_body">
                 <slot />
               </div>
-
-              {hasKoalaGrid && <KoalaGrid lang={d.lang} />}
             </div>
           </div>
         </div>
