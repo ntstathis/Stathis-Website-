@@ -1,0 +1,22 @@
+---
+// Thank you — EN landing page after a successful contact-form submission.
+// New page (the old WPForms setup showed an inline message instead).
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base
+  lang="en"
+  title="Thank you - Stathis"
+  path="en/thank-you"
+  twinPath="efcharistoume"
+  headerColor="grey"
+  noindex={true}
+  padTop={false}
+>
+  <div class="spacer big_top_space" aria-hidden="true"></div>
+  <div class="container-fluid">
+    <h1 class="ff-pfdin-bold fs-xl-64 fs-md-48 fs-40 mb-20">Thank you!</h1>
+    <p class="fs-18 mb-30">Your message has been received. Our team will get back to you soon.</p>
+    <a class="btn_black" href="/en/home/">Back to Home</a>
+  </div>
+</Base>

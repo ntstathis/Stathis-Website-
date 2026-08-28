@@ -2,8 +2,12 @@
 // Catch-all: renders every migrated content entry at its frozen WordPress URL.
 // Bespoke .astro pages take priority over this route automatically.
 // The language twin is resolved via translationKey across the same collection.
+// Rendering dispatches per collection: koala/vehicles → CatalogLayout,
+// news → NewsLayout, products/pages → ProseLayout.
 import { getCollection, render } from 'astro:content';
-import Base from '../layouts/Base.astro';
+import CatalogLayout from '../layouts/CatalogLayout.astro';
+import NewsLayout from '../layouts/NewsLayout.astro';
+import ProseLayout from '../layouts/ProseLayout.astro';
 
 export async function getStaticPaths() {
   const collections = ['koala', 'vehicles', 'products', 'news', 'pages'] as const;
@@ -26,19 +30,17 @@ export async function getStaticPaths() {
 
 const { entry, twinPath } = Astro.props;
 const { Content } = await render(entry);
+
+const layouts = {
+  koala: CatalogLayout,
+  vehicles: CatalogLayout,
+  news: NewsLayout,
+  products: ProseLayout,
+  pages: ProseLayout,
+} as const;
+const Layout = layouts[entry.collection];
 ---
 
-<Base
-  lang={entry.data.lang}
-  title={entry.data.seo.title}
-  description={entry.data.seo.description}
-  path={entry.data.path}
-  {twinPath}
-  noindex={entry.data.seo.noindex}
->
-  <div class="spacer big_top_space"></div>
-  <div class="container-fluid">
-    <h1 class="fs-md-40 fs-32">{entry.data.title}</h1>
-    <Content />
-  </div>
-</Base>
+<Layout entry={entry as never} {twinPath}>
+  <Content />
+</Layout>

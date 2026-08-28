@@ -1,0 +1,36 @@
+---
+// English news listing at the frozen WP URLs: /en/our-news/,
+// /en/our-news/page/2/, … Same mechanics as the GR listing.
+// SEO title from export/raw/pages/4501.json yoast_head_json (no description).
+// (The live EN page's subtitle widget held pasted junk content, so the EN
+// listing renders the heading only.)
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Base from '../../../layouts/Base.astro';
+import NewsListing from '../../news/_NewsListing.astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const posts = (await getCollection('news', ({ data }) => data.lang === 'en')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  );
+  return paginate(posts, { pageSize: 9 }).map((route) => ({
+    ...route,
+    params: {
+      page: route.props.page.currentPage === 1 ? undefined : `page/${route.props.page.currentPage}`,
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<Base lang="en" title="Our news - Stathis" path="en/our-news" twinPath="news">
+  <NewsListing
+    lang="en"
+    heading="Our News"
+    posts={page.data}
+    currentPage={page.currentPage}
+    lastPage={page.lastPage}
+    base="en/our-news"
+  />
+</Base>

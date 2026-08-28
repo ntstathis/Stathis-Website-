@@ -1,0 +1,234 @@
+---
+// Shared news-listing body for /news/ (GR) and /en/our-news/ (EN).
+// Underscore prefix keeps it out of routing. Mirrors the theme's native
+// #index blog template (export/html/category/news + app.bundle.css rules):
+// heading row → 3-col card grid (image / date badge / title) → pagination.
+import type { CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import type { Lang } from '../../lib/i18n';
+import { toUrl } from '../../lib/i18n';
+
+interface Props {
+  lang: Lang;
+  heading: string;
+  subtitle?: string;
+  posts: CollectionEntry<'news'>[];
+  currentPage: number;
+  lastPage: number;
+  /** stored base path: 'news' | 'en/our-news' */
+  base: string;
+}
+const { lang, heading, subtitle, posts, currentPage, lastPage, base } = Astro.props;
+
+const ASSETS = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/img/**/*.{jpg,jpeg,png,webp,gif}',
+  { eager: true },
+);
+const meta = (src?: string) => {
+  if (!src) return null;
+  const m = ASSETS[src]?.default ?? null;
+  if (!m) console.warn(`[NewsListing] card image not found in src/assets glob, using raw path: ${src}`);
+  return m;
+};
+
+// live-site date format: day without leading zero + month abbreviation
+const MONTHS: Record<Lang, string[]> = {
+  el: ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαΐ', 'Ιούν', 'Ιούλ', 'Αύγ', 'Σεπ', 'Οκτ', 'Νοέ', 'Δεκ'],
+  en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+};
+const fmtDate = (date: Date) => `${date.getUTCDate()} ${MONTHS[lang][date.getUTCMonth()]}`;
+
+const pageUrl = (n: number) => (n <= 1 ? `/${base}/` : `/${base}/page/${n}/`);
+const pageNums = Array.from({ length: lastPage }, (_, i) => i + 1);
+const prevLabel = lang === 'el' ? 'Προηγούμενα' : 'Previous';
+const nextLabel = lang === 'el' ? 'Επόμενα' : 'Next';
+---
+
+<div id="index" class="container-fluid">
+  <div class="row row_blog_heading">
+    <div class="col-md-7">
+      <h1 class="ff-pfdin-bold fs-md-40 fs-32">{heading}</h1>
+    </div>
+    {subtitle && (
+      <div class="col-md-5">
+        <p class="blog_subtitle fs-18">{subtitle}</p>
+      </div>
+    )}
+  </div>
+
+  <div class="row row_posts_grid">
+    {posts.map((p) => {
+      const im = p.data.images?.[0];
+      const m = meta(im?.src);
+      return (
+        <div class="col-lg-4 col-md-6">
+          <a href={toUrl(p.data.path)} class="post_preview">
+            <div class="featured_img_wrapper mb-20">
+              <div class="nb_aspect" style="--w: 95; --h: 56;">
+                {m ? (
+                  <Image
+                    src={m}
+                    alt={im?.alt ?? ''}
+                    widths={[420, 640, 950]}
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 33vw"
+                    loading="lazy"
+                  />
+                ) : im ? (
+                  <img src={im.src} alt={im.alt} loading="lazy" />
+                ) : (
+                  <span class="img_placeholder" aria-hidden="true"></span>
+                )}
+              </div>
+            </div>
+            <div class="post_title_wrapper">
+              <h2 class="title ff-pfdin-bold fs-20">{p.data.title}</h2>
+              <p class="date ff-pfdin-bold fs-18 text-text_grey">
+                <time datetime={p.data.pubDate.toISOString().slice(0, 10)}>{fmtDate(p.data.pubDate)}</time>
+              </p>
+            </div>
+          </a>
+        </div>
+      );
+    })}
+    {posts.length === 0 && (
+      <div class="col-12">
+        <p class="fs-18">{lang === 'el' ? 'Δεν υπάρχουν ακόμη άρθρα.' : 'No posts yet.'}</p>
+      </div>
+    )}
+  </div>
+
+  {lastPage > 1 && (
+    <div class="row">
+      <div class="col-12">
+        <nav class="pagination_wrapper" aria-label={lang === 'el' ? 'Σελιδοποίηση' : 'Pagination'}>
+          {currentPage > 1 && (
+            <a class="prev page-numbers" href={pageUrl(currentPage - 1)}>{prevLabel}</a>
+          )}
+          {pageNums.map((n) =>
+            n === currentPage ? (
+              <span class="page-numbers current" aria-current="page">{n}</span>
+            ) : (
+              <a class="page-numbers" href={pageUrl(n)}>{n}</a>
+            ),
+          )}
+          {currentPage < lastPage && (
+            <a class="next page-numbers" href={pageUrl(currentPage + 1)}>{nextLabel}</a>
+          )}
+        </nav>
+      </div>
+    </div>
+  )}
+</div>
+
+<style>
+  /* old theme: .pt-md-100 .pt-50 on #index */
+  #index {
+    padding-top: 5rem;
+  }
+  @media (min-width: 768px) {
+    #index {
+      padding-top: 10rem;
+    }
+  }
+
+  /* heading row: .mb-md-65 .mb-40 + .fs-xl-48 equivalents */
+  .row_blog_heading {
+    margin-bottom: 4rem;
+  }
+  @media (min-width: 768px) {
+    .row_blog_heading {
+      margin-bottom: 6.5rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    .row_blog_heading h1 {
+      font-size: 4.8rem;
+    }
+  }
+  .blog_subtitle {
+    margin: 2rem 0 0;
+  }
+  @media (min-width: 768px) {
+    .blog_subtitle {
+      margin-top: 0;
+    }
+  }
+
+  /* #index card grid — ported from the old app.bundle.css
+     (.row_posts_grid gutters 2rem x / 6rem y) */
+  .row_posts_grid {
+    margin-inline: -1rem;
+    row-gap: 6rem;
+  }
+  .row_posts_grid > * {
+    padding-inline: 1rem;
+  }
+
+  .post_preview {
+    display: block;
+  }
+  .post_preview .featured_img_wrapper {
+    border-radius: 2.4rem;
+    overflow: hidden;
+  }
+  .post_preview .featured_img_wrapper :global(img) {
+    transform: scale(1);
+    transition: all 0.1s linear;
+  }
+  .post_preview:hover .featured_img_wrapper :global(img) {
+    transform: scale(1.05);
+  }
+  .img_placeholder {
+    background-color: var(--grey);
+    display: block;
+    inset: 0;
+    position: absolute;
+  }
+  .post_preview .post_title_wrapper {
+    align-items: flex-end;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .post_preview .post_title_wrapper .title {
+    margin: 0;
+    width: 100%;
+  }
+  .post_preview .post_title_wrapper .date {
+    margin: 0;
+    max-width: 70px;
+    text-align: end;
+    width: 100%;
+  }
+
+  /* pagination — ported from the old app.bundle.css */
+  .pagination_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  .pagination_wrapper .page-numbers {
+    align-items: center;
+    background-color: transparent;
+    color: var(--black);
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    line-height: 1;
+    min-width: 26px;
+    padding: 0.5rem;
+    transition: all 0.2s linear;
+  }
+  .pagination_wrapper .page-numbers:hover,
+  .pagination_wrapper .page-numbers.current {
+    background-color: var(--black);
+    color: var(--white);
+  }
+  .pagination_wrapper .page-numbers.prev,
+  .pagination_wrapper .page-numbers.next {
+    border-radius: 100vmax;
+    padding: 0.5rem 1.5rem;
+  }
+</style>

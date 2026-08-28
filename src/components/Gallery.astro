@@ -1,0 +1,231 @@
+---
+// Photo gallery shared by CatalogLayout and ProseLayout: main image +
+// clickable thumbnails + a tiny vanilla lightbox (no libraries).
+// Frontmatter image paths ('/src/assets/img/…') resolve through the asset
+// glob into astro:assets <Image>; a miss falls back to a plain <img> and
+// logs a build warning.
+import { Image } from 'astro:assets';
+
+interface GalleryImage {
+  src: string;
+  alt: string;
+}
+interface Props {
+  images: GalleryImage[];
+  /** page title — alt fallback for images with empty alt */
+  title?: string;
+}
+const { images = [], title = '' } = Astro.props;
+
+const ASSETS = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/img/**/*.{jpg,jpeg,png,webp,gif}',
+  { eager: true },
+);
+const resolved = images.map((im) => {
+  const mod = ASSETS[im.src];
+  if (!mod) console.warn(`[Gallery] image not found in src/assets glob, using raw path: ${im.src}`);
+  return { meta: mod?.default ?? null, src: im.src, alt: im.alt || title };
+});
+---
+
+{resolved.length > 0 && (
+  <div class="nb_gallery" data-gallery>
+    <button class="gallery_main radius-24-16 overflow-hidden" type="button" aria-label="Fullscreen">
+      {resolved.map((im, i) =>
+        im.meta ? (
+          <Image
+            src={im.meta}
+            alt={im.alt}
+            widths={[640, 1000, 1600]}
+            sizes="(max-width: 991px) 100vw, 950px"
+            class={i === 0 ? 'active' : ''}
+            data-index={i}
+            loading={i === 0 ? 'eager' : 'lazy'}
+          />
+        ) : (
+          <img src={im.src} alt={im.alt} class={i === 0 ? 'active' : ''} data-index={i} loading="lazy" />
+        ),
+      )}
+    </button>
+
+    {resolved.length > 1 && (
+      <div class="gallery_thumbs">
+        {resolved.map((im, i) => (
+          <button type="button" class={i === 0 ? 'active' : ''} data-thumb={i} aria-label={`Image ${i + 1}`}>
+            {im.meta ? <Image src={im.meta} alt="" width={200} loading="lazy" /> : <img src={im.src} alt="" loading="lazy" />}
+          </button>
+        ))}
+      </div>
+    )}
+
+    <div class="gallery_lightbox" hidden>
+      <button type="button" class="lb_close" aria-label="Close">&times;</button>
+      <button type="button" class="lb_prev" aria-label="Previous">&#8249;</button>
+      <figure><img alt="" /></figure>
+      <button type="button" class="lb_next" aria-label="Next">&#8250;</button>
+    </div>
+  </div>
+)}
+
+<style>
+  .nb_gallery {
+    margin-inline: auto;
+    max-width: 950px;
+  }
+  .gallery_main {
+    background-color: var(--grey);
+    border: 0;
+    cursor: zoom-in;
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+  .gallery_main :global(img) {
+    display: none;
+    height: auto;
+    width: 100%;
+  }
+  .gallery_main :global(img.active) {
+    display: block;
+  }
+
+  .gallery_thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-top: 1.6rem;
+  }
+  .gallery_thumbs button {
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    transition: border-color 0.1s linear;
+    width: 96px;
+  }
+  .gallery_thumbs button.active {
+    border-color: var(--black);
+  }
+  .gallery_thumbs button :global(img) {
+    aspect-ratio: 1;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+  @media (max-width: 767.98px) {
+    .gallery_thumbs button { width: 72px; }
+  }
+
+  /* lightbox */
+  .gallery_lightbox {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    position: fixed;
+    z-index: 300;
+  }
+  .gallery_lightbox[hidden] {
+    display: none;
+  }
+  .gallery_lightbox figure {
+    margin: 0;
+  }
+  .gallery_lightbox figure img {
+    display: block;
+    height: auto;
+    max-height: 88vh;
+    max-width: min(92vw, 1400px);
+    width: auto;
+  }
+  .gallery_lightbox button {
+    background: none;
+    border: 0;
+    color: var(--white);
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1;
+    padding: 1rem;
+    position: absolute;
+    transition: opacity 0.1s linear;
+  }
+  .gallery_lightbox button:hover {
+    opacity: 0.7;
+  }
+  .lb_close {
+    font-size: 4rem;
+    right: 2rem;
+    top: 1.2rem;
+  }
+  .lb_prev,
+  .lb_next {
+    font-size: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .lb_prev { left: 1.2rem; }
+  .lb_next { right: 1.2rem; }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-gallery]').forEach((root) => {
+    const mains = [...root.querySelectorAll<HTMLImageElement>('.gallery_main [data-index]')];
+    const thumbs = [...root.querySelectorAll<HTMLButtonElement>('[data-thumb]')];
+    const lb = root.querySelector<HTMLElement>('.gallery_lightbox');
+    const lbImg = lb?.querySelector<HTMLImageElement>('figure img');
+    if (mains.length === 0) return;
+
+    let current = 0;
+    const show = (i: number) => {
+      current = (i + mains.length) % mains.length;
+      mains.forEach((el, j) => el.classList.toggle('active', j === current));
+      thumbs.forEach((el, j) => el.classList.toggle('active', j === current));
+    };
+    thumbs.forEach((t) => t.addEventListener('click', () => show(Number(t.dataset.thumb))));
+
+    if (!lb || !lbImg) return;
+    const single = mains.length < 2;
+    if (single) {
+      lb.querySelector<HTMLElement>('.lb_prev')!.style.display = 'none';
+      lb.querySelector<HTMLElement>('.lb_next')!.style.display = 'none';
+    }
+    const sync = () => {
+      const el = mains[current];
+      lbImg.src = el.currentSrc || el.src;
+      lbImg.srcset = el.srcset || '';
+      lbImg.sizes = el.srcset ? '92vw' : '';
+      lbImg.alt = el.alt || '';
+    };
+    const open = () => {
+      sync();
+      lb.hidden = false;
+      document.body.style.overflow = 'hidden';
+    };
+    const close = () => {
+      lb.hidden = true;
+      document.body.style.overflow = '';
+    };
+    const step = (d: number) => {
+      show(current + d);
+      sync();
+    };
+    root.querySelector('.gallery_main')?.addEventListener('click', open);
+    lb.querySelector('.lb_close')?.addEventListener('click', close);
+    lb.querySelector('.lb_prev')?.addEventListener('click', (e) => { e.stopPropagation(); step(-1); });
+    lb.querySelector('.lb_next')?.addEventListener('click', (e) => { e.stopPropagation(); step(1); });
+    lb.addEventListener('click', (e) => {
+      if (e.target === lb) close();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') close();
+      else if (!single && e.key === 'ArrowLeft') step(-1);
+      else if (!single && e.key === 'ArrowRight') step(1);
+    });
+  });
+</script>

@@ -1,0 +1,145 @@
+---
+// Contact form used by /epikoinwnia/ and /en/contact/ — POSTs to Web3Forms.
+// Replaces the old WPForms setup; labels are real (the old site shipped
+// unconfigured "Single Line Text" / "Paragraph Text" label texts).
+import type { Lang } from '../lib/i18n';
+
+// The owner must replace this placeholder with the real access key created at
+// https://web3forms.com for contact@stathis.com.gr before go-live.
+const FORM_ACCESS_KEY = 'PENDING-OWNER-KEY';
+
+/** email subject prefix; the visitor's topic is appended on submit */
+const SUBJECT_PREFIX = 'Φόρμα stathis.com.gr';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const t = {
+  el: {
+    name: 'Όνομα*',
+    surname: 'Επώνυμο*',
+    email: 'Email*',
+    subject: 'Θέμα',
+    message: 'Μήνυμα',
+    submit: 'Υποβολή',
+    redirect: '/efcharistoume/',
+  },
+  en: {
+    name: 'Name*',
+    surname: 'Surname*',
+    email: 'Email*',
+    subject: 'Subject',
+    message: 'Message',
+    submit: 'Send',
+    redirect: '/en/thank-you/',
+  },
+}[lang];
+
+const site = Astro.site ? Astro.site.href.replace(/\/$/, '') : '';
+const redirectUrl = site + t.redirect;
+---
+
+<form class="contact_form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value={FORM_ACCESS_KEY} />
+  <input type="hidden" name="subject" value={SUBJECT_PREFIX} data-subject-prefix={SUBJECT_PREFIX} />
+  <input type="hidden" name="redirect" value={redirectUrl} />
+  <!-- honeypot: real visitors never see or tick this -->
+  <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+  <div class="fields">
+    <div class="field field_half">
+      <label for="cf-name">{t.name}</label>
+      <input type="text" id="cf-name" name="name" autocomplete="given-name" required />
+    </div>
+    <div class="field field_half">
+      <label for="cf-surname">{t.surname}</label>
+      <input type="text" id="cf-surname" name="surname" autocomplete="family-name" required />
+    </div>
+    <div class="field">
+      <label for="cf-email">{t.email}</label>
+      <input type="email" id="cf-email" name="email" autocomplete="email" spellcheck="false" required />
+    </div>
+    <div class="field">
+      <label for="cf-topic">{t.subject}</label>
+      <input type="text" id="cf-topic" name="topic" />
+    </div>
+    <div class="field">
+      <label for="cf-message">{t.message}</label>
+      <textarea id="cf-message" name="message"></textarea>
+    </div>
+  </div>
+
+  <div class="submit_container">
+    <button type="submit" class="btn_black">{t.submit}</button>
+  </div>
+</form>
+
+<style>
+  .contact_form {
+    max-width: 800px;
+  }
+  .botcheck {
+    display: none;
+  }
+  .fields {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4%;
+  }
+  .field {
+    padding: 1.1rem 0;
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    .field_half {
+      width: 48%;
+    }
+  }
+  label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+  }
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    background-color: transparent;
+    border: 1px solid var(--black);
+    border-radius: 0.8rem;
+    color: var(--black);
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    width: 100%;
+  }
+  textarea {
+    height: 130px;
+    resize: none;
+  }
+  input[type='text']:focus-visible,
+  input[type='email']:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+  }
+  .submit_container {
+    padding-top: 25px;
+  }
+</style>
+
+<script>
+  // append the visitor's topic to the fixed subject prefix
+  document.querySelectorAll<HTMLFormElement>('form.contact_form').forEach((form) => {
+    form.addEventListener('submit', () => {
+      const subject = form.querySelector<HTMLInputElement>('input[name="subject"]');
+      const topic = form.querySelector<HTMLInputElement>('input[name="topic"]');
+      const prefix = subject?.dataset.subjectPrefix ?? '';
+      if (subject && topic && topic.value.trim()) {
+        subject.value = `${prefix} — ${topic.value.trim()}`;
+      }
+    });
+  });
+</script>

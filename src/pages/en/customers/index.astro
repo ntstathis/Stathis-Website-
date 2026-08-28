@@ -1,0 +1,112 @@
+---
+// Our Customers — EN twin of /pelates/. Same logo walls, English headings.
+import { Image } from 'astro:assets';
+import Base from '../../../layouts/Base.astro';
+
+const clientFiles = import.meta.glob<{ default: ImageMetadata }>(
+  '../../../assets/img/bespoke/clients/*.{png,jpg}',
+  { eager: true },
+);
+const logo = (name: string) => {
+  const hit = Object.entries(clientFiles).find(([p]) => p.includes(`/${name}.`));
+  return { img: hit![1].default, alt: name };
+};
+
+const sections: { title: string; doubleSpacer?: boolean; logos: { img: ImageMetadata; alt: string }[] }[] = [
+  {
+    title: 'Car Dealers',
+    logos: ['citroen', 'daf', 'ford', 'iveco', 'man', 'mercedes', 'mitsubishi', 'nissan', 'opel', 'peugeot', 'fiat', 'renault', 'scania', 'toyota', 'volkswagen', 'volvo', 'byd', 'levc', 'maxus'].map(logo),
+  },
+  {
+    title: 'Car Leasing',
+    logos: ['avis', 'arval', 'ayvens', 'instacar', 'hertz', 'flex-car'].map(logo),
+  },
+  {
+    title: 'Food Companies',
+    logos: ['stergiou', 'nitsiakos', 'pindos', 'panini', 'sergal', 'terkenlis', 'varsos', 'fregio', 'gatidis', 'hellenic-catering', 'kanakis', 'koukaki', 'mevgal', 'miltos'].map(logo),
+  },
+  {
+    title: 'Pharmaceutical Companies',
+    logos: ['liafarm', 'prosufape', 'syfa', 'syfak'].map(logo),
+  },
+  {
+    title: 'Supermarket',
+    doubleSpacer: true,
+    logos: ['sklavenitis', 'my-market', 'the-mart', 'kritikos', 'ab-vasilopoulos'].map(logo),
+  },
+  {
+    title: 'Sortimo Equipment',
+    logos: ['dedhe', 'vestas', 'kotsovolos', 'eydap', 'carrier'].map(logo),
+  },
+];
+---
+
+<Base
+  lang="en"
+  title="Our Customers - Stathis"
+  path="en/customers"
+  twinPath="pelates"
+  headerColor="grey"
+  padTop={false}
+>
+  <div id="flexiblePage">
+    <div class="spacer big_top_space" aria-hidden="true"></div>
+    <section class="hero_title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="ff-pfdin-bold fs-xl-64 fs-md-48 fs-40">Our Customers</h1>
+          </div>
+          <div class="col-md-6 mt-md-0 mt-15">
+            <p class="fs-md-18 fs-16">For 60 years now, absolute priority for "Stathis" Company is customers' needs.
+"Stathis" Company thanks its customers and promise to continue with the same dedication and respect for your needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {sections.map((s) => (
+      <>
+        <div class="spacer big" aria-hidden="true"></div>
+        {s.doubleSpacer && <div class="spacer big" aria-hidden="true"></div>}
+        <section class="collaborators">
+          <div class="container-fluid">
+            <div class="row mb-md-70 mb-25">
+              <div class="col-md-7">
+                <h2 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32">{s.title}</h2>
+              </div>
+            </div>
+            <div class="row row_logos">
+              <div class="col-12">
+                <div class="logos_wrapper">
+                  {s.logos.map((l) => (
+                    <div class="img_wrapper">
+                      <Image src={l.img} alt={l.alt} width={Math.min(l.img.width, 500)} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .mt-15 { margin-top: 1.5rem; }
+  @media (min-width: 768px) {
+    .mb-md-70 { margin-bottom: 7rem; }
+    .mt-md-0 { margin-top: 0; }
+  }
+  #flexiblePage section.collaborators .logos_wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+  }
+  #flexiblePage section.collaborators .logos_wrapper .img_wrapper { max-width: 250px; }
+  @media (max-width: 767.98px) {
+    #flexiblePage section.collaborators .logos_wrapper .img_wrapper { max-width: 100px; }
+  }
+</style>

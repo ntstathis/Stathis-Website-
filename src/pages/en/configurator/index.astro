@@ -1,0 +1,29 @@
+---
+// Configurator — EN twin of /diamorfwtis/; same full-viewport iframe page.
+import Base from '../../../layouts/Base.astro';
+---
+
+<Base
+  lang="en"
+  title="Configurator - Stathis"
+  path="en/configurator"
+  twinPath="diamorfwtis"
+  headerColor="grey"
+  padTop={false}
+>
+  <div class="iframe_wrapper">
+    <iframe
+      src="https://sales.stathis.com.gr/configurator"
+      title="configurator"
+      style="width: 100vw; height: 100vh;"
+      frameborder="0"
+      allowfullscreen></iframe>
+  </div>
+</Base>
+
+<style is:global>
+  /* the old template-iframe page renders no footer */
+  #site_footer {
+    display: none;
+  }
+</style>

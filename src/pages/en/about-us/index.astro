@@ -1,0 +1,252 @@
+---
+// About us — EN twin of /etaireia/, faithful rebuild of the old flexible page.
+import { Image } from 'astro:assets';
+import Base from '../../../layouts/Base.astro';
+
+import heroAbout from '../../../assets/img/bespoke/etaireia/hero-about.jpg';
+import gridDji0008 from '../../../assets/img/bespoke/etaireia/dji-0008f.webp';
+import gridFourn2 from '../../../assets/img/bespoke/etaireia/fourn-image-2.jpg';
+import gridDji0746 from '../../../assets/img/bespoke/etaireia/dji-0746.webp';
+import gridFourn4 from '../../../assets/img/bespoke/etaireia/fourn-image-4.jpg';
+
+// Partners — the EN page shows the named partner logos (order + alts verbatim)
+import pSortimo from '../../../assets/img/bespoke/about-us/sortimo.png';
+import pBarCargolift from '../../../assets/img/bespoke/about-us/bar-cargolift.png';
+import pSnapshot from '../../../assets/img/bespoke/about-us/snapshot-2021-11-17.png';
+import pCarrier from '../../../assets/img/bespoke/about-us/carrier.png';
+import pThermoking from '../../../assets/img/bespoke/about-us/thermoking.jpg';
+import pScattolini from '../../../assets/img/bespoke/about-us/scattolini.png';
+import pRoadRanger from '../../../assets/img/bespoke/about-us/road-ranger.png';
+import pPommier from '../../../assets/img/bespoke/about-us/pommier-furgocar.png';
+import pAllsafe from '../../../assets/img/bespoke/about-us/allsafe.png';
+import pIfacInox from '../../../assets/img/bespoke/about-us/ifac-inox.png';
+import pEuroscan from '../../../assets/img/bespoke/about-us/euroscan.png';
+import pBc from '../../../assets/img/bespoke/about-us/partner-bc.png';
+import pMelform from '../../../assets/img/bespoke/about-us/melform.webp';
+import pBlockshaft from '../../../assets/img/bespoke/about-us/blockshaft.jpg';
+
+const partners = [
+  { img: pSortimo, alt: 'logo_sortimo-stathis-xefond' },
+  { img: pBarCargolift, alt: 'logo_bar_cargolift-stathis-xefond' },
+  { img: pSnapshot, alt: 'Στιγμιότυπο-οθόνης-2021-11-17-133618-2' },
+  { img: pCarrier, alt: 'logo_carrier-stathis-170x70-1-xefond' },
+  { img: pThermoking, alt: 'thermoking' },
+  { img: pScattolini, alt: 'scattolini' },
+  { img: pRoadRanger, alt: 'roadrangerlogon2023' },
+  { img: pPommier, alt: 'logo_Pommier-Furgocar-stathis-xefond' },
+  { img: pAllsafe, alt: 'logo-allsafe-600x450-2-2' },
+  { img: pIfacInox, alt: 'logo_Ifac_Inox-stathis-xefond' },
+  { img: pEuroscan, alt: 'logo_euroscan2-stathis-xefond' },
+  { img: pBc, alt: 'bc-1b-af-1e-33-fa-50-dd-e8-e2-a3-1f-c1-70-ad-61-51-46-2d-14' },
+  { img: pMelform, alt: 'melform' },
+  { img: pBlockshaft, alt: 'blockshaft' },
+];
+
+const clientFiles = import.meta.glob<{ default: ImageMetadata }>(
+  '../../../assets/img/bespoke/clients/*.{png,jpg}',
+  { eager: true },
+);
+const client = (name: string) => {
+  const hit = Object.entries(clientFiles).find(([p]) => p.includes(`/${name}.`));
+  return hit![1].default;
+};
+const clients = ['sklavenitis', 'kotsovolos', 'avis', 'dedhe', 'eydap', 'syfa', 'vestas'].map(
+  (name) => ({ img: client(name), alt: name }),
+);
+
+const fourGrid = [
+  { img: gridDji0008, alt: 'DJI_0008F', col: 7, w: 832, h: 340 },
+  { img: gridFourn2, alt: 'fourn image 2', col: 5, w: 588, h: 340 },
+  { img: gridDji0746, alt: 'DJI_0746', col: 5, w: 588, h: 340 },
+  { img: gridFourn4, alt: 'fourn image 4', col: 7, w: 832, h: 340 },
+];
+---
+
+<Base
+  lang="en"
+  title="About Us - Stathis"
+  description='Since 1961, "Stathis" is one of the leading companies in the field of car conversion in Greece.'
+  path="en/about-us"
+  twinPath="etaireia"
+  headerColor="white"
+  padTop={false}
+>
+  <div id="flexiblePage">
+    <section class="hero_image_title" style={`background-image:url('${heroAbout.src}')`}>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 the_col d-flex align-items-end">
+            <h1 class="title text-white ff-pfdin-bold fs-xl-64 fs-md-48 fs-40">About us</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer big" aria-hidden="true"></div>
+
+    <section class="simple_title_subtitle_columns mb-md-50 mb-25">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-5 offset-md-1 mt-md-0 mt-15 pt-md-20">
+            <div class="subtitle_wrapper">
+              <p>Since 1961, "Stathis" is one of the leading companies in the field of car conversion in Greece.</p>
+              <p>The company is being steadily increased, adds new products, expands its collaborations with leading foreign companies, with guiding principle the quality of products and customers' service.</p>
+              <p>With new facilities in Thessaloniki and Athens, with modern mechanical equipment, upgraded computerization and well-trained staff, “Stathis” provides complete solutions to the entire range of vehicle conversion and<br />
+after sales support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="images_four_grid">
+      <div class="container-fluid">
+        <div class="row the_row">
+          {fourGrid.map((g) => (
+            <div class={`col-${g.col}`}>
+              <div class="radius-24-16-8 overflow-hidden">
+                <div class="nb_aspect" style={`--w: ${g.w};--h: ${g.h};`}>
+                  <Image src={g.img} alt={g.alt} width={1664} />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer medium" aria-hidden="true"></div>
+
+    <section class="collaborators">
+      <div class="container-fluid">
+        <div class="row mb-md-70 mb-25">
+          <div class="col-md-7">
+            <h2 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32">Partners</h2>
+          </div>
+          <div class="col-md-5 mt-md-0 mt-15">
+            <p class="fs-md-18 fs-16">We work with the world's leading companies to offer you the best means and vehicles.</p>
+          </div>
+        </div>
+        <div class="row row_logos">
+          <div class="col-12">
+            <div class="logos_wrapper">
+              {partners.map((l) => (
+                <div class="img_wrapper">
+                  <Image src={l.img} alt={l.alt} width={Math.min(l.img.width, 500)} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer medium" aria-hidden="true"></div>
+
+    <section class="collaborators">
+      <div class="container-fluid">
+        <div class="row mb-md-70 mb-25">
+          <div class="col-md-7">
+            <h2 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32">Our Customers</h2>
+          </div>
+        </div>
+        <div class="row row_logos">
+          <div class="col-12">
+            <div class="logos_wrapper">
+              {clients.map((l) => (
+                <div class="img_wrapper">
+                  <Image src={l.img} alt={l.alt} width={Math.min(l.img.width, 500)} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div class="row mt-md-80 mt-40">
+          <div class="col-12 text-center">
+            <a href="/en/customers/" class="theme_button">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer medium" aria-hidden="true"></div>
+  </div>
+</Base>
+
+<style>
+  /* spacing utilities used by this template but not in theme.css */
+  .mt-15 { margin-top: 1.5rem; }
+  .mt-40 { margin-top: 4rem; }
+
+  /* hero with the angled clip-path bottom edge */
+  #flexiblePage section.hero_image_title {
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-clip-path: polygon(100% 0, 100% clamp(calc(100% - 120px), calc(100% - 7.5vw), calc(100% - 30px)), 50% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% clamp(calc(100% - 120px), calc(100% - 7.5vw), calc(100% - 30px)), 50% 100%, 0 100%, 0 0);
+    position: relative;
+  }
+  #flexiblePage section.hero_image_title::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  #flexiblePage section.hero_image_title .the_col { min-height: 85vh; }
+  #flexiblePage section.hero_image_title .the_col .title { margin-bottom: 15rem; position: relative; z-index: 5; }
+
+  #flexiblePage section.simple_title_subtitle_columns .subtitle_wrapper p { font-size: 1.8rem; }
+  #flexiblePage section.simple_title_subtitle_columns .subtitle_wrapper p:not(:last-of-type) { margin-bottom: 1.5rem; }
+
+  /* four-image grid: fixed 7/5 columns with 2rem gutters */
+  .row > .col-7 { width: 58.3333%; }
+  .row > .col-5 { width: 41.6667%; }
+  #flexiblePage section.images_four_grid .the_row { margin-inline: -1rem; row-gap: 2rem; }
+  #flexiblePage section.images_four_grid .the_row > * { padding-inline: 1rem; }
+
+  #flexiblePage section.collaborators .logos_wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+  }
+  #flexiblePage section.collaborators .logos_wrapper .img_wrapper { max-width: 250px; }
+
+  a.theme_button {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 0.8rem;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'PFDinText', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1.5rem 4.6rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s linear;
+  }
+  a.theme_button:hover { background-color: var(--white); border-color: var(--black); color: var(--black); }
+
+  @media (min-width: 768px) {
+    .offset-md-1 { margin-left: 8.3333%; }
+    .pt-md-20 { padding-top: 2rem; }
+    .mb-md-50 { margin-bottom: 5rem; }
+    .mb-md-70 { margin-bottom: 7rem; }
+    .mt-md-80 { margin-top: 8rem; }
+    .mt-md-0 { margin-top: 0; }
+  }
+  @media (max-width: 767.98px) {
+    a.theme_button { font-size: 1.6rem; padding: 1.4rem 4rem; }
+    #flexiblePage section.collaborators .logos_wrapper .img_wrapper { max-width: 100px; }
+    #flexiblePage section.images_four_grid .the_row { margin-inline: -0.6rem; row-gap: 1.2rem; }
+    #flexiblePage section.images_four_grid .the_row > * { padding-inline: 0.6rem; }
+    #flexiblePage section.hero_image_title .the_col { min-height: 70vh; }
+    #flexiblePage section.hero_image_title .the_col .title { margin-bottom: 8rem; }
+    #flexiblePage section.simple_title_subtitle_columns .subtitle_wrapper p { font-size: 1.6rem; }
+  }
+</style>

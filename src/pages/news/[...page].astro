@@ -1,0 +1,36 @@
+---
+// Greek news listing at the frozen WP URLs: /news/, /news/page/2/, …
+// paginate() slices the posts; params are remapped so page N lives under
+// /page/N/ (plain paginate would emit /news/2/, which the old site never had).
+// SEO title from export/raw/pages/3707.json yoast_head_json (no description).
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import NewsListing from './_NewsListing.astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const posts = (await getCollection('news', ({ data }) => data.lang === 'el')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  );
+  return paginate(posts, { pageSize: 9 }).map((route) => ({
+    ...route,
+    params: {
+      page: route.props.page.currentPage === 1 ? undefined : `page/${route.props.page.currentPage}`,
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<Base lang="el" title="Τα Νέα μας - Stathis" path="news" twinPath="en/our-news">
+  <NewsListing
+    lang="el"
+    heading="Τα Νέα μας"
+    subtitle="Μάθετε πρώτοι τα νέα μας"
+    posts={page.data}
+    currentPage={page.currentPage}
+    lastPage={page.lastPage}
+    base="news"
+  />
+</Base>

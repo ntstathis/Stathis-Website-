@@ -1,0 +1,42 @@
+---
+// English home page — mirrors the Greek one with the EN texts/links and the
+// live EN page's own quirks (no video in the welcome box, its own spacer
+// sizes, EN certificate scans, EN client logos).
+// Section order and spacers mirror export/skeletons/en-home.txt.
+import Base from '../../../layouts/Base.astro';
+import '../../../components/home/home.css';
+import HomeHero from '../../../components/home/HomeHero.astro';
+import WelcomeBlack from '../../../components/home/WelcomeBlack.astro';
+import Certificates from '../../../components/home/Certificates.astro';
+import WarrantyTitle from '../../../components/home/WarrantyTitle.astro';
+import ProductsSection from '../../../components/home/ProductsSection.astro';
+import ServicesSection from '../../../components/home/ServicesSection.astro';
+import NewsSection from '../../../components/home/NewsSection.astro';
+import ClientsSection from '../../../components/home/ClientsSection.astro';
+import ogHome from '../../../assets/img/home/og-home.jpg';
+---
+
+<Base
+  lang="en"
+  title="Home - English - Stathis"
+  path="en/home"
+  twinPath=""
+  headerColor="white"
+  padTop={false}
+  ogImage={ogHome.src}
+>
+  <div id="flexiblePage">
+    <HomeHero title="Superior Solutions for Transport Since 1961" />
+    <div class="spacer big" aria-hidden="true"></div>
+    <WelcomeBlack lang="en" />
+    <div class="spacer big" aria-hidden="true"></div>
+    <Certificates lang="en" />
+    <WarrantyTitle lang="en" />
+    <div class="spacer big" aria-hidden="true"></div>
+    <ProductsSection lang="en" />
+    <ServicesSection lang="en" />
+    <NewsSection lang="en" />
+    <div class="spacer big_top_space" aria-hidden="true"></div>
+    <ClientsSection lang="en" />
+  </div>
+</Base>

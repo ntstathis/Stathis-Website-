@@ -1,0 +1,235 @@
+---
+// Single news post. Mirrors the old #singlePage template (export/skeletons/
+// news-post.txt + theme bundle rules): title + date row, featured image in a
+// 3.2rem-radius wrapper indented by the container padding, prose body in
+// .container_max_content, back-to-news link.
+import type { CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from './Base.astro';
+
+interface Props {
+  entry: CollectionEntry<'news'>;
+  twinPath: string | null;
+}
+const { entry, twinPath } = Astro.props;
+const d = entry.data;
+
+const ASSETS = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/img/**/*.{jpg,jpeg,png,webp,gif}',
+  { eager: true },
+);
+const meta = (src?: string) => (src && ASSETS[src]?.default) || null;
+
+const featured = d.images?.[0];
+const featuredMeta = meta(featured?.src);
+if (featured && !featuredMeta)
+  console.warn(`[NewsLayout] featured image not found in src/assets glob, using raw path: ${featured.src}`);
+
+const ogImage = d.seo.ogImage
+  ? (meta(d.seo.ogImage)?.src ?? d.seo.ogImage)
+  : featuredMeta?.src;
+
+// live-site date format: day without leading zero + month abbreviation
+// ("26 Μαρ" / "26 Mar"), WP Greek month abbreviations
+const MONTHS: Record<'el' | 'en', string[]> = {
+  el: ['Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαΐ', 'Ιούν', 'Ιούλ', 'Αύγ', 'Σεπ', 'Οκτ', 'Νοέ', 'Δεκ'],
+  en: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+};
+const fmtDate = (date: Date) => `${date.getUTCDate()} ${MONTHS[d.lang][date.getUTCMonth()]}`;
+
+const backHref = d.lang === 'el' ? '/news/' : '/en/our-news/';
+const backLabel = d.lang === 'el' ? 'Τα Νέα μας' : 'Our news';
+---
+
+<Base
+  lang={d.lang}
+  title={d.seo.title}
+  description={d.seo.description}
+  path={d.path}
+  {twinPath}
+  {ogImage}
+  noindex={d.seo.noindex}
+>
+  <div id="singlePage" class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="container_max_content">
+          <div class="post_title_wrapper">
+            <h1 class="title ff-pfdin-bold fs-32">{d.title}</h1>
+            <p class="date ff-pfdin-bold fs-18 text-text_grey">
+              <time datetime={d.pubDate.toISOString().slice(0, 10)}>{fmtDate(d.pubDate)}</time>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {featured && (
+      <div class="row">
+        <div class="col-12">
+          <div class="container_max_content">
+            <div class="featured_img_wrapper">
+              {featuredMeta ? (
+                <Image
+                  src={featuredMeta}
+                  alt={featured.alt}
+                  widths={[640, 950, 1400]}
+                  sizes="(max-width: 991px) 100vw, 950px"
+                  loading="eager"
+                />
+              ) : (
+                <img src={featured.src} alt={featured.alt} />
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
+
+    <div class="row row_the_content">
+      <div class="col-12">
+        <div class="container_max_content">
+          <article class="gutenberg-content">
+            <slot />
+          </article>
+          <p class="back_to_news">
+            <a href={backHref} class="ff-pfdin-bold fs-18">&larr; {backLabel}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>
+
+<style>
+  /* old theme: .pt-md-100 .pt-50 on the page wrapper */
+  #singlePage {
+    padding-top: 5rem;
+  }
+  @media (min-width: 768px) {
+    #singlePage {
+      padding-top: 10rem;
+    }
+  }
+
+  /* #singlePage rules ported verbatim from the old app.bundle.css */
+  .post_title_wrapper {
+    align-items: flex-end;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-left: var(--container_padding_x);
+    padding-right: var(--container_padding_x);
+  }
+  @media (min-width: 768px) {
+    .post_title_wrapper {
+      margin-bottom: 3rem;
+    }
+  }
+  .post_title_wrapper .title {
+    margin: 0;
+    max-width: 650px;
+    width: 100%;
+  }
+  .post_title_wrapper .date {
+    margin: 0;
+    max-width: 80px;
+    text-align: end;
+    width: 100%;
+  }
+
+  .featured_img_wrapper {
+    border-radius: 3.2rem;
+    margin-bottom: 2rem;
+    margin-left: var(--container_padding_x);
+    margin-right: var(--container_padding_x);
+    overflow: hidden;
+  }
+  @media (min-width: 768px) {
+    .featured_img_wrapper {
+      margin-bottom: 4rem;
+    }
+  }
+  .featured_img_wrapper :global(img) {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  @media (max-width: 767.98px) {
+    .post_title_wrapper {
+      flex-direction: column-reverse;
+      gap: 1rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .post_title_wrapper .date {
+      text-align: start;
+    }
+    .featured_img_wrapper {
+      border-radius: 2.4rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .row_the_content .col-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  /* prose body — .gutenberg-content rules from the old bundle */
+  .gutenberg-content :global(p),
+  .gutenberg-content :global(li),
+  .gutenberg-content :global(blockquote) {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .gutenberg-content :global(h1),
+  .gutenberg-content :global(h2),
+  .gutenberg-content :global(h3),
+  .gutenberg-content :global(h4) {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .gutenberg-content :global(figure),
+  .gutenberg-content :global(ol),
+  .gutenberg-content :global(p),
+  .gutenberg-content :global(ul) {
+    margin: 0 0 1rem;
+  }
+  .gutenberg-content :global(a) {
+    text-decoration: underline;
+  }
+  .gutenberg-content :global(img),
+  .gutenberg-content :global(video) {
+    height: auto;
+    max-width: 100%;
+  }
+  .gutenberg-content :global(video) {
+    display: block;
+    width: 100%;
+  }
+  /* WP flex image galleries embedded in post HTML */
+  .gutenberg-content :global(figure.is-layout-flex) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .gutenberg-content :global(figure.is-layout-flex > figure) {
+    flex: 1 1 200px;
+    margin: 0;
+  }
+  .gutenberg-content :global(figure.is-layout-flex img) {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .back_to_news {
+    margin-top: 5rem;
+  }
+  .back_to_news a:hover {
+    text-decoration: underline;
+  }
+</style>

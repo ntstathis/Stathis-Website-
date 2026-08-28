@@ -1,0 +1,111 @@
+---
+// Οι Πελάτες μας — faithful rebuild of the old /pelates/ logo-wall page.
+// Six «collaborators» sections; logo files and order verbatim from the crawl.
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+
+const clientFiles = import.meta.glob<{ default: ImageMetadata }>(
+  '../../assets/img/bespoke/clients/*.{png,jpg}',
+  { eager: true },
+);
+const logo = (name: string) => {
+  const hit = Object.entries(clientFiles).find(([p]) => p.includes(`/${name}.`));
+  return { img: hit![1].default, alt: name };
+};
+
+const sections: { title: string; doubleSpacer?: boolean; logos: { img: ImageMetadata; alt: string }[] }[] = [
+  {
+    title: 'Αντιπροσωπείες Αυτοκινήτων',
+    logos: ['citroen', 'daf', 'ford', 'iveco', 'man', 'mercedes', 'mitsubishi', 'nissan', 'opel', 'peugeot', 'fiat', 'renault', 'scania', 'toyota', 'volkswagen', 'volvo', 'byd', 'levc', 'maxus'].map(logo),
+  },
+  {
+    title: 'Εταιρείες Χρονομίσθωσης Οχημάτων',
+    logos: ['avis', 'arval', 'ayvens', 'instacar', 'hertz', 'flex-car'].map(logo),
+  },
+  {
+    title: 'Εταιρείες Τροφίμων',
+    logos: ['stergiou', 'nitsiakos', 'pindos', 'panini', 'sergal', 'terkenlis', 'varsos', 'fregio', 'gatidis', 'hellenic-catering', 'kanakis', 'koukaki', 'mevgal', 'miltos'].map(logo),
+  },
+  {
+    title: 'Φαρμακευτικές Εταιρείες',
+    logos: ['liafarm', 'prosufape', 'syfa', 'syfak'].map(logo),
+  },
+  {
+    title: 'Supermarket',
+    doubleSpacer: true,
+    logos: ['sklavenitis', 'my-market', 'the-mart', 'kritikos', 'ab-vasilopoulos'].map(logo),
+  },
+  {
+    title: 'Εξοπλισμός Sortimo',
+    logos: ['dedhe', 'vestas', 'kotsovolos', 'eydap', 'carrier'].map(logo),
+  },
+];
+---
+
+<Base
+  lang="el"
+  title="Οι Πελάτες μας - Stathis"
+  path="pelates"
+  twinPath="en/customers"
+  headerColor="grey"
+  padTop={false}
+>
+  <div id="flexiblePage">
+    <div class="spacer big_top_space" aria-hidden="true"></div>
+    <section class="hero_title">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 mt-md-0 mt-15">
+            <p class="fs-md-18 fs-16">Εδώ και 60 χρόνια η φιλοσοφία της εταιρείας θέτει ως απόλυτη προτεραιότητα τις ανάγκες των πελατών της και αυτό την τοποθετεί στην κορυφή της προτίµησής τους.
+Η εταιρεία “Stathis” ευχαριστεί τους πελάτες της και δεσµεύεται να συνεχίσει το ίδιο αποτελεσµατικά και µε τον ίδιο σεβασµό να παραµένει στη διάθεσή τους.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {sections.map((s) => (
+      <>
+        <div class="spacer big" aria-hidden="true"></div>
+        {s.doubleSpacer && <div class="spacer big" aria-hidden="true"></div>}
+        <section class="collaborators">
+          <div class="container-fluid">
+            <div class="row mb-md-70 mb-25">
+              <div class="col-md-7">
+                <h2 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32">{s.title}</h2>
+              </div>
+            </div>
+            <div class="row row_logos">
+              <div class="col-12">
+                <div class="logos_wrapper">
+                  {s.logos.map((l) => (
+                    <div class="img_wrapper">
+                      <Image src={l.img} alt={l.alt} width={Math.min(l.img.width, 500)} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .mt-15 { margin-top: 1.5rem; }
+  @media (min-width: 768px) {
+    .mb-md-70 { margin-bottom: 7rem; }
+    .mt-md-0 { margin-top: 0; }
+  }
+  #flexiblePage section.collaborators .logos_wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+  }
+  #flexiblePage section.collaborators .logos_wrapper .img_wrapper { max-width: 250px; }
+  @media (max-width: 767.98px) {
+    #flexiblePage section.collaborators .logos_wrapper .img_wrapper { max-width: 100px; }
+  }
+</style>

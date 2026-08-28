@@ -1,0 +1,132 @@
+---
+// Επικοινωνία — faithful rebuild of the old /epikoinwnia/ contact page.
+// The old ACF Google-Maps JS blocks are reproduced as keyless Google Maps
+// embed iframes centered on the same marker coordinates and zoom.
+import Base from '../../layouts/Base.astro';
+import ContactForm from '../../components/ContactForm.astro';
+
+const maps = {
+  thessaloniki: 'https://maps.google.com/maps?q=40.679629120994,22.805246114731&z=13&hl=el&output=embed',
+  athens: 'https://maps.google.com/maps?q=38.082723324416,23.787503242493&z=13&hl=el&output=embed',
+};
+---
+
+<Base
+  lang="el"
+  title="Επικοινωνία - Stathis"
+  path="epikoinwnia"
+  twinPath="en/contact"
+  headerColor="white"
+  padTop={false}
+>
+  <div id="contactPage">
+    <section class="hero bg-grey">
+      <div class="container-fluid">
+        <div class="row mb-md-65 mb-40">
+          <div class="col-md-7">
+            <h1 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32">Επικοινωνία</h1>
+          </div>
+          <div class="col-md-5 d-flex align-items-end">
+            <p class="fs-18">Βρείτε μας είτε στην Αθήνα, είτε στη Θεσσαλονίκη.</p>
+          </div>
+        </div>
+        <div class="row pb-md-80 pb-40 row_map">
+          <div class="col-md-6">
+            <div class="map_wrapper">
+              <div class="black_box">
+                <ul class="links list-unstyled">
+                  <li><p>ΒI.ΠE. Σίνδου , Είσοδος B', Θεσσαλονίκη</p></li>
+                  <li><p>T.K.: 57022</p></li>
+                  <li><a href="tel:2310798300">Τηλ: 2310 798 300</a></li>
+                  <li><a href="mailto:contact@stathis.com.gr">contact@stathis.com.gr</a></li>
+                </ul>
+              </div>
+              <div class="acf-map">
+                <iframe
+                  src={maps.thessaloniki}
+                  title="Χάρτης — Κεντρικά / Εργοστάσιο Θεσσαλονίκη"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="map_wrapper">
+              <div class="black_box">
+                <ul class="links list-unstyled">
+                  <li><p>Ανδρέα Μεταξά 11Α, 14564 Κηφισιά Αττικής</p></li>
+                  <li><a href="tel:2105584160">Τηλ: 210 55 84 160</a></li>
+                  <li><a href="mailto:athens@stathis.com.gr">athens@stathis.com.gr</a></li>
+                </ul>
+              </div>
+              <div class="acf-map">
+                <iframe
+                  src={maps.athens}
+                  title="Χάρτης — Υποκατάστημα Αθήνα"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form mt-md-80 mt-40">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <p class="form_title ff-pfdin-bold fs-20">Για οποιαδήποτε απορία ή σχόλιο παρακαλούμε επικοινωνήστε μαζί μας ή συμπληρώστε τη φόρμα επικοινωνίας.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div id="theme_form">
+              <ContactForm lang="el" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .mb-40 { margin-bottom: 4rem; }
+  .pb-40 { padding-bottom: 4rem; }
+  .mt-40 { margin-top: 4rem; }
+  @media (min-width: 768px) {
+    .row.mb-md-65 { margin-bottom: 6.5rem; }
+    .pb-md-80 { padding-bottom: 8rem; }
+    .mt-md-80 { margin-top: 8rem; }
+  }
+
+  #contactPage section.hero { padding-top: calc(var(--navigation_height) + 10rem); }
+  #contactPage .row_map { row-gap: 2rem; }
+  #contactPage .map_wrapper { position: relative; }
+  #contactPage .map_wrapper .black_box {
+    background-color: var(--black);
+    bottom: 0;
+    color: var(--white);
+    left: 0;
+    max-width: 100%;
+    min-height: 160px;
+    padding: 2rem;
+    position: absolute;
+    width: 300px;
+    z-index: 2;
+  }
+  #contactPage .map_wrapper .black_box .links { display: flex; flex-direction: column; }
+  #contactPage .map_wrapper .black_box .links li:not(:last-child) { margin-bottom: 0.5rem; }
+  #contactPage .map_wrapper .black_box .links li a,
+  #contactPage .map_wrapper .black_box .links li p { color: var(--white); font-size: 1.6rem; }
+  #contactPage .map_wrapper .acf-map { border: none; margin: 0; min-height: 370px; width: 100%; }
+  #contactPage .map_wrapper .acf-map iframe { border: 0; display: block; height: 370px; width: 100%; }
+  #contactPage section.form .form_title { max-width: 600px; }
+  #contactPage section.form #theme_form { max-width: 800px; }
+  @media (max-width: 767.98px) {
+    #contactPage section.hero { padding-top: calc(var(--navigation_height) + 5rem); }
+  }
+</style>

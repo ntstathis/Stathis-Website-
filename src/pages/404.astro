@@ -1,0 +1,33 @@
+---
+// Bilingual 404 — served for any unknown URL, Greek first, English below.
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  lang="el"
+  title="Η σελίδα δεν βρέθηκε - Stathis"
+  path="404"
+  twinPath={null}
+  headerColor="grey"
+  noindex={true}
+  padTop={false}
+>
+  <div class="spacer big_top_space" aria-hidden="true"></div>
+  <div class="container-fluid">
+    <h1 class="ff-pfdin-bold fs-xl-64 fs-md-48 fs-40 mb-30">Η σελίδα δεν βρέθηκε / Page not found</h1>
+    <p class="fs-18 mb-15">Η σελίδα που ψάχνετε δεν υπάρχει ή έχει μετακινηθεί.</p>
+    <p class="fs-18 mb-30" lang="en">The page you are looking for does not exist or has been moved.</p>
+    <div class="links_404">
+      <a class="btn_black" href="/">Αρχική</a>
+      <a class="btn_black" href="/en/home/" lang="en">Home</a>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .links_404 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+</style>

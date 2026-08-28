@@ -1,0 +1,88 @@
+---
+// Προϊόντα — products landing. The old WordPress page was only the «Προϊόντα»
+// heading; the card grid below is added deliberately, reusing the mega-menu
+// product data and images so the page actually lists the 14 product lines.
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import { megaProducts } from '../../lib/i18n';
+
+const megaImages = import.meta.glob<{ default: ImageMetadata }>(
+  '../../assets/img/site/mega/*.{jpg,png}',
+  { eager: true },
+);
+const megaImg = (name: string) => {
+  const hit = Object.entries(megaImages).find(([p]) => p.includes(`/${name}.`));
+  return hit ? hit[1].default : null;
+};
+const products = megaProducts.el;
+---
+
+<Base
+  lang="el"
+  title="Προϊόντα - Stathis"
+  path="proionta"
+  twinPath={null}
+  headerColor="grey"
+  padTop={false}
+>
+  <div class="container-fluid margin_navigation_top pt-md-100 pt-50">
+    <div class="row">
+      <div class="col-12">
+        <div id="page">
+          <div class="gutenberg-content">
+            <div class="container_max_content">
+              <h1 class="ff-pfdin-bold fs-xl-48 fs-md-40 fs-32 mb-md-60 mb-30">Προϊόντα</h1>
+              <div class="products_grid">
+                {products.map((p) => {
+                  const img = megaImg(p.img);
+                  return (
+                    <a class="product_card" href={p.href}>
+                      <div class="img_wrapper radius-12 overflow-hidden">
+                        {img && <Image src={img} alt={p.label} width={640} />}
+                      </div>
+                      <div class="title">{p.label}</div>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .pt-50 { padding-top: 5rem; }
+  @media (min-width: 768px) {
+    .pt-md-100 { padding-top: 10rem; }
+    .mb-md-60 { margin-bottom: 6rem; }
+  }
+
+  /* product cards, styled after the products mega-menu items */
+  .products_grid {
+    display: grid;
+    gap: 4rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 767.98px) {
+    .products_grid {
+      gap: 3rem 1.2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .product_card { display: flex; flex-direction: column; gap: 1.5rem; }
+  .product_card .img_wrapper :global(img) {
+    transform: scale(1);
+    transition: all 0.2s linear;
+    width: 100%;
+  }
+  .product_card:hover .img_wrapper :global(img) { transform: scale(1.05); }
+  .product_card .title {
+    color: var(--black);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+  }
+</style>
